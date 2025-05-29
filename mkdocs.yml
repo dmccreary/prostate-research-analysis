@@ -15,6 +15,8 @@ nav:
   - Workflow:
     - Intro: index.md
     - Check Special Characters: workflow/check-special-chars.md
+    - Python Setup: workflow/setup-python-with-conda.md
+    - Run Script: workflow/run-abstract-extractor-script.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
