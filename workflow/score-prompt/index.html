@@ -12,28 +12,28 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/checklist/">
+        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/workflow/score-prompt/">
       
       
-        <link rel="prev" href="../workflow/run-scorer/">
+        <link rel="prev" href="../run-abstract-extractor-script/">
       
       
-        <link rel="next" href="../glossary/">
+        <link rel="next" href="../run-scorer/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Checklist - Prostate Research Analysis</title>
+        <title>Score Prompt - Prostate Research Analysis</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#site-checklist" class="md-skip">
+        <a href="#creating-a-python-program-to-score-each-paper" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Prostate Research Analysis" class="md-header__button md-logo" aria-label="Prostate Research Analysis" data-md-component="logo">
+    <a href="../.." title="Prostate Research Analysis" class="md-header__button md-logo" aria-label="Prostate Research Analysis" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Checklist
+              Score Prompt
             
           </span>
         </div>
@@ -203,9 +203,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Prostate Research Analysis" class="md-nav__button md-logo" aria-label="Prostate Research Analysis" data-md-component="logo">
+    <a href="../.." title="Prostate Research Analysis" class="md-nav__button md-logo" aria-label="Prostate Research Analysis" data-md-component="logo">
       
-  <img src="../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     Prostate Research Analysis
@@ -232,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../summary-criteria/" class="md-nav__link">
+      <a href="../../summary-criteria/" class="md-nav__link">
         
   
   
@@ -298,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exclusion-criteria/" class="md-nav__link">
+      <a href="../../exclusion-criteria/" class="md-nav__link">
         
   
   
@@ -320,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inclusion-criteria/" class="md-nav__link">
+      <a href="../../inclusion-criteria/" class="md-nav__link">
         
   
   
@@ -338,6 +338,8 @@
       
       
   
+  
+    
   
   
   
@@ -363,18 +365,17 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="../workflow/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -383,19 +384,95 @@
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Workflow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-special-chars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Check Special Characters
+    
+  </span>
   
 
-      
+      </a>
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-python-with-conda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Setup
     
-      
-      
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run-abstract-extractor-script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Run Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
     
@@ -415,12 +492,43 @@
   
   
   <span class="md-ellipsis">
-    Checklist
+    Score Prompt
     
   </span>
   
 
       </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run-scorer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Run Scorer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -433,7 +541,29 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-highlight-test.md" class="md-nav__link">
+      <a href="../../checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code-highlight-test.md" class="md-nav__link">
         
   
   
@@ -455,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   
@@ -477,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   
@@ -499,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   
@@ -521,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   
@@ -543,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -592,7 +722,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/checklist.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/workflow/score-prompt.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -600,16 +730,13 @@
   
 
 
-<h1 id="site-checklist">Site Checklist</h1>
-<ol>
-<li>Customize the fields in your mkdocs.yml file</li>
-<li>Configure Google Analytics to use the right site ID</li>
-<li>Make sure that your .gitignore file includes the <code>site</code> directory</li>
-<li>Test the build</li>
-<li>Make sure the Edit button appears</li>
-<li>Make sure that code color heightening renders correctly</li>
-<li>run <code>git config advice.addIgnoredFile false</code></li>
-</ol>
+<h1 id="creating-a-python-program-to-score-each-paper">Creating a Python Program to Score Each Paper</h1>
+<div class="admonition prompt">
+<p class="admonition-title">Prompt</p>
+<p>Please create Prostate Cancer Treatment Only Comparative Effectiveness Study Scoring program in Python.</p>
+<p>I would like you to create a Python program that does classification of each row of data in the output100.csv file.  The first row is only metadata.  The other 99 lines represent papers and abstracts from Medline.  The output100.csv file contains descriptions and abstracts of prostrate cancer research.  I would like you to use the summary-criteria.md which contains rule to create a score for each line in the output100.csv file.  The score should range on a scale of 0 to 100.  A score of 0 means that none of the criteria match.  A score of 100 implies that all of the summary-criteria are matching.</p>
+<p>Please have the Python program add a new column to the CSV with the score in it.  Label the column "score".</p>
+</div>
 
 
 
@@ -645,7 +772,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../workflow/run-scorer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run Scorer">
+          <a href="../run-abstract-extractor-script/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run Script">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -655,20 +782,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Run Scorer
+                Run Script
               </div>
             </div>
           </a>
         
         
           
-          <a href="../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+          <a href="../run-scorer/" class="md-footer__link md-footer__link--next" aria-label="Next: Run Scorer">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Glossary
+                Run Scorer
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -704,10 +831,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
