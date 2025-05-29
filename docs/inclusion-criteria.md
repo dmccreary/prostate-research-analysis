@@ -22,7 +22,8 @@ All Accepted Treatments:
 1. Cryotherapy
 1. HIFU
 
-Study Acceptance Criteria:
+## Study Acceptance Criteria:
+
 1. Patients must be stratified into recognizable Pre-Treatment Risk Groups: Low, Intermediate, and High Risk by
 either D’Amico, Zelefsky or NCCN stratification. The risk group must be maintained after treatment.
 2. Evaluate the following endpoints if reported: BRFS (biochemical relapse free survival) standard endpoint ASTRO,
