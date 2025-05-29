@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/workflow/setup-python-with-conda/">
+        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/workflow/run-abstract-extractor-script/">
       
       
-        <link rel="prev" href="../check-special-chars/">
+        <link rel="prev" href="../setup-python-with-conda/">
       
       
-        <link rel="next" href="../run-abstract-extractor-script/">
+        <link rel="next" href="../../checklist/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Python Setup - Prostate Research Analysis</title>
+        <title>Run Script - Prostate Research Analysis</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-python-environment-with-conda" class="md-skip">
+        <a href="#invoking-the-python-program" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python Setup
+              Run Script
             
           </span>
         </div>
@@ -425,6 +425,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-python-with-conda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -442,36 +465,13 @@
   
   
   <span class="md-ellipsis">
-    Python Setup
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../run-abstract-extractor-script/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     Run Script
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -672,7 +672,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/workflow/setup-python-with-conda.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/workflow/run-abstract-extractor-script.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -680,18 +680,29 @@
   
 
 
-<h1 id="setup-python-environment-with-conda">Setup Python Environment with Conda</h1>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>deactivate
-conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;doc-classifier&quot;</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>
-conda<span class="w"> </span>activate<span class="w"> </span>doc-classifier
-pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>tqdm<span class="w"> </span>Bio<span class="w"> </span>chardet
+<h1 id="invoking-the-python-program">Invoking the Python program</h1>
+<p>Copy this command to the command line to start processing the input data to get the abstracts.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>extractor4.py<span class="w"> </span>--input_file<span class="w"> </span>../data/data.csv<span class="w"> </span>--output_file<span class="w"> </span>output.csv<span class="w"> </span>--email<span class="w"> </span>dan.mccreary@gmail.com
 </code></pre></div></td></tr></table></div>
-<p>The prompt should now have the string "doc-classifier" in it.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>(doc-classifier) prostate-research-analysis/src $
-</code></pre></div></td></tr></table></div>
+<p>Sample working run of the 4th version:</p>
+<p>``
+$  python extractor4.py --input_file ../data/data.csv --output_file output.csv --email dan.mccreary@gmail.com
+2025-05-29 14:13:51,874 - INFO - Starting PubMed abstract extraction
+2025-05-29 14:13:51,874 - INFO - Input file: ../data/data.csv
+2025-05-29 14:13:51,874 - INFO - Output file: output.csv
+2025-05-29 14:13:51,874 - INFO - Batch size: 100
+2025-05-29 14:13:51,874 - INFO - Max workers: 1
+2025-05-29 14:13:51,874 - INFO - Specified encoding: Auto-detect
+2025-05-29 14:13:51,914 - INFO - Detected encoding: utf-8 (confidence: 0.99)
+2025-05-29 14:13:51,914 - INFO - Trying to read file with encoding: utf-8
+2025-05-29 14:13:51,933 - INFO - Successfully read file with encoding: utf-8
+2025-05-29 14:13:51,933 - INFO - Processing 7338 articles
+Fetching abstracts: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 74/74 [01:15&lt;00:00,  1.01s/it]
+2025-05-29 14:15:34,578 - INFO - File saved with UTF-8 encoding
+2025-05-29 14:15:34,578 - INFO - Successfully saved 7338 articles with abstracts to output.csv
+2025-05-29 14:15:34,580 - INFO - Articles with abstracts: 7289/7338 (99.33%)
+2025-05-29 14:15:34,581 - INFO - Extraction completed
+```</p>
 
 
 
@@ -727,7 +738,7 @@ pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w">
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../check-special-chars/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Check Special Characters">
+          <a href="../setup-python-with-conda/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python Setup">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -737,20 +748,20 @@ pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w">
                 Previous
               </span>
               <div class="md-ellipsis">
-                Check Special Characters
+                Python Setup
               </div>
             </div>
           </a>
         
         
           
-          <a href="../run-abstract-extractor-script/" class="md-footer__link md-footer__link--next" aria-label="Next: Run Script">
+          <a href="../../checklist/" class="md-footer__link md-footer__link--next" aria-label="Next: Checklist">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Run Script
+                Checklist
               </div>
             </div>
             <div class="md-footer__button md-icon">
