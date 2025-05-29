@@ -9,6 +9,7 @@ edit_uri: 'blob/master/docs'
 nav:
   - Home: index.md
   - About: about.md
+  - Summary Criteria: summary-criteria.md
   - Exclusion Criteria: exclusion-criteria.md
   - Inclusion Criteria: inclusion-criteria.md
   - Checklist: checklist.md
