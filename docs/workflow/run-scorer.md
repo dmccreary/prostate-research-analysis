@@ -1,11 +1,12 @@
 # Run Scorer
 
-``sh
+```sh
 python prostate-cancer-scorer.py
 ```
 
 ## Test Run on first 99 Papers
 
+```
 Loading data from output100.csv...
 Successfully loaded 99 papers
 
@@ -49,11 +50,15 @@ Rank Score  Title
 
 ================================================================================
 Analysis complete! Check output100_scored.csv for full results.
+```
 
 ## Full Run on the Entire FIle
 
+```sh
+python prostate-cancer-scorer.py
 ```
-$ python prostate-cancer-scorer.py
+
+```
 Loading data from ../data/output.csv...
 Successfully loaded 7338 papers
 
