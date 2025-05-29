@@ -510,6 +510,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Run Scorer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -521,6 +534,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#test-run-on-first-99-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Run on first 99 Papers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-run-on-the-entire-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Run on the Entire FIle
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -708,6 +758,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#test-run-on-first-99-papers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Run on first 99 Papers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-run-on-the-entire-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Run on the Entire FIle
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -731,8 +807,9 @@
 
 
 <h1 id="run-scorer">Run Scorer</h1>
-<p>``sh
-python prostate-cancer-scorer.py
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>prostate-cancer-scorer.py
+</code></pre></div></td></tr></table></div>
+<h2 id="test-run-on-first-99-papers">Test Run on first 99 Papers</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -775,13 +852,7 @@ python prostate-cancer-scorer.py
 <span class="normal">40</span>
 <span class="normal">41</span>
 <span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code>## Test Run on first 99 Papers
-
-Loading data from output100.csv...
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code>Loading data from output100.csv...
 Successfully loaded 99 papers
 
 Processing papers...
@@ -824,35 +895,83 @@ Rank Score  Title
 
 ================================================================================
 Analysis complete! Check output100_scored.csv for full results.
-
-## Full Run on the Entire FIle
 </code></pre></div></td></tr></table></div>
-$ python prostate-cancer-scorer.py
-Loading data from ../data/output.csv...
-Successfully loaded 7338 papers</p>
-<h1 id="processing-papers">Processing papers...</h1>
-<p>Paper 1: Score 52 - Outcomes of Observation vs Stereotactic Ablative Radiation f...
+<h2 id="full-run-on-the-entire-file">Full Run on the Entire FIle</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>prostate-cancer-scorer.py
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code>Loading data from ../data/output.csv...
+Successfully loaded 7338 papers
+
+Processing papers...
+================================================================================
+Paper 1: Score 52 - Outcomes of Observation vs Stereotactic Ablative Radiation f...
 Paper 2: Score 28 - Considering the role of radical prostatectomy in 21st centur...
 Paper 3: Score 43 - MRI-Targeted, Systematic, and Combined Biopsy for Prostate C...
 Paper 4: Score 24 - HDR Prostate Brachytherapy...
-Paper 5: Score 54 - Testosterone replacement therapy (TRT) and prostate cancer: ...</p>
-<p>================================================================================
+Paper 5: Score 54 - Testosterone replacement therapy (TRT) and prostate cancer: ...
+
+================================================================================
 ✓ Scoring completed successfully!
-✓ Results saved to: output-full-scored.csv</p>
-<p>Score Statistics:
+✓ Results saved to: output-full-scored.csv
+
+Score Statistics:
   Mean Score: 16.4
   Median Score: 10.0
   Standard Deviation: 14.7
-  Range: 0 - 88</p>
-<p>Score Distribution:
+  Range: 0 - 88
+
+Score Distribution:
   High Quality (≥70):     26 papers (0.4%)
   Good Quality (50-69):   282 papers (3.8%)
   Moderate Quality (30-49): 1026 papers (14.0%)
-  Low Quality (&lt;30):      6004 papers (81.8%)</p>
-<p>Top 10 Highest Scoring Papers:
-Rank Score  Title</p>
-<hr />
-<p>1    88     Stereotactic body radiotherapy versus conventional/mode...
+  Low Quality (&lt;30):      6004 papers (81.8%)
+
+Top 10 Highest Scoring Papers:
+Rank Score  Title
+---- ------ ------------------------------------------------------------
+1    88     Stereotactic body radiotherapy versus conventional/mode...
 2    86     Metastasis, Mortality, and Quality of Life for Men With...
 3    86     The role of radical prostatectomy and definitive extern...
 4    86     Metastasis, Mortality, and Quality of Life for Men With...
@@ -861,10 +980,11 @@ Rank Score  Title</p>
 7    80     External Beam Radiation Therapy (EBRT) and High-Dose-Ra...
 8    79     Benefits and Risks of Primary Treatments for High-risk ...
 9    79     Cohort study of high-intensity focused ultrasound in th...
-10   79     Cohort study of high-intensity focused ultrasound in th...</p>
-<p>================================================================================
+10   79     Cohort study of high-intensity focused ultrasound in th...
+
+================================================================================
 Analysis complete! Check output-full-scored.csv for full results.
-```</p>
+</code></pre></div></td></tr></table></div>
 
 
 
