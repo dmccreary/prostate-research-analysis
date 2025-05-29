@@ -40,4 +40,12 @@
          <loc>https://dmccreary.github.io/prostate-research-analysis/summary-criteria/</loc>
          <lastmod>2025-05-29</lastmod>
     </url>
+    <url>
+         <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/check-special-chars/</loc>
+         <lastmod>2025-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/setup-python-with-conda/</loc>
+         <lastmod>2025-05-29</lastmod>
+    </url>
 </urlset>
