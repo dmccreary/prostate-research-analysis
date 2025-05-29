@@ -1,4 +1,4 @@
-site_name: Mkdocs Template Site
+site_name: Prostrate Research Analysis
 site_description: 'DESCRIPTION All content licensed Creative Commons ShareAlike Attribution Noncommercial'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
@@ -8,11 +8,15 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
+  - About: about.md
+  - Exclusion Criteria: exclusion-criteria.md
+  - Inclusion Criteria: inclusion-criteria.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
+  - License: license.md
   - Contact: contact.md
  
 # CoderDojo Microsite Standards from here down
