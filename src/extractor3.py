@@ -119,6 +119,8 @@ def process_csv(input_file, output_file, email, batch_size=100, max_workers=1, d
         max_workers: Number of parallel workers
         delay: Delay between API calls in seconds
         encoding: File encoding (default: cp1252)
+
+        $ python extractor3 -input_file ../data/data.csv -output_file output.csv
     """
     try:
         # Read the CSV file with the specified encoding

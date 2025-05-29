@@ -12,6 +12,9 @@ nav:
   - Summary Criteria: summary-criteria.md
   - Exclusion Criteria: exclusion-criteria.md
   - Inclusion Criteria: inclusion-criteria.md
+  - Workflow:
+    - Intro: index.md
+    - Check Special Characters: workflow/check-special-chars.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
