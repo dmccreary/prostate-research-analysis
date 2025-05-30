@@ -551,6 +551,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Run
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -734,6 +743,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sample-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Run
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -759,13 +777,135 @@
 
 
 <h1 id="similarity-viewer">Similarity Viewer</h1>
+<p><a href="main.html">Run the Similarity Viewer</a></p>
 <p>This 2D chart shows a series of points.  Each point
 corresponds to a single paper.  The distance between
 any two points represents how similar the papers are.
 Points that are close together indicated that the papers are similar.  Points that are far apart indicate that the papers are different.
 Note that the X and Y dimensions don't actually mean anything concrete like the score.  They are just ways to group similar papers.</p>
 <h2 id="embeddings">Embeddings</h2>
-<p>The way we create this chart is to use large language models (LLMs) to create a data structure for each paper called an <strong>embedding</strong>.  An embedding is a vector of numbers that place each paper in a multi-dimensional space based on the words and concepts described in each paper.  </p>
+<p>The way we create this chart is to use large language models (LLMs) to create a data structure for each paper called an <strong>embedding</strong>.  An embedding is a vector of numbers that place each paper in a multi-dimensional space based on the words and concepts described in each paper.</p>
+<h2 id="sample-run">Sample Run</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>$<span class="w"> </span>python<span class="w"> </span>create-embeddings.py<span class="w"> </span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code>Prostate Cancer Papers - Embedding Analysis
+==================================================
+Loading data from ../../data/output-full-scored.csv...
+Loaded 7338 papers
+Creating text embeddings...
+  - Generating TF-IDF vectors...
+  - TF-IDF matrix shape: (7338, 5000)
+  - Applying UMAP reduction...
+  - 2D embeddings shape: (7338, 2)
+Performing clustering with 8 clusters...
+
+Cluster Analysis:
+==================================================
+Cluster 0: 1019 papers
+  Avg Score: 18.4
+  Top Terms: biopsy, mri, imaging, patients, resonance
+  Main Treatment: Unknown
+
+Cluster 1: 1037 papers
+  Avg Score: 9.3
+  Top Terms: expression, ar, mir, pca, cell
+  Main Treatment: Unknown
+
+Cluster 2: 686 papers
+  Avg Score: 16.3
+  Top Terms: psma, sup, pet, ct, pet ct
+  Main Treatment: Unknown
+
+Cluster 3: 1089 papers
+  Avg Score: 13.8
+  Top Terms: risk, patients, pca, men, 95
+  Main Treatment: Unknown
+
+Cluster 4: 968 papers
+  Avg Score: 7.6
+  Top Terms: cells, cell, sub, cancer cells, activity
+  Main Treatment: Unknown
+
+Cluster 5: 814 papers
+  Avg Score: 29.1
+  Top Terms: patients, radiotherapy, dose, radiation, therapy
+  Main Treatment: Unknown
+
+Cluster 6: 951 papers
+  Avg Score: 22.3
+  Top Terms: patients, men, prostatectomy, radical, screening
+  Main Treatment: Unknown
+
+Cluster 7: 774 papers
+  Avg Score: 17.7
+  Top Terms: metastatic, patients, castration, bone, resistant
+  Main Treatment: Unknown
+
+Exporting to papers-embeddings.json...
+✓ Successfully exported 7338 papers with embeddings
+
+✓ Analysis complete!
+✓ Embeddings and clusters saved to: papers-embeddings.json
+✓ Ready for 2D similarity visualization!
+</code></pre></div></td></tr></table></div>
 
 
 
