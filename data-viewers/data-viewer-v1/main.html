@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prostate Cancer Research Papers - Interactive Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        select, input {
+            padding: 8px 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .chart-container {
+            position: relative;
+            background: #fefefe;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tooltip {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            max-width: 400px;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            line-height: 1.4;
+        }
+        
+        .tooltip.visible {
+            opacity: 1;
+        }
+        
+        .tooltip h3 {
+            margin: 0 0 8px 0;
+            color: #3498db;
+            font-size: 14px;
+        }
+        
+        .tooltip .score {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 16px;
+        }
+        
+        .tooltip .meta {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #bdc3c7;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .stat-label {
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        
+        .dot {
+            stroke: rgba(255, 255, 255, 0.8);
+            stroke-width: 1px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .dot:hover {
+            stroke-width: 2px;
+            stroke: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prostate Cancer Research Papers</h1>
+        <p class="subtitle">Interactive Analysis of Treatment Comparative Effectiveness Studies</p>
+        
+        <div id="stats" class="stats"></div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="treatmentFilter">Filter by Treatment:</label>
+                <select id="treatmentFilter">
+                    <option value="all">All Treatments</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="studyFilter">Filter by Study Type:</label>
+                <select id="studyFilter">
+                    <option value="all">All Study Types</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="minScore">Min Score:</label>
+                <input type="range" id="minScore" min="0" max="100" value="0">
+                <span id="minScoreValue">0</span>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <svg id="chart"></svg>
+        </div>
+        
+        <div class="legend" id="legend"></div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        class ProstatePapersVisualization {
+            constructor() {
+                this.data = [];
+                this.filteredData = [];
+                this.width = 1000;
+                this.height = 600;
+                this.margin = { top: 40, right: 60, bottom: 60, left: 60 };
+                
+                this.colorScale = d3.scaleOrdinal()
+                    .domain(['High Quality', 'Good Quality', 'Moderate Quality', 'Low Quality'])
+                    .range(['#27ae60', '#3498db', '#f39c12', '#e74c3c']);
+                
+                this.initializeChart();
+                this.loadData();
+            }
+            
+            initializeChart() {
+                const svg = d3.select('#chart')
+                    .attr('width', this.width)
+                    .attr('height', this.height);
+                
+                this.chartGroup = svg.append('g')
+                    .attr('transform', `translate(${this.margin.left}, ${this.margin.top})`);
+                
+                this.innerWidth = this.width - this.margin.left - this.margin.right;
+                this.innerHeight = this.height - this.margin.top - this.margin.bottom;
+                
+                // Add axes
+                this.xAxisGroup = this.chartGroup.append('g')
+                    .attr('transform', `translate(0, ${this.innerHeight})`);
+                
+                this.yAxisGroup = this.chartGroup.append('g');
+                
+                // Add axis labels
+                this.chartGroup.append('text')
+                    .attr('x', this.innerWidth / 2)
+                    .attr('y', this.innerHeight + 40)
+                    .style('text-anchor', 'middle')
+                    .style('font-size', '14px')
+                    .style('fill', '#2c3e50')
+                    .text('Publication Year');
+                
+                this.chartGroup.append('text')
+                    .attr('transform', 'rotate(-90)')
+                    .attr('x', -this.innerHeight / 2)
+                    .attr('y', -40)
+                    .style('text-anchor', 'middle')
+                    .style('font-size', '14px')
+                    .style('fill', '#2c3e50')
+                    .text('Quality Score');
+            }
+            
+            async loadData() {
+                try {
+                    const response = await fetch('prostate-papers-data.json');
+                    const jsonData = await response.json();
+                    
+                    this.data = jsonData.papers;
+                    this.summary = jsonData.summary;
+                    
+                    this.initializeControls();
+                    this.updateStats();
+                    this.updateChart();
+                    this.createLegend();
+                    
+                } catch (error) {
+                    console.error('Error loading data:', error);
+                    document.querySelector('.container').innerHTML = 
+                        '<h2 style="color: red; text-align: center;">Error loading data. Please ensure prostate_papers_data.json is available.</h2>';
+                }
+            }
+            
+            initializeControls() {
+                // Populate treatment filter
+                const treatments = [...new Set(this.data.map(d => d.treatment_type))].sort();
+                const treatmentSelect = document.getElementById('treatmentFilter');
+                treatments.forEach(treatment => {
+                    const option = document.createElement('option');
+                    option.value = treatment;
+                    option.textContent = treatment;
+                    treatmentSelect.appendChild(option);
+                });
+                
+                // Populate study type filter
+                const studyTypes = [...new Set(this.data.map(d => d.study_type))].sort();
+                const studySelect = document.getElementById('studyFilter');
+                studyTypes.forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type;
+                    option.textContent = type;
+                    studySelect.appendChild(option);
+                });
+                
+                // Add event listeners
+                treatmentSelect.addEventListener('change', () => this.filterData());
+                studySelect.addEventListener('change', () => this.filterData());
+                
+                const minScoreSlider = document.getElementById('minScore');
+                minScoreSlider.addEventListener('input', (e) => {
+                    document.getElementById('minScoreValue').textContent = e.target.value;
+                    this.filterData();
+                });
+                
+                this.filterData();
+            }
+            
+            filterData() {
+                const treatmentFilter = document.getElementById('treatmentFilter').value;
+                const studyFilter = document.getElementById('studyFilter').value;
+                const minScore = parseInt(document.getElementById('minScore').value);
+                
+                this.filteredData = this.data.filter(d => {
+                    return (treatmentFilter === 'all' || d.treatment_type === treatmentFilter) &&
+                           (studyFilter === 'all' || d.study_type === studyFilter) &&
+                           d.score >= minScore;
+                });
+                
+                this.updateChart();
+            }
+            
+            updateStats() {
+                const statsDiv = document.getElementById('stats');
+                statsDiv.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-value">${this.summary.total_papers}</div>
+                        <div class="stat-label">Total Papers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${this.summary.score_stats.mean.toFixed(1)}</div>
+                        <div class="stat-label">Average Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${this.summary.score_stats.max}</div>
+                        <div class="stat-label">Highest Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${this.summary.quality_distribution['High Quality (≥70)']}</div>
+                        <div class="stat-label">High Quality Studies</div>
+                    </div>
+                `;
+            }
+            
+            updateChart() {
+                const validData = this.filteredData.filter(d => d.year && d.year > 1990);
+                
+                // Update scales
+                const xScale = d3.scaleLinear()
+                    .domain(d3.extent(validData, d => d.year))
+                    .range([0, this.innerWidth]);
+                
+                const yScale = d3.scaleLinear()
+                    .domain([0, 100])
+                    .range([this.innerHeight, 0]);
+                
+                // Update axes
+                this.xAxisGroup.call(d3.axisBottom(xScale).tickFormat(d3.format('d')));
+                this.yAxisGroup.call(d3.axisLeft(yScale));
+                
+                // Bind data to dots
+                const dots = this.chartGroup.selectAll('.dot')
+                    .data(validData, d => d.id);
+                
+                // Remove old dots
+                dots.exit().remove();
+                
+                // Add new dots
+                const dotsEnter = dots.enter()
+                    .append('circle')
+                    .attr('class', 'dot')
+                    .attr('r', 0);
+                
+                // Update all dots
+                dots.merge(dotsEnter)
+                    .transition()
+                    .duration(500)
+                    .attr('cx', d => xScale(d.year))
+                    .attr('cy', d => yScale(d.score))
+                    .attr('r', 5)
+                    .attr('fill', d => this.colorScale(d.quality_category))
+                    .attr('opacity', 0.7);
+                
+                // Add hover effects
+                this.chartGroup.selectAll('.dot')
+                    .on('mouseover', (event, d) => this.showTooltip(event, d))
+                    .on('mouseout', () => this.hideTooltip())
+                    .on('click', (event, d) => window.open(d.url, '_blank'));
+            }
+            
+            showTooltip(event, d) {
+                const tooltip = document.getElementById('tooltip');
+                
+                tooltip.innerHTML = `
+                    <h3>${d.title}</h3>
+                    <div class="score">Score: ${d.score}/100</div>
+                    <div><strong>Treatment:</strong> ${d.treatment_type}</div>
+                    <div><strong>Study Type:</strong> ${d.study_type}</div>
+                    <div><strong>Journal:</strong> ${d.journal}</div>
+                    <div class="meta">
+                        Year: ${d.year || 'Unknown'} | PMID: ${d.pmid}
+                        <br>Click to view on PubMed
+                    </div>
+                `;
+                
+                tooltip.classList.add('visible');
+                
+                // Position tooltip
+                const rect = tooltip.getBoundingClientRect();
+                tooltip.style.left = Math.min(event.pageX + 10, window.innerWidth - rect.width - 20) + 'px';
+                tooltip.style.top = Math.max(event.pageY - 10, 10) + 'px';
+            }
+            
+            hideTooltip() {
+                document.getElementById('tooltip').classList.remove('visible');
+            }
+            
+            createLegend() {
+                const legend = document.getElementById('legend');
+                const categories = ['High Quality', 'Good Quality', 'Moderate Quality', 'Low Quality'];
+                
+                legend.innerHTML = categories.map(category => `
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: ${this.colorScale(category)}"></div>
+                        <span>${category}</span>
+                    </div>
+                `).join('');
+            }
+        }
+        
+        // Initialize visualization when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new ProstatePapersVisualization();
+        });
+    </script>
+</body>
+</html>

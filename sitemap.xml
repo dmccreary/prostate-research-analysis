@@ -2,70 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/about/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/checklist/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/contact/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/exclusion-criteria/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/glossary/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/how-we-built-this-site/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/inclusion-criteria/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/license/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/references/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/summary-criteria/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/prostate-research-analysis/data-viewers/</loc>
+         <lastmod>2025-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/prostate-research-analysis/data-viewers/data-viewer-v1/</loc>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/check-special-chars/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/clone-the-repo/</loc>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/run-abstract-extractor-script/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/run-scorer/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/score-prompt/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/prostate-research-analysis/workflow/setup-python-with-conda/</loc>
-         <lastmod>2025-05-29</lastmod>
+         <lastmod>2025-05-30</lastmod>
     </url>
 </urlset>
