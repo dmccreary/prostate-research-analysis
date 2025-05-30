@@ -30,7 +30,6 @@ nav:
     - Data Viewer v1: data-viewers/data-viewer-v1/index.md
     - Similarity: data-viewers/similarity/index.md
   - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
