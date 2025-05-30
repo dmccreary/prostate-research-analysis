@@ -354,24 +354,32 @@
             async loadData() {
                 try {
                     const response = await fetch('papers-embeddings.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
                     const jsonData = await response.json();
                     
                     this.data = jsonData.papers;
                     this.clusters = jsonData.clusters;
                     this.bounds = jsonData.bounds;
                     
+                    console.log(`Loaded ${this.data.length} papers`);
+                    console.log('Bounds:', this.bounds);
+                    
                     document.getElementById('loadingMessage').style.display = 'none';
                     document.getElementById('mainContent').style.display = 'block';
                     
+                    this.updateScales(); // Call this BEFORE other initialization
                     this.initializeControls();
-                    this.updateScales();
                     this.updateVisualization();
                     this.createClusterStats();
                     
                 } catch (error) {
                     console.error('Error loading data:', error);
                     document.getElementById('loadingMessage').innerHTML = 
-                        '<h2 style="color: red;">Error loading embeddings data. Please run the embedding analysis first.</h2>';
+                        `<h2 style="color: red;">Error loading embeddings data</h2>
+                         <p>Please ensure papers-embeddings.json exists in the same directory.</p>
+                         <p>Error: ${error.message}</p>`;
                 }
             }
             
@@ -396,7 +404,8 @@
                     this.filterData();
                 });
                 
-                this.filterData();
+                // Initialize filtered data
+                this.filteredData = this.data.slice(); // Copy all data initially
             }
             
             filterData() {
@@ -412,19 +421,40 @@
             }
             
             updateScales() {
-                // Create scales for positioning
+                // Ensure bounds exist and are valid
+                if (!this.bounds) {
+                    console.error('No bounds data available');
+                    return;
+                }
+                
+                console.log('Creating scales with bounds:', this.bounds);
+                
+                // Create scales for positioning with some padding
+                const xPadding = (this.bounds.x_max - this.bounds.x_min) * 0.05;
+                const yPadding = (this.bounds.y_max - this.bounds.y_min) * 0.05;
+                
                 this.xScale = d3.scaleLinear()
-                    .domain([this.bounds.x_min, this.bounds.x_max])
+                    .domain([this.bounds.x_min - xPadding, this.bounds.x_max + xPadding])
                     .range([this.margin.left, this.width - this.margin.right]);
                 
                 this.yScale = d3.scaleLinear()
-                    .domain([this.bounds.y_min, this.bounds.y_max])
+                    .domain([this.bounds.y_min - yPadding, this.bounds.y_max + yPadding])
                     .range([this.height - this.margin.bottom, this.margin.top]);
+                
+                console.log('Scales created successfully');
             }
             
             updateVisualization() {
+                // Check if scales are initialized
+                if (!this.xScale || !this.yScale) {
+                    console.error('Scales not initialized yet');
+                    return;
+                }
+                
                 const colorBy = document.getElementById('colorBy').value;
                 const sizeBy = document.getElementById('sizeBy').value;
+                
+                console.log(`Updating visualization: ${this.filteredData.length} papers`);
                 
                 // Update color scale based on selection
                 let colorScale;
