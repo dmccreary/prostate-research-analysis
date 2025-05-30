@@ -12,14 +12,19 @@ nav:
   - Summary Criteria: summary-criteria.md
   - Exclusion Criteria: exclusion-criteria.md
   - Inclusion Criteria: inclusion-criteria.md
+
   - Workflow:
     - Intro: workflow/index.md
+    - Clone GitHub Repository: workflow/clone-github-repo.md
     - Check Special Characters: workflow/check-special-chars.md
     - Python Setup: workflow/setup-python-with-conda.md
     - Run Script: workflow/run-abstract-extractor-script.md
     - Score Prompt: workflow/score-prompt.md
     - Run Scorer: workflow/run-scorer.md
 
+  - Data Viewers:
+    - Intro: data-viewers/index.md
+    - Data Viewer v1: data-viewers/data-viewer-v1/index.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md
