@@ -1,0 +1,52 @@
+2025-06-13 15:04:19,337 - INFO - Reading output100.csv
+2025-06-13 15:04:19,341 - INFO - Loaded 99 rows
+2025-06-13 15:04:19,342 - INFO - Applying filters and calculating scores...
+2025-06-13 15:04:19,349 - INFO - Processed 10/99 rows
+2025-06-13 15:04:19,354 - INFO - Processed 20/99 rows
+2025-06-13 15:04:19,360 - INFO - Processed 30/99 rows
+2025-06-13 15:04:19,365 - INFO - Processed 40/99 rows
+2025-06-13 15:04:19,370 - INFO - Processed 50/99 rows
+2025-06-13 15:04:19,375 - INFO - Processed 60/99 rows
+2025-06-13 15:04:19,380 - INFO - Processed 70/99 rows
+2025-06-13 15:04:19,386 - INFO - Processed 80/99 rows
+2025-06-13 15:04:19,391 - INFO - Processed 90/99 rows
+2025-06-13 15:04:19,396 - INFO - Saving results to analyzed_output.csv
+2025-06-13 15:04:19,400 - INFO - 
+=== SUMMARY STATISTICS ===
+2025-06-13 15:04:19,401 - INFO - Sample Size Filter Results:
+2025-06-13 15:04:19,401 - INFO -   UNKNOWN: 66 (66.7%)
+2025-06-13 15:04:19,401 - INFO -   FALSE: 19 (19.2%)
+2025-06-13 15:04:19,401 - INFO -   TRUE: 14 (14.1%)
+2025-06-13 15:04:19,402 - INFO - 
+Followup Filter Results (for eligible papers):
+2025-06-13 15:04:19,402 - INFO -   UNKNOWN: 70 (87.5%)
+2025-06-13 15:04:19,402 - INFO -   TRUE: 5 (6.2%)
+2025-06-13 15:04:19,402 - INFO -   FALSE: 5 (6.2%)
+2025-06-13 15:04:19,402 - INFO - 
+Pathologic Staging Filter Results:
+2025-06-13 15:04:19,402 - INFO -   UNKNOWN: 83 (83.8%)
+2025-06-13 15:04:19,402 - INFO -   TRUE: 14 (14.1%)
+2025-06-13 15:04:19,402 - INFO -   FALSE: 2 (2.0%)
+2025-06-13 15:04:19,402 - INFO - 
+Keyword Score Statistics:
+2025-06-13 15:04:19,402 - INFO -   Mean: 67.8
+2025-06-13 15:04:19,402 - INFO -   Median: 65.0
+2025-06-13 15:04:19,402 - INFO -   Min: 33
+2025-06-13 15:04:19,402 - INFO -   Max: 100
+2025-06-13 15:04:19,403 - INFO - 
+High-quality papers (passed all filters + score ≥70): 0
+2025-06-13 15:04:19,403 - INFO - Analysis completed successfully
+2025-06-13 15:20:27,836 - INFO - Starting Prostate Cancer Treatment Study Paper Analysis
+2025-06-13 15:20:27,837 - INFO - Input file: output100.csv
+2025-06-13 15:20:27,837 - INFO - Output file: output.csv
+2025-06-13 15:20:27,837 - INFO - Reading input file: output100.csv
+2025-06-13 15:20:27,841 - INFO - Processing 99 papers
+2025-06-13 15:20:27,909 - INFO - Analysis Results:
+2025-06-13 15:20:27,909 - INFO -   Papers with prostate keywords: 90/99 (90.91%)
+2025-06-13 15:20:27,909 - INFO -   Papers with adequate sample size: 44/99 (44.44%)
+2025-06-13 15:20:27,909 - INFO -   Papers with adequate follow-up: 3/99 (3.03%)
+2025-06-13 15:20:27,909 - INFO -   Papers with clinical staging: 4/99 (4.04%)
+2025-06-13 15:20:27,910 - INFO -   Average keyword score: 99.49
+2025-06-13 15:20:27,910 - INFO - Saving results to: output.csv
+2025-06-13 15:20:27,913 - INFO - Analysis completed successfully
+2025-06-13 15:20:27,913 - INFO - Analysis completed
