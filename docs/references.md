@@ -1,5 +1,11 @@
 # Site References
 
+## 
+
+[SEMI-AUTOMATED EXTRACTION OF RESEARCH TOPICS AND TRENDS FROM NCI FUNDING IN RADIOLOGICAL SCIENCES FROM 2000-2020 ](https://arxiv.org/pdf/2306.13075) - Mark Nguyen, Peter Beidler, Joseph Tsai, August Anderson, Daniel Chen, Paul Kinahan, and John Kang - University of Washington
+
+## Site Building Tools
+
 1. **mkdocs** - [https://www.mkdocs.org/](https://www.mkdocs.org/) - this is our tool for building the website.  It converts Markdown into HTML in the ```site``` directory.
 2. **mkdocs material theme** - [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/) - this is the theme for our site.  The theme adds the user interface elements that give our site the look and feel.  It also has the features such as social cards.
 3. **GitHub Pages** - [https://pages.github.com/](https://pages.github.com/) - this is the free tool for hosting public websites created by mkdocs
