@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Convert negative-data-set.xlsx to JSON with abstracts fetched from PubMed.
+Processes all sheets/tabs in the Excel file.
 
 Usage:
     python xlsx-to-json.py --email your@email.com
@@ -9,6 +10,7 @@ Usage:
 
 import argparse
 import json
+import re
 import time
 import pandas as pd
 from Bio import Entrez
@@ -66,7 +68,6 @@ def parse_citation(citation):
         citation = citation[:doi_idx].strip()
 
     # Try to parse "Journal. Year Mon;Vol(Issue):Pages"
-    import re
     match = re.match(r'^(.+?)\.\s*(\d{4})\s*\w*;?\s*(\d+)?(?:\([^)]+\))?:?([\d\-]+)?', citation)
     if match:
         parts['journal'] = match.group(1).strip()
@@ -86,12 +87,23 @@ def main():
     parser.add_argument('--batch-size', type=int, default=50, help='PMIDs per API request')
     args = parser.parse_args()
 
-    # Read Excel without headers
+    # Read all sheets from Excel file
     logger.info(f"Reading {args.input}")
-    df = pd.read_excel(args.input, header=None)
-    df.columns = ['row_id', 'pmid', 'title', 'citation', 'author', 'url']
+    xlsx = pd.ExcelFile(args.input)
+    sheet_names = xlsx.sheet_names
+    logger.info(f"Found {len(sheet_names)} sheets: {sheet_names}")
 
-    logger.info(f"Found {len(df)} papers")
+    # Combine all sheets into one dataframe
+    all_rows = []
+    for sheet_name in sheet_names:
+        df = pd.read_excel(xlsx, sheet_name=sheet_name, header=None)
+        df.columns = ['row_id', 'pmid', 'title', 'citation', 'author', 'url']
+        df['sheet'] = sheet_name  # Track which sheet/year group this came from
+        all_rows.append(df)
+        logger.info(f"  Sheet '{sheet_name}': {len(df)} papers")
+
+    df = pd.concat(all_rows, ignore_index=True)
+    logger.info(f"Total papers across all sheets: {len(df)}")
 
     # Fetch abstracts in batches
     all_pmids = df['pmid'].tolist()
@@ -119,9 +131,13 @@ def main():
             'pages': citation_parts['pages'],
             'doi': citation_parts['doi'],
             'url': row['url'],
+            'year_group': row['sheet'],  # Sheet name (e.g., "2005", "2010", etc.)
             'dataset': 'negative'
         }
         papers.append(paper)
+
+    # Count papers per sheet
+    sheet_counts = {sheet: sum(1 for p in papers if p['year_group'] == sheet) for sheet in sheet_names}
 
     # Write JSON
     output_data = {
@@ -129,7 +145,9 @@ def main():
             'source': args.input,
             'total_papers': len(papers),
             'papers_with_abstracts': sum(1 for p in papers if p['abstract']),
-            'dataset_type': 'negative'
+            'dataset_type': 'negative',
+            'sheets': sheet_names,
+            'papers_per_sheet': sheet_counts
         },
         'papers': papers
     }
@@ -139,6 +157,7 @@ def main():
 
     logger.info(f"Saved {len(papers)} papers to {args.output}")
     logger.info(f"Papers with abstracts: {output_data['metadata']['papers_with_abstracts']}/{len(papers)}")
+    logger.info(f"Papers per sheet: {sheet_counts}")
 
 if __name__ == "__main__":
     main()
