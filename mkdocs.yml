@@ -35,6 +35,7 @@ nav:
   - Reports:
     - Data Profiles: reports/data-profiles/index.md
     - Year Distribution: reports/data-profiles/year-distribution.md
+    - Year Distribution Chart: reports/data-profiles/year-distribution-chart.md
 
   - Checklist: checklist.md
   - Glossary: glossary.md

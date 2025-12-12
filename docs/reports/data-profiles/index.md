@@ -6,7 +6,8 @@ Comparative analysis of positive (accepted) and negative (rejected) paper datase
 
 | Report | Description |
 |--------|-------------|
-| [Year Distribution](year-distribution.md) | Publication year comparison between datasets |
+| [Year Distribution](year-distribution.md) | Publication year comparison tables |
+| [Year Distribution Chart](year-distribution-chart.md) | Interactive Chart.js visualization |
 
 ## Data Sources
 
