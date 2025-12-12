@@ -37,6 +37,10 @@ nav:
     - Year Distribution: reports/data-profiles/year-distribution.md
     - Year Distribution Chart: reports/data-profiles/year-distribution-chart.md
 
+  - MicroSims:
+    - Intro: sims/index.md
+    - ML Workflow: sims/ml-workflow/index.md
+
   - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
@@ -74,12 +78,18 @@ markdown_extensions:
   - admonition
   - md_in_html
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - pymdownx.highlight:
       linenums: true
 extra_css:
    - css/extra.css
+extra_javascript:
+   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
 #extra:
 #  analytics:
 #    provider: google
