@@ -58,9 +58,23 @@ Period      Positive                          Negative
 2020-2024                                 ██████████████████████████████
 ```
 
+## Temporal Mismatch Warning
+
+**The datasets have significantly different year distributions.** This could bias a classifier to reject newer papers simply because they are more recent:
+
+- Positive papers end in 2013; negative papers continue through 2022
+- 52% of negative papers (128) are from 2015-2022, with **zero** positive papers in this range
+- A classifier might learn "newer = rejected" rather than actual quality criteria
+
+### Recommendations
+
+1. Add more recent positive papers (2014-2024) to balance the datasets
+2. Consider filtering to overlapping years (2005-2013) for initial model training
+3. Use publication year as a control variable to prevent temporal confounding
+
 ## Notes
 
-- **Positive dataset**: Papers accepted for the systematic review (from `data/accepted-articles.xlsx`)
-- **Negative dataset**: Papers rejected/excluded (from `data/negative-data-set.xlsx`)
+- **Positive dataset**: 191 papers from `data/accepted-articles.xlsx` (120 with retrievable years)
+- **Negative dataset**: 244 papers from `data/negative-data-set.json`
 - Publication years fetched from PubMed metadata
-- Year distribution similarity is important for training unbiased classifiers
+- 71 positive papers missing year data (PMIDs may be invalid or have incomplete metadata)

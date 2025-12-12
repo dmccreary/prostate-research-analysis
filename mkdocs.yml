@@ -31,6 +31,11 @@ nav:
     - Data Viewer v1: data-viewers/data-viewer-v1/index.md
     - Similarity: data-viewers/similarity/index.md
     - Sankey Diagram: data-viewers/sankey/index.md
+
+  - Reports:
+    - Data Profiles: reports/data-profiles/index.md
+    - Year Distribution: reports/data-profiles/year-distribution.md
+
   - Checklist: checklist.md
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
