@@ -238,23 +238,17 @@
                 
                 this.yAxisGroup = this.chartGroup.append('g');
                 
-                // Add axis labels
-                this.chartGroup.append('text')
-                    .attr('x', this.innerWidth / 2)
-                    .attr('y', this.innerHeight + 40)
-                    .style('text-anchor', 'middle')
-                    .style('font-size', '14px')
-                    .style('fill', '#2c3e50')
-                    .text('Publication Year');
-                
-                this.chartGroup.append('text')
-                    .attr('transform', 'rotate(-90)')
-                    .attr('x', -this.innerHeight / 2)
-                    .attr('y', -40)
-                    .style('text-anchor', 'middle')
-                    .style('font-size', '14px')
-                    .style('fill', '#2c3e50')
-                    .text('Quality Score');
+                // Add x-axis label (Quality Category)
+this.chartGroup.append('text')
+    .attr('x', this.innerWidth / 2)
+    .attr('y', this.innerHeight + 45)
+    .style('text-anchor', 'middle')
+    .style('font-size', '14px')
+    .style('fill', '#2c3e50')
+    .text('Quality Category');
+
+// Remove Y-axis label (no vertical scale needed)
+
             }
             
             async loadData() {
@@ -347,51 +341,70 @@
                 `;
             }
             
-            updateChart() {
-                const validData = this.filteredData.filter(d => d.year && d.year > 1990);
-                
-                // Update scales
-                const xScale = d3.scaleLinear()
-                    .domain(d3.extent(validData, d => d.year))
-                    .range([0, this.innerWidth]);
-                
-                const yScale = d3.scaleLinear()
-                    .domain([0, 100])
-                    .range([this.innerHeight, 0]);
-                
-                // Update axes
-                this.xAxisGroup.call(d3.axisBottom(xScale).tickFormat(d3.format('d')));
-                this.yAxisGroup.call(d3.axisLeft(yScale));
-                
-                // Bind data to dots
-                const dots = this.chartGroup.selectAll('.dot')
-                    .data(validData, d => d.id);
-                
-                // Remove old dots
-                dots.exit().remove();
-                
-                // Add new dots
-                const dotsEnter = dots.enter()
-                    .append('circle')
-                    .attr('class', 'dot')
-                    .attr('r', 0);
-                
-                // Update all dots
-                dots.merge(dotsEnter)
-                    .transition()
-                    .duration(500)
-                    .attr('cx', d => xScale(d.year))
-                    .attr('cy', d => yScale(d.score))
-                    .attr('r', 5)
-                    .attr('fill', d => this.colorScale(d.quality_category))
-                    .attr('opacity', 0.7);
-                
-                // Add hover effects
-                this.chartGroup.selectAll('.dot')
-                    .on('mouseover', (event, d) => this.showTooltip(event, d))
-                    .on('mouseout', () => this.hideTooltip())
-                    .on('click', (event, d) => window.open(d.url, '_blank'));
-            }
+updateChart() {
+    const validData = this.filteredData.filter(d => d.year && d.year > 1990);
+    
+    // Create scales
+    const xScale = d3.scaleLinear()
+        .domain(d3.extent(validData, d => d.year))
+        .range([0, this.innerWidth]);
+    
+    const yScale = d3.scaleLinear()
+        .domain([0, 100])
+        .range([this.innerHeight, 0]);
+    
+    // Calculate the actual pixel distance between years
+    const yearExtent = d3.extent(validData, d => d.year);
+    const yearRange = yearExtent[1] - yearExtent[0] || 1;
+    const pixelsPerYear = this.innerWidth / yearRange;
+    
+    // MAXIMUM jitter - use full distance between years (minus a tiny buffer)
+    const maxJitter = pixelsPerYear - 2; // Just 2px buffer to stay barely inside
+    const jitterY = 3;
+    
+    // Update axes
+    this.xAxisGroup.call(d3.axisBottom(xScale).tickFormat(d3.format('d')));
+    this.yAxisGroup.call(d3.axisLeft(yScale));
+    
+    // Bind data to dots
+    const dots = this.chartGroup.selectAll('.dot')
+        .data(validData, d => d.id);
+    
+    // Remove old dots
+    dots.exit().remove();
+    
+    // Add new dots
+    const dotsEnter = dots.enter()
+        .append('circle')
+        .attr('class', 'dot')
+        .attr('r', 0);
+    
+    // Update all dots with maximum jitter
+    dots.merge(dotsEnter)
+        .transition()
+        .duration(500)
+        .attr('cx', d => {
+            const baseX = xScale(d.year);
+            const jitter = (Math.random() - 0.5) * maxJitter;
+            // Clamp to keep inside chart
+            return Math.max(6, Math.min(this.innerWidth - 6, baseX + jitter));
+        })
+        .attr('cy', d => {
+            const baseY = yScale(d.score);
+            const jitter = (Math.random() - 0.5) * jitterY;
+            // Clamp to keep inside chart
+            return Math.max(6, Math.min(this.innerHeight - 6, baseY + jitter));
+        })
+        .attr('r', 6)
+        .attr('fill', d => this.colorScale(d.quality_category))
+        .attr('opacity', 0.6);
+    
+    // Add hover effects
+    this.chartGroup.selectAll('.dot')
+        .on('mouseover', (event, d) => this.showTooltip(event, d))
+        .on('mouseout', () => this.hideTooltip())
+        .on('click', (event, d) => window.open(d.url, '_blank'));
+}
             
             showTooltip(event, d) {
                 const tooltip = document.getElementById('tooltip');
