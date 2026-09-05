@@ -25,6 +25,7 @@ from tqdm import tqdm
 from Bio import Entrez
 from concurrent.futures import ThreadPoolExecutor
 import logging
+from bs4 import BeautifulSoup
 
 # Set up logging
 logging.basicConfig(
@@ -48,6 +49,14 @@ def parse_arguments():
     parser.add_argument('--delay', type=float, default=0.34, help='Delay between API calls in seconds')
     parser.add_argument('--encoding', type=str, default='cp1252', help='File encoding (default: cp1252)')
     return parser.parse_args()
+
+def clean_abstract(text):
+    """
+    Remove HTML/XML formatting tags while preserving the abstract text.
+
+    """
+    soup = BeautifulSoup(str(text), "html.parser")
+    return soup.get_text(" ", strip=True)
 
 def fetch_abstract_batch(pmid_list, email):
     """
@@ -95,6 +104,8 @@ def fetch_abstract_batch(pmid_list, email):
                 
                 # Clean the abstract text to remove problematic characters
                 abstract_text = " ".join(abstract_parts)
+                # Remove HTML/XML markup
+                abstract_text = clean_abstract(abstract_text)
                 # Replace thin spaces and other potentially problematic characters
                 abstract_text = abstract_text.replace('\u2009', ' ')  # Replace thin space with regular space
                 abstracts[pmid] = abstract_text
