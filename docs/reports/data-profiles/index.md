@@ -13,7 +13,7 @@ Comparative analysis of positive (accepted) and negative (rejected) paper datase
 
 | Dataset | File | Papers |
 |---------|------|--------|
-| Positive (Accepted) | `data/accepted-articles.xlsx` | 191 papers |
+| Positive (Accepted) | `data/positive-data-set.xlsx` | 191 papers |
 | Negative (Rejected) | `data/negative-data-set.json` | 244 papers |
 
 ## Key Findings

@@ -19,7 +19,7 @@ docs/reports/data-profiles/
 
 ### Script
 - `src/generate-data-profiles.py` - Generates year distribution reports by:
-  - Loading positive papers from `data/accepted-articles.xlsx`
+  - Loading positive papers from `data/positive-data-set.xlsx`
   - Loading negative papers from `data/negative-data-set.json`
   - Fetching publication years from PubMed for positive papers
   - Generating markdown reports with tables and ASCII charts
@@ -28,7 +28,7 @@ docs/reports/data-profiles/
 
 | Dataset | File | Papers | Year Range |
 |---------|------|--------|------------|
-| Positive | `data/accepted-articles.xlsx` | 191 (120 with years) | 1999-2013 |
+| Positive | `data/positive-data-set.xlsx` | 191 (120 with years) | 1999-2013 |
 | Negative | `data/negative-data-set.json` | 244 | 2005-2022 |
 
 ## Key Finding: Temporal Mismatch
@@ -78,13 +78,13 @@ python generate-data-profiles.py --email dan.mccreary@gmail.com
 ```
 
 ### Options
-- `--positive` - Path to positive dataset (default: `../data/accepted-articles.xlsx`)
+- `--positive` - Path to positive dataset (default: `../data/positive-data-set.xlsx`)
 - `--negative` - Path to negative dataset JSON (default: `../data/negative-data-set.json`)
 - `--output-dir` - Output directory for reports (default: `../docs/reports/data-profiles`)
 
 ## Positive Dataset Structure
 
-The `accepted-articles.xlsx` file contains:
+The `positive-data-set.xlsx` file contains:
 - Single column of PubMed URLs
 - Category headers embedded in data: "LOW RISK", "INTERMEDIATE RISK", "HIGH RISK"
 - 191 total papers across risk categories
