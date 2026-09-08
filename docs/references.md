@@ -1,6 +1,6 @@
 # Site References
 
-## 
+## Dr Mark H Nguyen Paper
 
 [SEMI-AUTOMATED EXTRACTION OF RESEARCH TOPICS AND TRENDS FROM NCI FUNDING IN RADIOLOGICAL SCIENCES FROM 2000-2020 ](https://arxiv.org/pdf/2306.13075) - Mark Nguyen, Peter Beidler, Joseph Tsai, August Anderson, Daniel Chen, Paul Kinahan, and John Kang - University of Washington
 
