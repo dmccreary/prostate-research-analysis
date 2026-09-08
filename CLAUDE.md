@@ -49,7 +49,7 @@ The scorer (`prostate-cancer-scorer.py`) evaluates papers on three criteria:
 - **Study quality** (40 pts): Peer review, proper endpoints (BRFS, OS, MFS, CSS), stratification (D'Amico, NCCN)
 - **Numerical criteria** (20 pts): Sample size (≥100 for low/int risk, ≥50 for high), follow-up (≥5 years), EBRT dose (≥72Gy)
 
-Treatment modalities and acceptance criteria are defined in `docs/summary-criteria.md`.
+Treatment modalities and acceptance criteria are defined in `docs/selection-criteria.md`.
 
 ### Data Flow
 

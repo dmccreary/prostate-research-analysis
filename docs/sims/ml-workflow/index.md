@@ -1,6 +1,6 @@
 # ML Workflow for Paper Classification
 
-This diagram shows the high-level steps to build a machine learning model that predicts whether a prostate cancer research paper should be recommended to patients based on the [inclusion criteria](../../inclusion-criteria.md) and [exclusion criteria](../../exclusion-criteria.md).
+This diagram shows the high-level steps to build a machine learning model that predicts whether a prostate cancer research paper should be recommended to patients based on the [selection criteria](../../selection-criteria.md).
 
 ## Workflow Overview
 

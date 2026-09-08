@@ -10,9 +10,7 @@ nav:
   - Home: index.md
   - About: about.md
   - To Do List: todo-list.md
-  - Summary Criteria: summary-criteria.md
-  - Exclusion Criteria: exclusion-criteria.md
-  - Inclusion Criteria: inclusion-criteria.md
+  - Selection Criteria: selection-criteria.md
 
   - Workflow:
     - Intro: workflow/index.md
