@@ -74,7 +74,7 @@ Period      Positive                          Negative
 
 ## Notes
 
-- **Positive dataset**: 191 papers from `data/accepted-articles.xlsx` (120 with retrievable years)
+- **Positive dataset**: 191 papers from `data/positive-data-set.xlsx` (120 with retrievable years)
 - **Negative dataset**: 244 papers from `data/negative-data-set.json`
 - Publication years fetched from PubMed metadata
 - 71 positive papers missing year data (PMIDs may be invalid or have incomplete metadata)

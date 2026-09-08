@@ -174,7 +174,7 @@ Period      Positive                          Negative
     report += """
 ## Notes
 
-- **Positive dataset**: Papers accepted for the systematic review (from `data/accepted-articles.xlsx`)
+- **Positive dataset**: Papers accepted for the systematic review (from `data/positive-data-set.xlsx`)
 - **Negative dataset**: Papers rejected/excluded (from `data/negative-data-set.xlsx`)
 - Publication years fetched from PubMed metadata
 - Year distribution similarity is important for training unbiased classifiers
@@ -188,7 +188,7 @@ Period      Positive                          Negative
 def main():
     parser = argparse.ArgumentParser(description='Generate data profile reports')
     parser.add_argument('--email', required=True, help='Email for NCBI API')
-    parser.add_argument('--positive', default='../data/accepted-articles.xlsx', help='Positive dataset')
+    parser.add_argument('--positive', default='../data/positive-data-set.xlsx', help='Positive dataset')
     parser.add_argument('--negative', default='../data/negative-data-set.json', help='Negative dataset JSON')
     parser.add_argument('--output-dir', default='../docs/reports/data-profiles', help='Output directory')
     args = parser.parse_args()
