@@ -44,4 +44,60 @@ python build-positive-dataset.py --email dan.mccreary@gmail.com   # fetches abst
 python build-labeled-dataset.py                                    # merges positive + negative -> ../data/labeled-dataset.csv
 ```
 
-`labeled-dataset.csv` (364 rows: 120 positive, 244 negative) is the input for training a classifier — see project TODO for next steps (train/test split, baseline TF-IDF model, evaluation against the existing rule-based scorer).
+`labeled-dataset.csv` (364 rows: 120 positive, 244 negative) is the input for training a classifier.
+
+A baseline TF-IDF + Logistic Regression model has been trained and compared against the existing rule-based scorer — see [docs/reports/baseline-model-report.md](../docs/reports/baseline-model-report.md). Re-run it with:
+
+```bash
+cd src
+python train-baseline-model.py
+```
+
+## Untapped raw data (found 2026-09-08)
+
+`Pubmed-Exports_2021_Final.xlsx` contains **10,834 unique PMIDs**, but only 6,622 of them have ever been through abstract extraction/scoring (`output-full-scored.csv`). **9,665 PMIDs (89%) were never extracted.**
+
+`src/filter-unextracted-papers.py` fetches abstracts for those unextracted PMIDs and applies the pre-screening filters agreed by Alex (Richard Hsi) and Mark Nguyen in `TODO.md` (June 2026):
+- Exclude if the abstract contains "palliative", "metastatic", or "hormone resistant"
+- Require the abstract to contain "prostate cancer", "prostate neoplasia", or "prostate carcinoma"
+
+Run results (2026-09-08, all 9,665 unextracted PMIDs):
+
+| Outcome | Count | % |
+|---|---|---|
+| Passed filters | 4,211 | 43.6% |
+| Missing required phrase | 3,083 | 31.9% |
+| Excluded — "metastatic" | 1,291 | 13.4% |
+| No abstract available | 1,019 | 10.5% |
+| Excluded — "palliative" | 60 | 0.6% |
+| Excluded — "hormone resistant" | 1 | <0.1% |
+
+Outputs:
+- `unextracted-with-abstracts.csv` — all 9,665 fetched PMIDs with abstracts and `filter_pass`/`filter_reason` columns
+- `filtered-candidates.csv` — the 4,211 papers that passed the filters, ready to run through `prostate-cancer-scorer.py` and/or be selected for manual labeling to grow the training set beyond the current 364 papers
+
+Re-run with:
+```bash
+cd src
+python filter-unextracted-papers.py --email dan.mccreary@gmail.com
+```
+
+### Rule-based scoring of the filtered candidates
+
+`filtered-candidates.csv` (4,211 papers) was scored with the existing rule-based scorer (`prostate-cancer-scorer.py`) — output saved to `filtered-candidates-scored.csv`, sorted by score descending.
+
+| Score range | Count |
+|---|---|
+| 0–10 | 2,073 |
+| 11–20 | 854 |
+| 21–30 | 449 |
+| 31–40 | 268 |
+| 41–50 | 152 |
+| 51–60 | 91 |
+| 61–70 | 44 |
+| 71–80 | 20 |
+| 81–90 | 4 |
+
+Mean score 15.2, median 10. Top-scoring papers (score ≥ 80) are randomized/phase-II trials with clear treatment modality + endpoint language, e.g. PMID `34740768` (score 90, salvage brachytherapy phase 2 trial) and `33909100` (score 86, trimodal therapy trial). Bottom-scoring papers are mostly off-topic reviews that slipped past the phrase filter (breast cancer, lncRNA reviews, etc.) or narrow technique write-ups without quality/endpoint language.
+
+This ranked list is a good source for manual labeling: the top ~100 are strong positive-candidates, the bottom few hundred are strong negative-candidates, and the middle band (score 30–60) is where manual review adds the most value.
