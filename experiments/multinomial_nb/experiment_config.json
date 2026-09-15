@@ -1,0 +1,38 @@
+{
+  "model_key": "multinomial_nb",
+  "display_name": "Multinomial Naive Bayes",
+  "family": "Probabilistic",
+  "justification": "Generative probabilistic baseline computing posterior class probabilities under word conditional independence assumption.",
+  "best_params": {
+    "clf__alpha": "0.1",
+    "tfidf__min_df": "2",
+    "tfidf__ngram_range": "(1, 2)"
+  },
+  "cv_best_score_ap": 0.8052304738140386,
+  "random_state": 42,
+  "train_samples": 288,
+  "test_samples": 73,
+  "test_metrics": {
+    "true_negatives": 43,
+    "false_positives": 6,
+    "false_negatives": 7,
+    "true_positives": 17,
+    "total_samples": 73,
+    "accuracy": 0.821917808219178,
+    "precision": 0.7391304347826086,
+    "recall": 0.7083333333333334,
+    "sensitivity": 0.7083333333333334,
+    "specificity": 0.8775510204081632,
+    "f1_score": 0.723404255319149,
+    "false_positive_rate": 0.12244897959183673,
+    "false_negative_rate": 0.2916666666666667,
+    "train_time_sec": 5.305880784988403,
+    "inference_time_ms_per_sample": 0.6024086312071918,
+    "auroc": 0.8775510204081632,
+    "average_precision": 0.7870957867877443,
+    "model_key": "multinomial_nb",
+    "model_name": "Multinomial Naive Bayes",
+    "family": "Probabilistic",
+    "feature_representation": "Word TF-IDF (1, 2)"
+  }
+}

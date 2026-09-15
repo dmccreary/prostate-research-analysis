@@ -1,0 +1,17 @@
+{
+  "model": "Random Forest",
+  "confusion_matrix": [
+    [
+      45,
+      4
+    ],
+    [
+      13,
+      11
+    ]
+  ],
+  "tn": 45,
+  "fp": 4,
+  "fn": 13,
+  "tp": 11
+}

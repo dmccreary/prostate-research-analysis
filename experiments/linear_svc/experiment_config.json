@@ -1,0 +1,39 @@
+{
+  "model_key": "linear_svc",
+  "display_name": "Linear SVM (Calibrated)",
+  "family": "Support Vector Machine",
+  "justification": "Maximizes margin separation in high-dimensional TF-IDF space. Calibrated via 5-fold cross-validation to produce continuous calibrated probabilities and ranking scores.",
+  "best_params": {
+    "clf__estimator__C": "0.5",
+    "clf__estimator__class_weight": "None",
+    "tfidf__min_df": "3",
+    "tfidf__ngram_range": "(1, 1)"
+  },
+  "cv_best_score_ap": 0.8039577743674551,
+  "random_state": 42,
+  "train_samples": 288,
+  "test_samples": 73,
+  "test_metrics": {
+    "true_negatives": 39,
+    "false_positives": 10,
+    "false_negatives": 7,
+    "true_positives": 17,
+    "total_samples": 73,
+    "accuracy": 0.7671232876712328,
+    "precision": 0.6296296296296297,
+    "recall": 0.7083333333333334,
+    "sensitivity": 0.7083333333333334,
+    "specificity": 0.7959183673469388,
+    "f1_score": 0.6666666666666666,
+    "false_positive_rate": 0.20408163265306123,
+    "false_negative_rate": 0.2916666666666667,
+    "train_time_sec": 17.952110052108765,
+    "inference_time_ms_per_sample": 0.8796927047102419,
+    "auroc": 0.8435374149659864,
+    "average_precision": 0.6836373817459344,
+    "model_key": "linear_svc",
+    "model_name": "Linear SVM (Calibrated)",
+    "family": "Support Vector Machine",
+    "feature_representation": "Word TF-IDF (1, 2)"
+  }
+}

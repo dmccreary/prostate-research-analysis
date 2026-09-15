@@ -1,0 +1,40 @@
+{
+  "model_key": "logistic_regression",
+  "display_name": "Logistic Regression",
+  "family": "Linear",
+  "justification": "Primary linear text classification baseline. Highly effective for high-dimensional sparse TF-IDF vectors, interpretable weights, and well-calibrated posterior probabilities.",
+  "best_params": {
+    "clf__C": "0.1",
+    "clf__class_weight": "None",
+    "tfidf__min_df": "1",
+    "tfidf__ngram_range": "(1, 1)",
+    "tfidf__sublinear_tf": "True"
+  },
+  "cv_best_score_ap": 0.809064059549215,
+  "random_state": 42,
+  "train_samples": 288,
+  "test_samples": 73,
+  "test_metrics": {
+    "true_negatives": 49,
+    "false_positives": 0,
+    "false_negatives": 24,
+    "true_positives": 0,
+    "total_samples": 73,
+    "accuracy": 0.6712328767123288,
+    "precision": 0.0,
+    "recall": 0.0,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "f1_score": 0.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 1.0,
+    "train_time_sec": 39.85975480079651,
+    "inference_time_ms_per_sample": 0.46457003240715966,
+    "auroc": 0.8460884353741496,
+    "average_precision": 0.6860149887969117,
+    "model_key": "logistic_regression",
+    "model_name": "Logistic Regression",
+    "family": "Linear",
+    "feature_representation": "Word TF-IDF (1, 2)"
+  }
+}

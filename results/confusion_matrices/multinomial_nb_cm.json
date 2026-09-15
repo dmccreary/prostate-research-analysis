@@ -1,0 +1,17 @@
+{
+  "model": "Multinomial Naive Bayes",
+  "confusion_matrix": [
+    [
+      43,
+      6
+    ],
+    [
+      7,
+      17
+    ]
+  ],
+  "tn": 43,
+  "fp": 6,
+  "fn": 7,
+  "tp": 17
+}

@@ -1,0 +1,17 @@
+{
+  "model": "Linear SVM (Calibrated)",
+  "confusion_matrix": [
+    [
+      39,
+      10
+    ],
+    [
+      7,
+      17
+    ]
+  ],
+  "tn": 39,
+  "fp": 10,
+  "fn": 7,
+  "tp": 17
+}

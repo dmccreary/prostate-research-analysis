@@ -1,0 +1,9 @@
+Model Name,Family,Feature Representation,Accuracy,Precision,Recall (Sensitivity),Specificity,F1-Score,AUROC,Average Precision,Training Time (s),Inference Latency (ms/sample)
+Dummy (Most Frequent),Baseline,"Word TF-IDF (1, 2)",0.6712,0.0,0.0,1.0,0.0,0.5,0.3288,0.226,0.56
+Logistic Regression,Linear,"Word TF-IDF (1, 2)",0.6712,0.0,0.0,1.0,0.0,0.8461,0.686,39.86,0.46
+Linear SVM (Calibrated),Support Vector Machine,"Word TF-IDF (1, 2)",0.7671,0.6296,0.7083,0.7959,0.6667,0.8435,0.6836,17.952,0.88
+Multinomial Naive Bayes,Probabilistic,"Word TF-IDF (1, 2)",0.8219,0.7391,0.7083,0.8776,0.7234,0.8776,0.7871,5.306,0.6
+Complement Naive Bayes,Probabilistic,"Word TF-IDF (1, 2)",0.8082,0.6923,0.75,0.8367,0.72,0.8776,0.7871,10.253,0.61
+SGD Classifier (Modified Huber),Linear,"Word TF-IDF (1, 2)",0.7397,0.5806,0.75,0.7347,0.6545,0.8503,0.7509,7.612,0.49
+Random Forest,Tree Ensemble,"Word TF-IDF (1, 2)",0.7671,0.7333,0.4583,0.9184,0.5641,0.8138,0.6763,26.731,1.95
+Logistic Regression (Char TF-IDF),Linear,"Char-wb TF-IDF (3, 5)",0.8082,0.6667,0.8333,0.7959,0.7407,0.8563,0.6829,0.0,0.0

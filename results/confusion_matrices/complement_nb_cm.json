@@ -1,0 +1,17 @@
+{
+  "model": "Complement Naive Bayes",
+  "confusion_matrix": [
+    [
+      41,
+      8
+    ],
+    [
+      6,
+      18
+    ]
+  ],
+  "tn": 41,
+  "fp": 8,
+  "fn": 6,
+  "tp": 18
+}
