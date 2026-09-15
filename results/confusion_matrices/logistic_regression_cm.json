@@ -1,0 +1,17 @@
+{
+  "model": "Logistic Regression",
+  "confusion_matrix": [
+    [
+      49,
+      0
+    ],
+    [
+      24,
+      0
+    ]
+  ],
+  "tn": 49,
+  "fp": 0,
+  "fn": 24,
+  "tp": 0
+}

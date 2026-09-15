@@ -1,0 +1,39 @@
+{
+  "model_key": "complement_nb",
+  "display_name": "Complement Naive Bayes",
+  "family": "Probabilistic",
+  "justification": "Specifically engineered for imbalanced text classification by estimating parameters from the complement of each class, correcting standard Multinomial NB parameter bias.",
+  "best_params": {
+    "clf__alpha": "0.1",
+    "clf__norm": "False",
+    "tfidf__min_df": "2",
+    "tfidf__ngram_range": "(1, 2)"
+  },
+  "cv_best_score_ap": 0.8052304738140386,
+  "random_state": 42,
+  "train_samples": 288,
+  "test_samples": 73,
+  "test_metrics": {
+    "true_negatives": 41,
+    "false_positives": 8,
+    "false_negatives": 6,
+    "true_positives": 18,
+    "total_samples": 73,
+    "accuracy": 0.8082191780821918,
+    "precision": 0.6923076923076923,
+    "recall": 0.75,
+    "sensitivity": 0.75,
+    "specificity": 0.8367346938775511,
+    "f1_score": 0.72,
+    "false_positive_rate": 0.16326530612244897,
+    "false_negative_rate": 0.25,
+    "train_time_sec": 10.252833366394043,
+    "inference_time_ms_per_sample": 0.6056877031718215,
+    "auroc": 0.8775510204081632,
+    "average_precision": 0.7870957867877443,
+    "model_key": "complement_nb",
+    "model_name": "Complement Naive Bayes",
+    "family": "Probabilistic",
+    "feature_representation": "Word TF-IDF (1, 2)"
+  }
+}

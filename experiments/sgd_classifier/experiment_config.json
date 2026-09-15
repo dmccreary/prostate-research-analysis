@@ -1,0 +1,39 @@
+{
+  "model_key": "sgd_classifier",
+  "display_name": "SGD Classifier (Modified Huber)",
+  "family": "Linear",
+  "justification": "Stochastic gradient descent linear classifier with modified Huber loss, resilient to outliers while outputting calibrated probabilities.",
+  "best_params": {
+    "clf__alpha": "0.005",
+    "clf__class_weight": "balanced",
+    "clf__penalty": "elasticnet",
+    "tfidf__ngram_range": "(1, 1)"
+  },
+  "cv_best_score_ap": 0.8082474163011135,
+  "random_state": 42,
+  "train_samples": 288,
+  "test_samples": 73,
+  "test_metrics": {
+    "true_negatives": 36,
+    "false_positives": 13,
+    "false_negatives": 6,
+    "true_positives": 18,
+    "total_samples": 73,
+    "accuracy": 0.7397260273972602,
+    "precision": 0.5806451612903226,
+    "recall": 0.75,
+    "sensitivity": 0.75,
+    "specificity": 0.7346938775510204,
+    "f1_score": 0.6545454545454545,
+    "false_positive_rate": 0.2653061224489796,
+    "false_negative_rate": 0.25,
+    "train_time_sec": 7.611805438995361,
+    "inference_time_ms_per_sample": 0.4888103432851295,
+    "auroc": 0.8503401360544218,
+    "average_precision": 0.7509326172672323,
+    "model_key": "sgd_classifier",
+    "model_name": "SGD Classifier (Modified Huber)",
+    "family": "Linear",
+    "feature_representation": "Word TF-IDF (1, 2)"
+  }
+}

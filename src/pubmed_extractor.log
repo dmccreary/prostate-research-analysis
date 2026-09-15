@@ -19,3 +19,19 @@
 2025-05-29 14:15:34,578 - INFO - Successfully saved 7338 articles with abstracts to output.csv
 2025-05-29 14:15:34,580 - INFO - Articles with abstracts: 7289/7338 (99.33%)
 2025-05-29 14:15:34,581 - INFO - Extraction completed
+2026-09-15 14:47:59,911 - INFO - Starting PubMed abstract extraction
+2026-09-15 14:48:00,268 - INFO - Input file: ../data/labeled-dataset.csv
+2026-09-15 14:48:00,269 - INFO - Output file: output_01.csv
+2026-09-15 14:48:00,269 - INFO - Batch size: 100
+2026-09-15 14:48:00,270 - INFO - Max workers: 1
+2026-09-15 14:48:00,270 - INFO - Specified encoding: Auto-detect
+2026-09-15 14:48:01,857 - INFO - Detected encoding: EUC-JP (confidence: 0.99)
+2026-09-15 14:48:01,857 - INFO - Trying to read file with encoding: EUC-JP
+2026-09-15 14:48:01,868 - WARNING - Failed to read with encoding EUC-JP: 'euc_jp' codec can't decode byte 0xe2 in position 139338: illegal multibyte sequence
+2026-09-15 14:48:01,869 - INFO - Trying to read file with encoding: utf-8
+2026-09-15 14:48:01,902 - INFO - Successfully read file with encoding: utf-8
+2026-09-15 14:48:01,903 - INFO - Processing 364 articles
+2026-09-15 14:48:29,215 - INFO - File saved with UTF-8 encoding
+2026-09-15 14:48:29,216 - INFO - Successfully saved 364 articles with abstracts to output_01.csv
+2026-09-15 14:48:29,220 - INFO - Articles with abstracts: 363/364 (99.73%)
+2026-09-15 14:48:29,222 - INFO - Extraction completed

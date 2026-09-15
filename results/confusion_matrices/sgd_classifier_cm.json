@@ -1,0 +1,17 @@
+{
+  "model": "SGD Classifier (Modified Huber)",
+  "confusion_matrix": [
+    [
+      36,
+      13
+    ],
+    [
+      6,
+      18
+    ]
+  ],
+  "tn": 36,
+  "fp": 13,
+  "fn": 6,
+  "tp": 18
+}
