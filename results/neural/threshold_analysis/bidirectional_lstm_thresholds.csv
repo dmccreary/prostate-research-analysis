@@ -1,0 +1,5 @@
+model_name,target_sensitivity,val_selected_threshold,val_sensitivity,val_specificity,val_workload_pct,test_achieved_sensitivity,test_achieved_specificity,test_achieved_precision,test_achieved_f1,test_flagged_articles,test_workload_pct,test_workload_reduction_pct,test_true_positives,test_false_positives,test_true_negatives,test_false_negatives,val_status
+Bidirectional LSTM,0.9,0.21,0.9474,0.4615,67.24,0.9167,0.5714,0.5116,0.6567,43 / 73,58.9,41.1,22,21,28,2,ACHIEVED
+Bidirectional LSTM,0.95,0.13,1.0,0.1538,89.66,1.0,0.102,0.3529,0.5217,68 / 73,93.15,6.85,24,44,5,0,ACHIEVED
+Bidirectional LSTM,0.99,0.13,1.0,0.1538,89.66,1.0,0.102,0.3529,0.5217,68 / 73,93.15,6.85,24,44,5,0,ACHIEVED
+Bidirectional LSTM,1.0,0.13,1.0,0.1538,89.66,1.0,0.102,0.3529,0.5217,68 / 73,93.15,6.85,24,44,5,0,ACHIEVED

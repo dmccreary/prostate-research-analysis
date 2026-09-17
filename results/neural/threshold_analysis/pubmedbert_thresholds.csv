@@ -1,0 +1,5 @@
+model_name,target_sensitivity,val_selected_threshold,val_sensitivity,val_specificity,val_workload_pct,test_achieved_sensitivity,test_achieved_specificity,test_achieved_precision,test_achieved_f1,test_flagged_articles,test_workload_pct,test_workload_reduction_pct,test_true_positives,test_false_positives,test_true_negatives,test_false_negatives,val_status
+Biomedical Transformer (PubMedBERT),0.9,0.31,0.9474,0.4615,67.24,0.9583,0.3061,0.4035,0.5679,57 / 73,78.08,21.92,23,34,15,1,ACHIEVED
+Biomedical Transformer (PubMedBERT),0.95,0.22,1.0,0.2821,81.03,1.0,0.2245,0.3871,0.5581,62 / 73,84.93,15.07,24,38,11,0,ACHIEVED
+Biomedical Transformer (PubMedBERT),0.99,0.22,1.0,0.2821,81.03,1.0,0.2245,0.3871,0.5581,62 / 73,84.93,15.07,24,38,11,0,ACHIEVED
+Biomedical Transformer (PubMedBERT),1.0,0.22,1.0,0.2821,81.03,1.0,0.2245,0.3871,0.5581,62 / 73,84.93,15.07,24,38,11,0,ACHIEVED

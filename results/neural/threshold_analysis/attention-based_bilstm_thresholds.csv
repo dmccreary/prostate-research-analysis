@@ -1,0 +1,5 @@
+model_name,target_sensitivity,val_selected_threshold,val_sensitivity,val_specificity,val_workload_pct,test_achieved_sensitivity,test_achieved_specificity,test_achieved_precision,test_achieved_f1,test_flagged_articles,test_workload_pct,test_workload_reduction_pct,test_true_positives,test_false_positives,test_true_negatives,test_false_negatives,val_status
+Attention-Based BiLSTM,0.9,0.01,0.9474,0.3846,72.41,0.9167,0.3469,0.4074,0.5641,54 / 73,73.97,26.03,22,32,17,2,ACHIEVED
+Attention-Based BiLSTM,0.95,0.01,0.9474,0.3846,72.41,0.9167,0.3469,0.4074,0.5641,54 / 73,73.97,26.03,22,32,17,2,PARTIAL (Max: 0.947)
+Attention-Based BiLSTM,0.99,0.01,0.9474,0.3846,72.41,0.9167,0.3469,0.4074,0.5641,54 / 73,73.97,26.03,22,32,17,2,PARTIAL (Max: 0.947)
+Attention-Based BiLSTM,1.0,0.01,0.9474,0.3846,72.41,0.9167,0.3469,0.4074,0.5641,54 / 73,73.97,26.03,22,32,17,2,PARTIAL (Max: 0.947)

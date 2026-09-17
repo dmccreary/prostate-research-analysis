@@ -1,0 +1,5 @@
+model_name,target_sensitivity,val_selected_threshold,val_sensitivity,val_specificity,val_workload_pct,test_achieved_sensitivity,test_achieved_specificity,test_achieved_precision,test_achieved_f1,test_flagged_articles,test_workload_pct,test_workload_reduction_pct,test_true_positives,test_false_positives,test_true_negatives,test_false_negatives,val_status
+Vanilla RNN,0.9,0.27,0.9474,0.1026,91.38,0.8333,0.1429,0.3226,0.4651,62 / 73,84.93,15.07,20,42,7,4,ACHIEVED
+Vanilla RNN,0.95,0.21,1.0,0.0256,98.28,0.9583,0.0408,0.3286,0.4894,70 / 73,95.89,4.11,23,47,2,1,ACHIEVED
+Vanilla RNN,0.99,0.21,1.0,0.0256,98.28,0.9583,0.0408,0.3286,0.4894,70 / 73,95.89,4.11,23,47,2,1,ACHIEVED
+Vanilla RNN,1.0,0.21,1.0,0.0256,98.28,0.9583,0.0408,0.3286,0.4894,70 / 73,95.89,4.11,23,47,2,1,ACHIEVED

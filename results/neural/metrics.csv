@@ -1,0 +1,6 @@
+model_name,family,parameters,accuracy,precision,recall_sensitivity,specificity,f1_score,auroc,average_precision,true_negatives,false_positives,false_negatives,true_positives,train_time_sec,inference_latency_ms
+TF-IDF MLP,Feedforward Neural Network,785409,0.3288,0.3288,1.0,0.0,0.4948,0.8563,0.6991,0,49,0,24,2.146,0.07
+Vanilla RNN,Recurrent Neural Network,375681,0.5342,0.3214,0.375,0.6122,0.3462,0.4813,0.3507,30,19,15,9,2.029,0.16
+Bidirectional LSTM,Recurrent Neural Network,1010305,0.7397,0.6,0.625,0.7959,0.6122,0.8189,0.6575,39,10,9,15,11.853,1.01
+Attention-Based BiLSTM,Recurrent Neural Network (Attention),631553,0.7808,0.7222,0.5417,0.898,0.619,0.8401,0.6984,44,5,11,13,5.588,0.63
+Biomedical Transformer (PubMedBERT),Biomedical Transformer,109483009,0.6849,0.5122,0.875,0.5918,0.6462,0.8452,0.7199,29,20,3,21,676.196,68.87
