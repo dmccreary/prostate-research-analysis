@@ -1,3 +1,6 @@
 site
 .DS_Store
 ~$*
+*.pt
+*.pth
+*.ckpt
