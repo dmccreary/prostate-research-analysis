@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/workflow/score-prompt/">
+        <link rel="canonical" href="https://dmccreary.github.io/prostate-research-analysis/workflow/fine-tune-pubmedbert/">
       
       
-        <link rel="prev" href="../run-abstract-extractor-script/">
+        <link rel="prev" href="../embeddings/">
       
       
-        <link rel="next" href="../run-scorer/">
+        <link rel="next" href="../../data-viewers/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Score Prompt - Prostate Research Analysis</title>
+        <title>Fine-Tune PubMedBERT - Prostate Research Analysis</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-a-python-program-to-score-each-paper" class="md-skip">
+        <a href="#fine-tuning-pubmedbert" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Score Prompt
+              Fine-Tune PubMedBERT
             
           </span>
         </div>
@@ -564,37 +564,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Score Prompt
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../score-prompt/" class="md-nav__link">
         
   
   
@@ -610,37 +583,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#claude-dialog" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Claude Dialog
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -762,10 +704,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../fine-tune-pubmedbert/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-Tune PubMedBERT
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -781,6 +750,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suggested Libraries
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1156,10 +1189,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#claude-dialog" class="md-nav__link">
+  <a href="#workflow-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claude Dialog
+        Workflow Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suggested Libraries
       
     </span>
   </a>
@@ -1231,7 +1297,7 @@
 
 
   
-    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/workflow/score-prompt.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/dmccreary/prostate-research-analysis/blob/master/docs/workflow/fine-tune-pubmedbert.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1239,15 +1305,190 @@
   
 
 
-<h1 id="creating-a-python-program-to-score-each-paper">Creating a Python Program to Score Each Paper</h1>
-<div class="admonition prompt">
-<p class="admonition-title">Prompt</p>
-<p>Please create Prostate Cancer Treatment Only Comparative Effectiveness Study Scoring program in Python.</p>
-<p>I would like you to create a Python program that does classification of each row of data in the output100.csv file.  The first row is only metadata.  The other 99 lines represent papers and abstracts from Medline.  The output100.csv file contains descriptions and abstracts of prostrate cancer research.  I would like you to use the summary-criteria.md which contains rule to create a score for each line in the output100.csv file.  The score should range on a scale of 0 to 100.  A score of 0 means that none of the criteria match.  A score of 100 implies that all of the summary-criteria are matching.</p>
-<p>Please have the Python program add a new column to the CSV with the score in it.  Label the column "score".</p>
+<h1 id="fine-tuning-pubmedbert">Fine-Tuning PubMedBERT</h1>
+<p>This page shows the planned workflow for turning the positive and negative datasets in <code>data/</code> into a fine-tuned <a href="../../pubmedbert/">PubMedBERT</a> classifier. The model predicts whether a paper's abstract meets our <a href="../../selection-criteria/">selection criteria</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The data preparation steps (blue) already exist as scripts in <code>src/</code>. The training, evaluation, and inference steps (green) are planned, and no fine-tuning script exists yet.</p>
 </div>
-<h2 id="claude-dialog">Claude Dialog</h2>
-<p><a href="https://claude.ai/public/artifacts/dc5242bd-0f7b-4bb5-8bdc-b4e9cccee0a7">Claude Dialog</a></p>
+<h2 id="workflow-diagram">Workflow Diagram</h2>
+<pre class="mermaid"><code>flowchart TD
+    subgraph SRC["1. Source Data (data/)"]
+        direction TB
+        X1["positive-data-set.xlsx&lt;br/&gt;PMIDs grouped by risk category&lt;br/&gt;140 rows, 120 unique PMIDs"]
+        X2["negative-data-set.xlsx&lt;br/&gt;244 papers on 4 sheets&lt;br/&gt;2005, 2010, 2015, 2020"]
+    end
+
+    subgraph FETCH["2. Fetch Abstracts and Metadata"]
+        direction TB
+        F1["build-positive-dataset.py&lt;br/&gt;NCBI E-utilities, 0.34s rate limit"]
+        F2["positive-data-set.json&lt;br/&gt;120 papers with abstracts"]
+        F3["negative-data-set.json&lt;br/&gt;244 papers, 243 with abstracts"]
+        F1 --&gt; F2
+    end
+
+    subgraph MERGE["3. Merge and Label"]
+        direction TB
+        M1["build-labeled-dataset.py"]
+        M2["labeled-dataset.csv&lt;br/&gt;364 rows&lt;br/&gt;label: 1 = positive, 0 = negative"]
+        M1 --&gt; M2
+    end
+
+    subgraph CLEAN["4. Clean and Validate"]
+        direction TB
+        C1{"PMID in both sets?"}
+        C2["Resolve label conflict manually&lt;br/&gt;PMID 15774239 is in both sets"]
+        C3{"Abstract missing&lt;br/&gt;or empty?"}
+        C4["Drop row&lt;br/&gt;1 negative paper has no abstract"]
+        C5["Build model input text&lt;br/&gt;title + abstract"]
+        C1 -- "yes" --&gt; C2
+        C1 -- "no" --&gt; C3
+        C2 --&gt; C3
+        C3 -- "yes" --&gt; C4
+        C3 -- "no" --&gt; C5
+    end
+
+    subgraph SPLIT["5. Split Data"]
+        direction TB
+        S1["Stratified split&lt;br/&gt;on label + risk_category"]
+        S2["Train 70%"]
+        S3["Validation 15%&lt;br/&gt;early stopping and tuning"]
+        S4["Test 15%&lt;br/&gt;touched once at the end"]
+        S1 --&gt; S2
+        S1 --&gt; S3
+        S1 --&gt; S4
+    end
+
+    subgraph TOK["6. Tokenize"]
+        direction TB
+        T1["AutoTokenizer&lt;br/&gt;BiomedNLP-BiomedBERT-base-uncased-abstract"]
+        T2["Truncate to 512 tokens&lt;br/&gt;Pad per batch&lt;br/&gt;Add attention masks"]
+        T1 --&gt; T2
+    end
+
+    subgraph TRAIN["7. Fine-Tune"]
+        direction TB
+        R1["Load pretrained encoder&lt;br/&gt;BertForSequenceClassification&lt;br/&gt;num_labels = 2"]
+        R2["Handle class imbalance&lt;br/&gt;120 positive vs 244 negative&lt;br/&gt;class-weighted cross-entropy"]
+        R3["Train&lt;br/&gt;lr 2e-5, batch 16, 3 to 5 epochs&lt;br/&gt;warmup + weight decay"]
+        R4["Evaluate on validation set&lt;br/&gt;each epoch"]
+        R5{"Validation F1&lt;br/&gt;still improving?"}
+        R6["Keep best checkpoint"]
+        R1 --&gt; R2 --&gt; R3 --&gt; R4 --&gt; R5
+        R5 -- "yes" --&gt; R3
+        R5 -- "no" --&gt; R6
+    end
+
+    subgraph EVAL["8. Evaluate"]
+        direction TB
+        E1["Score held-out test set"]
+        E2["Precision, recall, F1, AUROC&lt;br/&gt;confusion matrix"]
+        E3["Compare against baselines&lt;br/&gt;TF-IDF + Logistic Regression&lt;br/&gt;rule-based scorer"]
+        E4["Error analysis&lt;br/&gt;by risk category and year group"]
+        E5{"Beats baselines&lt;br/&gt;and meets target?"}
+        E1 --&gt; E2 --&gt; E3 --&gt; E4 --&gt; E5
+    end
+
+    subgraph DEPLOY["9. Save and Apply"]
+        direction TB
+        D1["Save model + tokenizer&lt;br/&gt;models/pubmedbert-prostate/"]
+        D2["Score filtered-candidates.csv&lt;br/&gt;4,211 unlabeled papers"]
+        D3["Rank by predicted probability"]
+        D4["Manual review of&lt;br/&gt;uncertain middle band"]
+        D5["Add reviewed papers&lt;br/&gt;to the labeled dataset"]
+        D1 --&gt; D2 --&gt; D3 --&gt; D4 --&gt; D5
+    end
+
+    X1 --&gt; F1
+    X2 --&gt; F3
+    F2 --&gt; M1
+    F3 --&gt; M1
+    M2 --&gt; C1
+    C5 --&gt; S1
+    S2 --&gt; T1
+    S3 --&gt; T1
+    S4 --&gt; T1
+    T2 --&gt; R1
+    R6 --&gt; E1
+    E5 -- "yes" --&gt; D1
+    E5 -- "no" --&gt; R2
+    D5 -. "retrain with more data" .-&gt; M1
+
+    classDef exists fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef planned fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef decision fill:#fef9c3,stroke:#ca8a04,color:#713f12
+    class X1,X2,F1,F2,F3,M1,M2 exists
+    class C2,C4,C5,S1,S2,S3,S4,T1,T2,R1,R2,R3,R4,R6,E1,E2,E3,E4,D1,D2,D3,D4,D5 planned
+    class C1,C3,R5,E5 decision</code></pre>
+<h2 id="step-details">Step Details</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Purpose</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Source data</td>
+<td>Hand-curated examples of accepted (positive) and rejected (negative) papers</td>
+<td>Positive papers are grouped under LOW, INTERMEDIATE, and HIGH RISK headers</td>
+</tr>
+<tr>
+<td>2. Fetch</td>
+<td>Pull abstracts and metadata from PubMed</td>
+<td>Requires an email address for the NCBI API (<code>--email</code>)</td>
+</tr>
+<tr>
+<td>3. Merge and label</td>
+<td>Combine both sets into one table</td>
+<td><code>labeled-dataset.csv</code> is the intended training input</td>
+</tr>
+<tr>
+<td>4. Clean</td>
+<td>Remove label conflicts and empty abstracts</td>
+<td>PMID <code>15774239</code> appears in both sets, so resolve it before training</td>
+</tr>
+<tr>
+<td>5. Split</td>
+<td>Hold out validation and test data</td>
+<td>Stratify so each split keeps the same class ratio and risk mix</td>
+</tr>
+<tr>
+<td>6. Tokenize</td>
+<td>Convert text to token IDs</td>
+<td>Use the model's own tokenizer, not a generic BERT one</td>
+</tr>
+<tr>
+<td>7. Fine-tune</td>
+<td>Train a classification head and adapt the encoder</td>
+<td>The class weights offset the roughly 1 to 2 positive-to-negative ratio</td>
+</tr>
+<tr>
+<td>8. Evaluate</td>
+<td>Measure real performance</td>
+<td>Report results per risk category and year group, since the negatives span 2005 to 2020</td>
+</tr>
+<tr>
+<td>9. Save and apply</td>
+<td>Use the model to rank unlabeled candidates</td>
+<td>Human review of uncertain papers feeds the next round of training</td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-considerations">Design Considerations</h2>
+<ul>
+<li><strong>Small dataset.</strong> With 364 labeled papers, one random split gives noisy estimates. Consider stratified k-fold cross-validation (5 folds) for the final numbers, and keep a separate test set that is never used for tuning.</li>
+<li><strong>Possible leakage from year.</strong> The negative papers are sampled from specific years (2005, 2010, 2015, 2020). If the positives are distributed differently by year, the model could learn publication year instead of study quality. Check the <code>year_group</code> column against the label before trusting the results.</li>
+<li><strong>Long abstracts.</strong> Some abstracts exceed 512 tokens. Truncation is the simplest option. Check how many are affected before deciding on a sliding-window approach.</li>
+<li><strong>Compare against the baselines.</strong> The fine-tuned model is only worth adopting if it beats the TF-IDF plus Logistic Regression model and the rule-based scorer. See the <a href="../../reports/baseline-model-report/">baseline model report</a>.</li>
+<li><strong>Weak labels.</strong> Scores from <code>prostate-cancer-scorer.py</code> on <code>filtered-candidates.csv</code> can propose extra training examples. Validate them against a hand-labeled sample first.</li>
+<li><strong>Compute.</strong> A base-size model on about 250 training examples fine-tunes in minutes on a laptop GPU or Apple Silicon (MPS) and in a reasonable time on CPU.</li>
+</ul>
+<h2 id="suggested-libraries">Suggested Libraries</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>transformers<span class="w"> </span>datasets<span class="w"> </span>evaluate<span class="w"> </span>accelerate<span class="w"> </span>scikit-learn
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -1283,7 +1524,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../run-abstract-extractor-script/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Run Script">
+          <a href="../embeddings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Embeddings">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1293,20 +1534,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Run Script
+                Embeddings
               </div>
             </div>
           </a>
         
         
           
-          <a href="../run-scorer/" class="md-footer__link md-footer__link--next" aria-label="Next: Run Scorer">
+          <a href="../../data-viewers/" class="md-footer__link md-footer__link--next" aria-label="Next: Intro">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Run Scorer
+                Intro
               </div>
             </div>
             <div class="md-footer__button md-icon">
