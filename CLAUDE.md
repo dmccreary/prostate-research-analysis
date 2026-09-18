@@ -51,6 +51,10 @@ The scorer (`prostate-cancer-scorer.py`) evaluates papers on three criteria:
 
 Treatment modalities and acceptance criteria are defined in `docs/selection-criteria.md`.
 
+### Preferred Modeling Approach
+
+Fine-tuning PubMedBERT (`microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract`) is our preferred approach for new classification, extraction, and embedding work. Prefer it over adding more regex rules or TF-IDF-based methods. The existing regex scorer can supply weak labels, but validate them against a hand-labeled sample. See `docs/pubmedbert.md` for details.
+
 ### Data Flow
 
 1. **Input**: CSV with columns `pmid`, `title`, `author`, `details`

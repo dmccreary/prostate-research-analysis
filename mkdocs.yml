@@ -11,6 +11,7 @@ nav:
   - About: about.md
   - To Do List: todo-list.md
   - Selection Criteria: selection-criteria.md
+  - PubMedBERT: pubmedbert.md
 
   - Workflow:
     - Intro: workflow/index.md
@@ -23,6 +24,7 @@ nav:
     - Convert CSV to JSON: workflow/csv-to-json.md
     - Data  Visualization: workflow/data-visualization.md
     - Embeddings: workflow/embeddings.md
+    - Fine-Tune PubMedBERT: workflow/fine-tune-pubmedbert.md
   
   - Data Viewers:
     - Intro: data-viewers/index.md
