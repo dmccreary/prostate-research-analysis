@@ -1,0 +1,7 @@
+model_name,pipeline_type,threshold,accuracy,precision,recall_sensitivity,specificity,f1_score,auroc,pr_auc,true_positives,false_positives,true_negatives,false_negatives,flagged_count,workload_pct,workload_reduction_pct,nns,architecture_type
+Linear SVM (Title+Abstract),Standalone,0.5,0.7808,0.6429,0.75,0.7959,0.6923,0.8605,0.7134,18,10,39,6,28,38.36,61.64,1.56,Classical
+Linear SVM (Title+Abstract),Cascaded (Pre-Filter),0.5,0.7945,0.6667,0.75,0.8163,0.7059,0.8733,0.7261,18,9,40,6,27,36.99,63.01,1.5,Classical
+Complement NB (Title+Abstract),Standalone,0.5,0.7123,0.5789,0.4583,0.8367,0.5116,0.8291,0.6988,11,8,41,13,19,26.03,73.97,1.73,Classical
+Complement NB (Title+Abstract),Cascaded (Pre-Filter),0.5,0.7123,0.5789,0.4583,0.8367,0.5116,0.8444,0.7093,11,8,41,13,19,26.03,73.97,1.73,Classical
+PubMedBERT (Title+Abstract),Standalone,0.5,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Transformer
+PubMedBERT (Title+Abstract),Cascaded (Pre-Filter),0.5,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Transformer

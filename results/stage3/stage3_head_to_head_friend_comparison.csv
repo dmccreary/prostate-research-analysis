@@ -1,0 +1,13 @@
+model_name,pipeline_type,threshold,accuracy,precision,recall_sensitivity,specificity,f1_score,auroc,pr_auc,true_positives,false_positives,true_negatives,false_negatives,flagged_count,workload_pct,workload_reduction_pct,nns,comparison_mode
+Linear SVM (Title+Abstract),Standalone,0.1,0.6438,0.48,1.0,0.4694,0.6486,0.8605,0.7134,24,26,23,0,50,68.49,31.51,2.08,Fixed Threshold 0.10 (Friend's Table 2 format)
+Linear SVM (Title+Abstract),Standalone,0.3,0.7671,0.5946,0.9167,0.6939,0.7213,0.8605,0.7134,22,15,34,2,37,50.68,49.32,1.68,Fixed Threshold 0.30 (Friend's Table 2 format)
+Linear SVM (Title+Abstract),Cascaded (Pre-Filter),0.1,0.6712,0.5,1.0,0.5102,0.6667,0.8733,0.7261,24,24,25,0,48,65.75,34.25,2.0,Fixed Threshold 0.10 (Friend's Table 2 format)
+Linear SVM (Title+Abstract),Cascaded (Pre-Filter),0.3,0.7945,0.6286,0.9167,0.7347,0.7458,0.8733,0.7261,22,13,36,2,35,47.95,52.05,1.59,Fixed Threshold 0.30 (Friend's Table 2 format)
+Complement NB (Title+Abstract),Standalone,0.1,0.3288,0.3288,1.0,0.0,0.4948,0.8291,0.6988,24,49,0,0,73,100.0,0.0,3.04,Fixed Threshold 0.10 (Friend's Table 2 format)
+Complement NB (Title+Abstract),Standalone,0.3,0.3288,0.3288,1.0,0.0,0.4948,0.8291,0.6988,24,49,0,0,73,100.0,0.0,3.04,Fixed Threshold 0.30 (Friend's Table 2 format)
+Complement NB (Title+Abstract),Cascaded (Pre-Filter),0.1,0.5068,0.4,1.0,0.2653,0.5714,0.8444,0.7093,24,36,13,0,60,82.19,17.81,2.5,Fixed Threshold 0.10 (Friend's Table 2 format)
+Complement NB (Title+Abstract),Cascaded (Pre-Filter),0.3,0.5068,0.4,1.0,0.2653,0.5714,0.8444,0.7093,24,36,13,0,60,82.19,17.81,2.5,Fixed Threshold 0.30 (Friend's Table 2 format)
+PubMedBERT (Title+Abstract),Standalone,0.1,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Fixed Threshold 0.10 (Friend's Table 2 format)
+PubMedBERT (Title+Abstract),Standalone,0.3,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Fixed Threshold 0.30 (Friend's Table 2 format)
+PubMedBERT (Title+Abstract),Cascaded (Pre-Filter),0.1,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Fixed Threshold 0.10 (Friend's Table 2 format)
+PubMedBERT (Title+Abstract),Cascaded (Pre-Filter),0.3,0.9863,0.96,1.0,0.9796,0.9796,1.0,1.0,24,1,48,0,25,34.25,65.75,1.04,Fixed Threshold 0.30 (Friend's Table 2 format)
