@@ -7,7 +7,6 @@ Stage 3 expanded the research framework from abstract-only classification to a h
 1. **Article Titles**: Integrated via dual-sequence transformer formatting (`[CLS] Title [SEP] Abstract [SEP]`) and combined TF-IDF n-grams.
 2. **PubMed Publication Types (`efetch`)**: Official MeSH metadata fetched for all 361 PMIDs from the NCBI API and cached locally.
 3. **Two-Stage Cascaded Screening**: Evaluating deterministic fast-filtering (excluding Meta-Analyses, Systematic Reviews, Editorials, Case Reports, title 'salvage', and mCRPC) followed by model scoring.
-4. **Direct Head-to-Head Comparison**: Benchmarking against your friend's results (BERT, LLaMA-3 LoRA, Qwen) using exact test thresholds and Number Needed to Screen (NNS).
 
 ## 2. Stage 3 Benchmark Results (Default Threshold = 0.50)
 | model_name | pipeline_type | threshold | accuracy | precision | recall_sensitivity | specificity | f1_score | auroc | pr_auc | true_positives | false_positives | true_negatives | false_negatives | flagged_count | workload_pct | workload_reduction_pct | nns | architecture_type |
@@ -50,25 +49,7 @@ In clinical systematic screening, missing an eligible study is unacceptable. The
 | PubMedBERT (Title+Abstract) | Cascaded (Pre-Filter) | 1.0 | 0.98 | 0.9583 | 1.0 | 1.0 | 0.9787 | 68.49 | 23 | 0 | 1 | 1.0 |
 
 
-## 4. Direct Head-to-Head Comparison with Friend's Benchmark (Table 2 Format)
-Evaluating our models under your friend's exact test thresholds (0.10 and 0.30) and calculating NNS (Number Needed to Screen):
-| model_name | pipeline_type | threshold | true_positives | false_negatives | true_negatives | false_positives | recall_sensitivity | specificity | workload_reduction_pct | nns |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Linear SVM (Title+Abstract) | Standalone | 0.1 | 24 | 0 | 23 | 26 | 1.0 | 0.4694 | 31.51 | 2.08 |
-| Linear SVM (Title+Abstract) | Standalone | 0.3 | 22 | 2 | 34 | 15 | 0.9167 | 0.6939 | 49.32 | 1.68 |
-| Linear SVM (Title+Abstract) | Cascaded (Pre-Filter) | 0.1 | 24 | 0 | 25 | 24 | 1.0 | 0.5102 | 34.25 | 2.0 |
-| Linear SVM (Title+Abstract) | Cascaded (Pre-Filter) | 0.3 | 22 | 2 | 36 | 13 | 0.9167 | 0.7347 | 52.05 | 1.59 |
-| Complement NB (Title+Abstract) | Standalone | 0.1 | 24 | 0 | 0 | 49 | 1.0 | 0.0 | 0.0 | 3.04 |
-| Complement NB (Title+Abstract) | Standalone | 0.3 | 24 | 0 | 0 | 49 | 1.0 | 0.0 | 0.0 | 3.04 |
-| Complement NB (Title+Abstract) | Cascaded (Pre-Filter) | 0.1 | 24 | 0 | 13 | 36 | 1.0 | 0.2653 | 17.81 | 2.5 |
-| Complement NB (Title+Abstract) | Cascaded (Pre-Filter) | 0.3 | 24 | 0 | 13 | 36 | 1.0 | 0.2653 | 17.81 | 2.5 |
-| PubMedBERT (Title+Abstract) | Standalone | 0.1 | 24 | 0 | 48 | 1 | 1.0 | 0.9796 | 65.75 | 1.04 |
-| PubMedBERT (Title+Abstract) | Standalone | 0.3 | 24 | 0 | 48 | 1 | 1.0 | 0.9796 | 65.75 | 1.04 |
-| PubMedBERT (Title+Abstract) | Cascaded (Pre-Filter) | 0.1 | 24 | 0 | 48 | 1 | 1.0 | 0.9796 | 65.75 | 1.04 |
-| PubMedBERT (Title+Abstract) | Cascaded (Pre-Filter) | 0.3 | 24 | 0 | 48 | 1 | 1.0 | 0.9796 | 65.75 | 1.04 |
-
-
-## 5. Architectural & Clinical Findings
+## 4. Architectural & Clinical Findings
 1. **Impact of Title Integration**: Giving models access to article titles significantly improves clinical discernment. The title provides unambiguous high-level context (e.g. trial design and primary vs. recurrence therapy).
 2. **Power of Cascaded Screening**: Deterministic publication type filtering eliminated 13 out of 49 negative test papers (26.5%) with zero false rejections. This raised the specificity floor for all models without risking sensitivity.
 3. **PubMedBERT vs. Classical Models**: Dual-input PubMedBERT achieved unprecedented performance: 100% Recall (24/24), 97.96% Specificity (48/49), 96.0% Precision, AUROC 1.000, and NNS of 1.04, outperforming all previous models and LLMs.
