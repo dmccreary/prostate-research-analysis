@@ -1,0 +1,15 @@
+model_name,condition,mean_prob,median_prob,min_prob,max_prob,pos_pred_count,neg_pred_count,pos_pred_pct,tp,fp,tn,fn,recall,specificity,accuracy,precision,f1,auroc
+"Stage 4 Original (Seed 42, Weighted)",Original (No Trailing Dot),0.0245,0.0162,0.0159,0.9858,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.4298
+"Stage 4 Original (Seed 42, Weighted)",Intervention (Added Trailing Dot),0.9856,0.9858,0.9701,0.9859,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.6683
+"Stage 4 Original (Seed 42, Unweighted)",Original (No Trailing Dot),0.0272,0.0169,0.0167,0.9854,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.366
+"Stage 4 Original (Seed 42, Unweighted)",Intervention (Added Trailing Dot),0.9843,0.9853,0.93,0.9855,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.7251
+"Stage 4 Multi-Seed (Seed 101, Weighted)",Original (No Trailing Dot),0.0348,0.0199,0.0198,0.9849,2,115,1.71,0,2,87,28,0.0,97.75,74.36,0.0,0.0,0.4988
+"Stage 4 Multi-Seed (Seed 101, Weighted)",Intervention (Added Trailing Dot),0.9849,0.9849,0.9836,0.985,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.4837
+"Stage 4 Multi-Seed (Seed 123, Weighted)",Original (No Trailing Dot),0.024,0.0157,0.0156,0.9825,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.5217
+"Stage 4 Multi-Seed (Seed 123, Weighted)",Intervention (Added Trailing Dot),0.9821,0.9824,0.9659,0.9825,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.5823
+"Stage 4 Multi-Seed (Seed 456, Weighted)",Original (No Trailing Dot),0.0272,0.019,0.0188,0.9806,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.3146
+"Stage 4 Multi-Seed (Seed 456, Weighted)",Intervention (Added Trailing Dot),0.9808,0.9809,0.9785,0.981,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.6322
+"Stage 4 Multi-Seed (Seed 789, Weighted)",Original (No Trailing Dot),0.0227,0.0141,0.0139,0.9821,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.4246
+"Stage 4 Multi-Seed (Seed 789, Weighted)",Intervention (Added Trailing Dot),0.9822,0.9822,0.9819,0.9823,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.5795
+"Stage 4 Multi-Seed (Seed 2024, Weighted)",Original (No Trailing Dot),0.04,0.0318,0.0311,0.9708,1,116,0.85,0,1,88,28,0.0,98.88,75.21,0.0,0.0,0.5056
+"Stage 4 Multi-Seed (Seed 2024, Weighted)",Intervention (Added Trailing Dot),0.9711,0.9711,0.9699,0.9715,117,0,100.0,28,89,0,0,100.0,0.0,23.93,23.93,0.3862,0.5108

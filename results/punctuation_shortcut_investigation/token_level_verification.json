@@ -1,0 +1,149 @@
+[
+  {
+    "pmid": 33279855,
+    "title_original": "Androgen deprivation therapy and radiotherapy in intermediate-risk prostate cancer: A randomised phase III trial.",
+    "tokens_around_sep_original": [
+      "phase",
+      "iii",
+      "trial",
+      ".",
+      "[SEP]",
+      "background",
+      ":",
+      "the"
+    ],
+    "token_ids_around_sep_original": [
+      2934,
+      3852,
+      4033,
+      17,
+      3,
+      2645,
+      29,
+      1680
+    ],
+    "token_preceding_sep_original": ".",
+    "token_id_preceding_sep_original": 17,
+    "title_nodot": "Androgen deprivation therapy and radiotherapy in intermediate-risk prostate cancer: A randomised phase III trial",
+    "tokens_around_sep_nodot": [
+      "randomised",
+      "phase",
+      "iii",
+      "trial",
+      "[SEP]",
+      "background",
+      ":",
+      "the"
+    ],
+    "token_ids_around_sep_nodot": [
+      9525,
+      2934,
+      3852,
+      4033,
+      3,
+      2645,
+      29,
+      1680
+    ],
+    "token_preceding_sep_nodot": "trial",
+    "token_id_preceding_sep_nodot": 4033
+  },
+  {
+    "pmid": 32642874,
+    "title_original": "Treatment of low-risk prostate cancer: a\u00a0retrospective study with 477\u00a0patients comparing external beam radiotherapy and I-125 seeds brachytherapy in terms of biochemical control and late side effects.",
+    "tokens_around_sep_original": [
+      "late",
+      "side",
+      "effects",
+      ".",
+      "[SEP]",
+      "purpose",
+      ":",
+      "the"
+    ],
+    "token_ids_around_sep_original": [
+      4395,
+      3950,
+      2228,
+      17,
+      3,
+      3179,
+      29,
+      1680
+    ],
+    "token_preceding_sep_original": ".",
+    "token_id_preceding_sep_original": 17,
+    "title_nodot": "Treatment of low-risk prostate cancer: a\u00a0retrospective study with 477\u00a0patients comparing external beam radiotherapy and I-125 seeds brachytherapy in terms of biochemical control and late side effects",
+    "tokens_around_sep_nodot": [
+      "and",
+      "late",
+      "side",
+      "effects",
+      "[SEP]",
+      "purpose",
+      ":",
+      "the"
+    ],
+    "token_ids_around_sep_nodot": [
+      1690,
+      4395,
+      3950,
+      2228,
+      3,
+      3179,
+      29,
+      1680
+    ],
+    "token_preceding_sep_nodot": "effects",
+    "token_id_preceding_sep_nodot": 2228
+  },
+  {
+    "pmid": 33035622,
+    "title_original": "Dose-response with stereotactic body radiotherapy for prostate cancer: A multi-institutional analysis of prostate-specific antigen kinetics and biochemical control.",
+    "tokens_around_sep_original": [
+      "and",
+      "biochemical",
+      "control",
+      ".",
+      "[SEP]",
+      "background",
+      "and",
+      "purpose"
+    ],
+    "token_ids_around_sep_original": [
+      1690,
+      5355,
+      2039,
+      17,
+      3,
+      2645,
+      1690,
+      3179
+    ],
+    "token_preceding_sep_original": ".",
+    "token_id_preceding_sep_original": 17,
+    "title_nodot": "Dose-response with stereotactic body radiotherapy for prostate cancer: A multi-institutional analysis of prostate-specific antigen kinetics and biochemical control",
+    "tokens_around_sep_nodot": [
+      "kinetics",
+      "and",
+      "biochemical",
+      "control",
+      "[SEP]",
+      "background",
+      "and",
+      "purpose"
+    ],
+    "token_ids_around_sep_nodot": [
+      6321,
+      1690,
+      5355,
+      2039,
+      3,
+      2645,
+      1690,
+      3179
+    ],
+    "token_preceding_sep_nodot": "control",
+    "token_id_preceding_sep_nodot": 2039
+  }
+]

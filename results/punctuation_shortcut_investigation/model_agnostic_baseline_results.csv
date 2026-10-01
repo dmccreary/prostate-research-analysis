@@ -1,0 +1,4 @@
+dataset,total_samples,pos_samples,neg_samples,tp,fp,tn,fn,accuracy,sensitivity_recall,specificity,precision,f1_score,auroc
+Full Training Dataset (labeled-dataset-v2.csv),524,281,243,270,0,243,11,97.9,96.09,100.0,100.0,0.98,0.9804
+Stage 4 Held-Out Test Set (test.csv),105,56,49,55,0,49,1,99.05,98.21,100.0,100.0,0.991,0.9911
+Prospective 2021 Dataset (2021 labeld.csv),117,28,89,0,0,89,28,76.07,0.0,100.0,0.0,0.0,0.5

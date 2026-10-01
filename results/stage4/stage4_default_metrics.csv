@@ -1,0 +1,3 @@
+model_name,operating_point,threshold,recall_sensitivity,specificity,precision,f1_score,accuracy,auroc,pr_auc,tp,fp,tn,fn,flagged_papers,workload_pct,workload_reduction_pct,nns,total_test
+Unweighted Loss (1.0),Default (0.50),0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,56,0,49,0,56,53.33,46.67,1.0,105
+Weighted Loss (1.72),Default (0.50),0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,56,0,49,0,56,53.33,46.67,1.0,105

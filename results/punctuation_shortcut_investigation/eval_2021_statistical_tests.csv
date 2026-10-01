@@ -1,0 +1,8 @@
+mean_diff,ci_mean_95,median_diff,ci_median_95,mean_abs_diff,wilcoxon_stat,wilcoxon_p,cohens_dz,mcnemar_b_pos_to_neg,mcnemar_c_neg_to_pos,mcnemar_chi2,mcnemar_p_exact,mcnemar_p_asymp,model_name,comparison
+0.9611,"(0.9444, 0.9696)",0.9696,"(0.9696, 0.9696)",0.9611,0.0,6.149568424871581e-21,10.7228,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Original (Seed 42, Weighted)",2021 Dataset: Original vs Added Trailing Period
+0.9571,"(0.9385, 0.9679)",0.9684,"(0.9683, 0.9684)",0.9571,1.0,6.3103658764406746e-21,10.3921,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Original (Seed 42, Unweighted)",2021 Dataset: Original vs Added Trailing Period
+0.95,"(0.9269, 0.9649)",0.965,"(0.965, 0.965)",0.95,1.0,6.3103658764406746e-21,8.3539,0,115,113.0087,4.81482486096809e-35,0.0,"Stage 4 Multi-Seed (Seed 101, Weighted)",2021 Dataset: Original vs Added Trailing Period
+0.9582,"(0.9415, 0.9666)",0.9666,"(0.9666, 0.9667)",0.9582,1.0,6.3103658764406746e-21,10.7223,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Multi-Seed (Seed 123, Weighted)",2021 Dataset: Original vs Added Trailing Period
+0.9536,"(0.9371, 0.9619)",0.9619,"(0.9619, 0.9619)",0.9536,0.0,6.149568424871581e-21,10.7257,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Multi-Seed (Seed 456, Weighted)",2021 Dataset: Original vs Added Trailing Period
+0.9595,"(0.9426, 0.9681)",0.9681,"(0.9681, 0.9681)",0.9595,1.0,6.3103658764406746e-21,10.7157,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Multi-Seed (Seed 789, Weighted)",2021 Dataset: Original vs Added Trailing Period
+0.9311,"(0.9148, 0.9393)",0.9393,"(0.9392, 0.9394)",0.9311,1.0,6.3103658764406746e-21,10.7189,0,116,114.0086,2.407412430484045e-35,0.0,"Stage 4 Multi-Seed (Seed 2024, Weighted)",2021 Dataset: Original vs Added Trailing Period

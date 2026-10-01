@@ -1,0 +1,119 @@
+2026-09-20 00:15:51,842 [INFO] Using compute device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-09-20 00:15:51,843 [INFO] Loading PubMedBERT Tokenizer...
+2026-09-20 00:15:54,937 [INFO] 
+=======================================================
+2026-09-20 00:15:54,938 [INFO]    RUNNING EXPERIMENT 1/5: SEED 101
+2026-09-20 00:15:54,938 [INFO] =======================================================
+2026-09-20 00:15:54,994 [INFO] Seed 101 Split Sizes: Train=230 (Pos=76), Val=58 (Pos=19), Test=73 (Pos=24)
+2026-09-20 00:15:58,257 [INFO] === Starting Training for Seed 101 (Epochs=8, pos_weight=2.026) ===
+2026-09-20 00:16:46,288 [INFO] Seed 101 | Epoch 1/8 - Train Loss: 0.9461 | Val Loss: 0.8389 | Val AUROC: 0.8273 | Val F1: 0.5385
+2026-09-20 00:16:48,087 [INFO]   --> Saved new best checkpoint for Seed 101 at Epoch 1 (Val Loss: 0.8389, AUROC: 0.8273)
+2026-09-20 00:17:35,616 [INFO] Seed 101 | Epoch 2/8 - Train Loss: 0.6618 | Val Loss: 0.3179 | Val AUROC: 0.9946 | Val F1: 0.9444
+2026-09-20 00:17:37,078 [INFO]   --> Saved new best checkpoint for Seed 101 at Epoch 2 (Val Loss: 0.3179, AUROC: 0.9946)
+2026-09-20 00:21:14,750 [INFO] Seed 101 | Epoch 3/8 - Train Loss: 0.1786 | Val Loss: 0.2781 | Val AUROC: 0.9555 | Val F1: 0.9444
+2026-09-20 00:21:16,529 [INFO]   --> Saved new best checkpoint for Seed 101 at Epoch 3 (Val Loss: 0.2781, AUROC: 0.9555)
+2026-09-20 00:23:27,024 [INFO] Seed 101 | Epoch 4/8 - Train Loss: 0.0705 | Val Loss: 0.3242 | Val AUROC: 0.9771 | Val F1: 0.9189
+2026-09-20 00:25:41,147 [INFO] Seed 101 | Epoch 5/8 - Train Loss: 0.0425 | Val Loss: 0.3094 | Val AUROC: 0.9420 | Val F1: 0.9189
+2026-09-20 00:27:53,171 [INFO] Seed 101 | Epoch 6/8 - Train Loss: 0.0383 | Val Loss: 0.3137 | Val AUROC: 0.9501 | Val F1: 0.9189
+2026-09-20 00:30:12,559 [INFO] Seed 101 | Epoch 7/8 - Train Loss: 0.0370 | Val Loss: 0.3198 | Val AUROC: 0.9501 | Val F1: 0.9189
+2026-09-20 00:30:12,559 [INFO] Early stopping triggered for Seed 101 after 4 epochs without improvement.
+2026-09-20 00:30:12,573 [INFO] Seed 101: Restored best weights from epoch 3
+2026-09-20 00:30:17,654 [INFO] Seed 101 Test Results: Recall=0.9167, Specificity=0.9796, Accuracy=0.9589, Precision=0.9565, F1=0.9362, AUROC=0.9872, PR-AUC=0.9827, Workload Reduction=68.49%, NNS=1.05
+2026-09-20 00:30:17,905 [INFO] 
+=======================================================
+2026-09-20 00:30:17,905 [INFO]    RUNNING EXPERIMENT 2/5: SEED 123
+2026-09-20 00:30:17,906 [INFO] =======================================================
+2026-09-20 00:30:17,969 [INFO] Seed 123 Split Sizes: Train=230 (Pos=76), Val=58 (Pos=19), Test=73 (Pos=24)
+2026-09-20 00:30:22,854 [INFO] === Starting Training for Seed 123 (Epochs=8, pos_weight=2.026) ===
+2026-09-20 00:31:10,198 [INFO] Seed 123 | Epoch 1/8 - Train Loss: 0.9400 | Val Loss: 0.7638 | Val AUROC: 0.9055 | Val F1: 0.7692
+2026-09-20 00:31:12,052 [INFO]   --> Saved new best checkpoint for Seed 123 at Epoch 1 (Val Loss: 0.7638, AUROC: 0.9055)
+2026-09-20 00:33:27,830 [INFO] Seed 123 | Epoch 2/8 - Train Loss: 0.6727 | Val Loss: 0.4780 | Val AUROC: 0.9690 | Val F1: 0.8485
+2026-09-20 00:33:29,827 [INFO]   --> Saved new best checkpoint for Seed 123 at Epoch 2 (Val Loss: 0.4780, AUROC: 0.9690)
+2026-09-20 00:37:34,442 [INFO] Seed 123 | Epoch 3/8 - Train Loss: 0.2541 | Val Loss: 0.1155 | Val AUROC: 1.0000 | Val F1: 0.9500
+2026-09-20 00:37:36,514 [INFO]   --> Saved new best checkpoint for Seed 123 at Epoch 3 (Val Loss: 0.1155, AUROC: 1.0000)
+2026-09-20 00:43:50,295 [INFO] Seed 123 | Epoch 4/8 - Train Loss: 0.0720 | Val Loss: 0.1578 | Val AUROC: 0.9987 | Val F1: 0.9474
+2026-09-20 00:49:59,946 [INFO] Seed 123 | Epoch 5/8 - Train Loss: 0.0456 | Val Loss: 0.1284 | Val AUROC: 1.0000 | Val F1: 0.9500
+2026-09-20 00:56:11,999 [INFO] Seed 123 | Epoch 6/8 - Train Loss: 0.0381 | Val Loss: 0.1221 | Val AUROC: 1.0000 | Val F1: 0.9500
+2026-09-20 01:02:21,014 [INFO] Seed 123 | Epoch 7/8 - Train Loss: 0.0361 | Val Loss: 0.0777 | Val AUROC: 0.9987 | Val F1: 0.9744
+2026-09-20 01:02:22,899 [INFO]   --> Saved new best checkpoint for Seed 123 at Epoch 7 (Val Loss: 0.0777, AUROC: 0.9987)
+2026-09-20 01:05:03,527 [INFO] Seed 123 | Epoch 8/8 - Train Loss: 0.0343 | Val Loss: 0.0805 | Val AUROC: 0.9987 | Val F1: 0.9744
+2026-09-20 01:05:03,537 [INFO] Seed 123: Restored best weights from epoch 7
+2026-09-20 01:05:53,594 [INFO] Seed 123 Test Results: Recall=1.0000, Specificity=0.9796, Accuracy=0.9863, Precision=0.9600, F1=0.9796, AUROC=1.0000, PR-AUC=1.0000, Workload Reduction=65.75%, NNS=1.04
+2026-09-20 01:05:53,912 [INFO] 
+=======================================================
+2026-09-20 01:05:53,912 [INFO]    RUNNING EXPERIMENT 3/5: SEED 456
+2026-09-20 01:05:53,913 [INFO] =======================================================
+2026-09-20 01:05:53,976 [INFO] Seed 456 Split Sizes: Train=230 (Pos=76), Val=58 (Pos=19), Test=73 (Pos=24)
+2026-09-20 01:05:57,702 [INFO] === Starting Training for Seed 456 (Epochs=8, pos_weight=2.026) ===
+2026-09-20 01:06:44,968 [INFO] Seed 456 | Epoch 1/8 - Train Loss: 0.9420 | Val Loss: 0.8166 | Val AUROC: 0.9136 | Val F1: 0.7429
+2026-09-20 01:06:47,178 [INFO]   --> Saved new best checkpoint for Seed 456 at Epoch 1 (Val Loss: 0.8166, AUROC: 0.9136)
+2026-09-20 01:09:32,820 [INFO] Seed 456 | Epoch 2/8 - Train Loss: 0.6931 | Val Loss: 0.3626 | Val AUROC: 0.9946 | Val F1: 0.8824
+2026-09-20 01:09:34,741 [INFO]   --> Saved new best checkpoint for Seed 456 at Epoch 2 (Val Loss: 0.3626, AUROC: 0.9946)
+2026-09-20 01:13:09,155 [INFO] Seed 456 | Epoch 3/8 - Train Loss: 0.1756 | Val Loss: 0.3131 | Val AUROC: 0.9946 | Val F1: 0.9189
+2026-09-20 01:13:10,914 [INFO]   --> Saved new best checkpoint for Seed 456 at Epoch 3 (Val Loss: 0.3131, AUROC: 0.9946)
+2026-09-20 01:18:56,036 [INFO] Seed 456 | Epoch 4/8 - Train Loss: 0.0761 | Val Loss: 0.3451 | Val AUROC: 0.9946 | Val F1: 0.9189
+2026-09-20 01:24:41,380 [INFO] Seed 456 | Epoch 5/8 - Train Loss: 0.0418 | Val Loss: 0.2277 | Val AUROC: 0.9892 | Val F1: 0.9474
+2026-09-20 01:24:43,219 [INFO]   --> Saved new best checkpoint for Seed 456 at Epoch 5 (Val Loss: 0.2277, AUROC: 0.9892)
+2026-09-20 01:27:42,060 [INFO] Seed 456 | Epoch 6/8 - Train Loss: 0.0363 | Val Loss: 0.2286 | Val AUROC: 0.9663 | Val F1: 0.9474
+2026-09-20 01:30:40,897 [INFO] Seed 456 | Epoch 7/8 - Train Loss: 0.0374 | Val Loss: 0.2292 | Val AUROC: 0.9784 | Val F1: 0.9474
+2026-09-20 01:33:39,647 [INFO] Seed 456 | Epoch 8/8 - Train Loss: 0.0377 | Val Loss: 0.2295 | Val AUROC: 0.9852 | Val F1: 0.9474
+2026-09-20 01:33:39,656 [INFO] Seed 456: Restored best weights from epoch 5
+2026-09-20 01:33:53,253 [INFO] Seed 456 Test Results: Recall=1.0000, Specificity=0.9796, Accuracy=0.9863, Precision=0.9600, F1=0.9796, AUROC=1.0000, PR-AUC=1.0000, Workload Reduction=65.75%, NNS=1.04
+2026-09-20 01:33:53,625 [INFO] 
+=======================================================
+2026-09-20 01:33:53,625 [INFO]    RUNNING EXPERIMENT 4/5: SEED 789
+2026-09-20 01:33:53,625 [INFO] =======================================================
+2026-09-20 01:33:53,691 [INFO] Seed 789 Split Sizes: Train=230 (Pos=76), Val=58 (Pos=19), Test=73 (Pos=24)
+2026-09-20 01:33:56,736 [INFO] === Starting Training for Seed 789 (Epochs=8, pos_weight=2.026) ===
+2026-09-20 01:34:44,339 [INFO] Seed 789 | Epoch 1/8 - Train Loss: 0.9463 | Val Loss: 0.8917 | Val AUROC: 0.8367 | Val F1: 0.0000
+2026-09-20 01:34:46,273 [INFO]   --> Saved new best checkpoint for Seed 789 at Epoch 1 (Val Loss: 0.8917, AUROC: 0.8367)
+2026-09-20 01:36:19,562 [INFO] Seed 789 | Epoch 2/8 - Train Loss: 0.7585 | Val Loss: 0.5465 | Val AUROC: 0.9906 | Val F1: 0.8125
+2026-09-20 01:36:21,780 [INFO]   --> Saved new best checkpoint for Seed 789 at Epoch 2 (Val Loss: 0.5465, AUROC: 0.9906)
+2026-09-20 01:40:37,265 [INFO] Seed 789 | Epoch 3/8 - Train Loss: 0.3002 | Val Loss: 0.0555 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 01:40:39,311 [INFO]   --> Saved new best checkpoint for Seed 789 at Epoch 3 (Val Loss: 0.0555, AUROC: 1.0000)
+2026-09-20 01:45:53,047 [INFO] Seed 789 | Epoch 4/8 - Train Loss: 0.0817 | Val Loss: 0.0816 | Val AUROC: 1.0000 | Val F1: 0.9744
+2026-09-20 01:51:04,565 [INFO] Seed 789 | Epoch 5/8 - Train Loss: 0.0669 | Val Loss: 0.0849 | Val AUROC: 1.0000 | Val F1: 0.9744
+2026-09-20 01:56:17,875 [INFO] Seed 789 | Epoch 6/8 - Train Loss: 0.0561 | Val Loss: 0.0654 | Val AUROC: 1.0000 | Val F1: 0.9744
+2026-09-20 02:01:21,630 [INFO] Seed 789 | Epoch 7/8 - Train Loss: 0.0454 | Val Loss: 0.0467 | Val AUROC: 1.0000 | Val F1: 0.9744
+2026-09-20 02:01:24,212 [INFO]   --> Saved new best checkpoint for Seed 789 at Epoch 7 (Val Loss: 0.0467, AUROC: 1.0000)
+2026-09-20 02:04:01,153 [INFO] Seed 789 | Epoch 8/8 - Train Loss: 0.0332 | Val Loss: 0.0571 | Val AUROC: 1.0000 | Val F1: 0.9744
+2026-09-20 02:04:01,163 [INFO] Seed 789: Restored best weights from epoch 7
+2026-09-20 02:04:13,268 [INFO] Seed 789 Test Results: Recall=1.0000, Specificity=1.0000, Accuracy=1.0000, Precision=1.0000, F1=1.0000, AUROC=1.0000, PR-AUC=1.0000, Workload Reduction=67.12%, NNS=1.0
+2026-09-20 02:04:13,519 [INFO] 
+=======================================================
+2026-09-20 02:04:13,519 [INFO]    RUNNING EXPERIMENT 5/5: SEED 2024
+2026-09-20 02:04:13,520 [INFO] =======================================================
+2026-09-20 02:04:13,577 [INFO] Seed 2024 Split Sizes: Train=230 (Pos=76), Val=58 (Pos=19), Test=73 (Pos=24)
+2026-09-20 02:04:13,658 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDAE9A8A90>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 94ac8577-993d-4fca-a6b6-7998344fab33)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:13,658 [WARNING] Retrying in 1s [Retry 1/5].
+2026-09-20 02:04:14,662 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDB6C5D460>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: fd5ae6e5-35c7-4f5d-bf71-e7684c5e8ae9)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:14,663 [WARNING] Retrying in 2s [Retry 2/5].
+2026-09-20 02:04:16,674 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDB6C5D970>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: a2bec5ab-a787-4c11-aeca-fa106c3c49c7)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:16,675 [WARNING] Retrying in 4s [Retry 3/5].
+2026-09-20 02:04:20,691 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDB6C5D8B0>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 321ddd34-441e-4c53-9400-e74a8e038813)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:20,692 [WARNING] Retrying in 8s [Retry 4/5].
+2026-09-20 02:04:28,700 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDB6C5DD30>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 9764d432-8ce7-4121-8d8c-336592e9bf4f)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:28,700 [WARNING] Retrying in 8s [Retry 5/5].
+2026-09-20 02:04:36,708 [WARNING] '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002BDB6C2F430>: Failed to resolve \'huggingface.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: f50ac2f2-ce98-405c-8f3d-6dc66c83dd34)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract/resolve/main/config.json
+2026-09-20 02:04:38,078 [INFO] === Starting Training for Seed 2024 (Epochs=8, pos_weight=2.026) ===
+2026-09-20 02:05:25,256 [INFO] Seed 2024 | Epoch 1/8 - Train Loss: 0.9545 | Val Loss: 0.8848 | Val AUROC: 0.8866 | Val F1: 0.0000
+2026-09-20 02:05:26,979 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 1 (Val Loss: 0.8848, AUROC: 0.8866)
+2026-09-20 02:06:32,695 [INFO] Seed 2024 | Epoch 2/8 - Train Loss: 0.8604 | Val Loss: 0.6357 | Val AUROC: 0.9933 | Val F1: 0.7917
+2026-09-20 02:06:34,876 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 2 (Val Loss: 0.6357, AUROC: 0.9933)
+2026-09-20 02:10:34,712 [INFO] Seed 2024 | Epoch 3/8 - Train Loss: 0.5082 | Val Loss: 0.1360 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:10:36,368 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 3 (Val Loss: 0.1360, AUROC: 1.0000)
+2026-09-20 02:16:29,932 [INFO] Seed 2024 | Epoch 4/8 - Train Loss: 0.1572 | Val Loss: 0.0584 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:16:32,247 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 4 (Val Loss: 0.0584, AUROC: 1.0000)
+2026-09-20 02:18:48,790 [INFO] Seed 2024 | Epoch 5/8 - Train Loss: 0.0973 | Val Loss: 0.0434 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:18:50,459 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 5 (Val Loss: 0.0434, AUROC: 1.0000)
+2026-09-20 02:23:37,595 [INFO] Seed 2024 | Epoch 6/8 - Train Loss: 0.0751 | Val Loss: 0.0380 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:23:39,661 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 6 (Val Loss: 0.0380, AUROC: 1.0000)
+2026-09-20 02:28:33,624 [INFO] Seed 2024 | Epoch 7/8 - Train Loss: 0.0610 | Val Loss: 0.0413 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:33:27,644 [INFO] Seed 2024 | Epoch 8/8 - Train Loss: 0.0571 | Val Loss: 0.0364 | Val AUROC: 1.0000 | Val F1: 1.0000
+2026-09-20 02:33:29,339 [INFO]   --> Saved new best checkpoint for Seed 2024 at Epoch 8 (Val Loss: 0.0364, AUROC: 1.0000)
+2026-09-20 02:33:29,350 [INFO] Seed 2024: Restored best weights from epoch 8
+2026-09-20 02:34:41,241 [INFO] Seed 2024 Test Results: Recall=1.0000, Specificity=0.9796, Accuracy=0.9863, Precision=0.9600, F1=0.9796, AUROC=1.0000, PR-AUC=1.0000, Workload Reduction=65.75%, NNS=1.04
+2026-09-20 02:34:41,459 [INFO] 
+All 5 experiments completed in 138.78 minutes.
+2026-09-20 02:34:41,479 [INFO] Saved multi_seed_bert_summary.csv
+2026-09-20 02:34:43,015 [INFO] Saved multi_seed_robustness_report.md

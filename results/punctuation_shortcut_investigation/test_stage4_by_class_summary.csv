@@ -1,0 +1,15 @@
+model_name,cohort,n_samples,mean_orig_prob,mean_nodot_prob,mean_prob_change,median_prob_change,mean_abs_prob_change,predictions_changed_count,predictions_changed_pct,pos_to_neg_flips,neg_to_pos_flips
+"Stage 4 Original (Seed 42, Weighted)",Positive Articles,56,0.9858,0.0335,-0.9523,-0.9697,0.9523,55,98.21,55,0
+"Stage 4 Original (Seed 42, Weighted)",Negative Articles,49,0.0165,0.0165,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Original (Seed 42, Unweighted)",Positive Articles,56,0.9853,0.0343,-0.951,-0.9684,0.951,55,98.21,55,0
+"Stage 4 Original (Seed 42, Unweighted)",Negative Articles,49,0.0185,0.0185,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Multi-Seed (Seed 101, Weighted)",Positive Articles,56,0.9849,0.0371,-0.9478,-0.965,0.9478,55,98.21,55,0
+"Stage 4 Multi-Seed (Seed 101, Weighted)",Negative Articles,49,0.0398,0.0398,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Multi-Seed (Seed 123, Weighted)",Positive Articles,56,0.9824,0.033,-0.9494,-0.9667,0.9494,55,98.21,55,0
+"Stage 4 Multi-Seed (Seed 123, Weighted)",Negative Articles,49,0.0158,0.0158,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Multi-Seed (Seed 456, Weighted)",Positive Articles,56,0.9808,0.0361,-0.9447,-0.9619,0.9447,55,98.21,55,0
+"Stage 4 Multi-Seed (Seed 456, Weighted)",Negative Articles,49,0.0192,0.0192,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Multi-Seed (Seed 789, Weighted)",Positive Articles,56,0.9821,0.0326,-0.9495,-0.9681,0.9495,55,98.21,55,0
+"Stage 4 Multi-Seed (Seed 789, Weighted)",Negative Articles,49,0.0141,0.0141,0.0,0.0,0.0,0,0.0,0,0
+"Stage 4 Multi-Seed (Seed 2024, Weighted)",Positive Articles,56,0.9709,0.0485,-0.9224,-0.9392,0.9224,55,98.21,55,0
+"Stage 4 Multi-Seed (Seed 2024, Weighted)",Negative Articles,49,0.0326,0.0326,0.0,0.0,0.0,0,0.0,0,0

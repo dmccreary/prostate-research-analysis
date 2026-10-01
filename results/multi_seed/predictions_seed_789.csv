@@ -1,0 +1,74 @@
+pmid,title,true_label,predicted_probability,predicted_label
+31612318,Postoperative biochemical recurrence of pathologically localized high-grade prostate cancer in adjuvant treatment-naïve patients,0,0.015087684616446495,0
+15990187,A phase II study of localized prostate cancer treated to 75.6 Gy with 3D conformal radiotherapy,0,0.015333716757595539,0
+32006609,MRI-Guided Ultrafocal Salvage High-Dose-Rate Brachytherapy for Localized Radiorecurrent Prostate Cancer: Updated Results of 50 Patients,0,0.01521210465580225,0
+32077006,Post-HIFU locally relapsed prostate cancer: high-dose salvage radiotherapy guided by molecular imaging,0,0.015084880404174328,0
+20449749,Long-term outcomes of salvage radiotherapy for PSA-recurrent prostate cancer: validation of the Stephenson nomogram,0,0.015084837563335896,0
+15821486,12-year outcomes following permanent prostate brachytherapy in patients with clinically localized prostate cancer.,1,0.9798769354820251,1
+19913249,Robotic assisted laparoscopic salvage prostatectomy for radiation resistant prostate cancer,0,0.015238901600241661,0
+25711672,Salvage radical prostatectomy for recurrent prostate cancer: verification of European Association of Urology guideline criteria,0,0.015202815644443035,0
+19632069,Local control following permanent prostate brachytherapy: effect of high biologically effective dose on biopsy results and oncologic outcomes.,1,0.9799116253852844,1
+20303100,"Quality of life after open or robotic prostatectomy, cryoablation or brachytherapy for localized prostate cancer",0,0.015174198895692825,0
+16309852,Disease-specific survival following the brachytherapy management of prostate cancer,0,0.015224818140268326,0
+20338476,Permanent prostate brachytherapy in prostate glands <20 cm(3),0,0.015070652589201927,0
+25578739,Systematic review and meta-analysis of the survival outcomes of first-line treatment options in high-risk prostate cancer,0,0.015742111951112747,0
+31705700,Hemi-ablative low-dose-rate prostate brachytherapy for unilateral localised prostate cancer,0,0.015102826990187168,0
+26581143,Radical Prostatectomy Versus Radiation and Androgen Deprivation Therapy for Clinically Localized Prostate Cancer: How Good Is the Evidence?,0,0.04726254194974899,0
+32253928,An Exploratory Study of Dose Escalation vs Standard Focal High-Intensity Focused Ultrasound for Treating Nonmetastatic Prostate Cancer,0,0.015130791813135147,0
+15734204,Limited efficacy of salvage radiotherapy for biopsy confirmed or clinically palpable local recurrence of prostate carcinoma after surgery,0,0.015156985260546207,0
+18289596,Mayo Clinic validation of the D'amico risk group classification for predicting survival following radical prostatectomy.,1,0.9799004197120667,1
+32442822,A biochemical definition of cure after brachytherapy for prostate cancer,0,0.015082540921866894,0
+26341039,Individualization of Adjuvant Therapy After Radical Prostatectomy for Clinically Localized Prostate Cancer: Current Status and Future Directions,0,0.016002671793103218,0
+23552872,Radical radiotherapy in high-risk prostate cancer patients with high or ultra-high initial PSA levels: a single institution analysis.,1,0.9798867702484131,1
+24138913,Conventional versus automated implantation of loose seeds in prostate brachytherapy: analysis of dosimetric and clinical results.,1,0.9799963235855103,1
+15629591,Impact of supplemental external beam radiotherapy and/or androgen deprivation therapy on biochemical outcome after permanent prostate brachytherapy.,1,0.9798882603645325,1
+20005453,Outcomes following iodine-125 monotherapy for localized prostate cancer: the results of leeds 10-year single-center brachytherapy experience,0,0.015117084607481956,0
+22330999,Long-term results of an RTOG Phase II trial (00-19) of external-beam radiation therapy combined with permanent source brachytherapy for intermediate-risk clinically localized adenocarcinoma of the prostate.,1,0.9799396991729736,1
+21784585,Single-fraction high-dose-rate brachytherapy and hypofractionated external beam radiation therapy in the treatment of intermediate-risk prostate cancer - long term results.,1,0.9798886179924011,1
+23415962,Evolution and outcomes of 3 MHz high intensity focused ultrasound therapy for localized prostate cancer during 15 years.,1,0.979972779750824,1
+26408674,Hypofractionated Radiotherapy for Localized Prostate Cancer: A Challenging Accelerated Hypofractionated Radiotherapy,0,0.015186646953225136,0
+19553031,Whole-pelvis radiotherapy in combination with interstitial brachytherapy: does coverage of the pelvic lymph nodes improve treatment outcome in high-risk prostate cancer?,1,0.9775987863540649,1
+25736733,High-dose-rate brachytherapy as a monotherapy for prostate cancer--Single-institution results of the extreme fractionation regimen,0,0.015193408355116844,0
+31912470,Factors Predicting Prostate Specific Antigen Failure Following Radical Prostatectomy: Experience with 961 Patients,0,0.01513249147683382,0
+25770484,"Urinary Incontinence and Erectile Dysfunction After Robotic Versus Open Radical Prostatectomy: A Prospective, Controlled, Nonrandomised Trial",0,0.015233520418405533,0
+17482880,Escalated-dose versus standard-dose conformal radiotherapy in prostate cancer: first results from the MRC RT01 randomised controlled trial.,1,0.9797924757003784,1
+22633365,Biochemical recurrence after robot-assisted radical prostatectomy in a European single-centre cohort with a minimum follow-up time of 5 years.,1,0.9799766540527344,1
+16099293,Postoperative radiotherapy after radical prostatectomy: a randomised controlled trial (EORTC trial 22911),0,0.01519994530826807,0
+23395456,Long-term outcomes of prostate cancer patients with Gleason pattern 5 treated with combined brachytherapy and external beam radiotherapy.,1,0.9800274968147278,1
+19464818,Salvage radiotherapy for rising prostate-specific antigen levels after radical prostatectomy for prostate cancer: dose-response analysis,0,0.015105502679944038,0
+15718316,Randomized trial comparing iridium implant plus external-beam radiation therapy with external-beam radiation therapy alone in node-negative locally advanced cancer of the prostate,0,0.015299836173653603,0
+26003267,Whole Pelvis Versus Prostate-Only Radiotherapy With or Without Short-Course Androgen Deprivation Therapy and Mortality Risk,0,0.015266825444996357,0
+20493642,Long-term failure patterns and survival in a randomized dose-escalation trial for prostate cancer. Who dies of disease?,1,0.9798641204833984,1
+21163586,High-dose-rate brachytherapy boost for prostate cancer: comparison of two different fractionation schemes,0,0.015080032870173454,0
+21045780,Salvage radical prostatectomy,0,0.016544409096240997,0
+31708350,Single-Dose Focal Salvage High Dose Rate Brachytherapy for Locally Recurrent Prostate Cancer,0,0.015233471058309078,0
+20202991,Clinical results of iridium-192 high dose rate brachytherapy with external beam radiotherapy,0,0.015455998480319977,0
+26867889,Image Guided Hypofractionated Postprostatectomy Intensity Modulated Radiation Therapy for Prostate Cancer,0,0.015272855758666992,0
+32349700,Efficacy of PSMA ligand PET-based radiotherapy for recurrent prostate cancer after radical prostatectomy and salvage radiotherapy,0,0.015257910825312138,0
+20646861,Long-term follow-up and risk of cancer death after radiation for post-prostatectomy rising prostate-specific antigen,0,0.015187978744506836,0
+20932728,High-intensity focused ultrasound for prostate cancer: a systematic review,0,0.015331529080867767,0
+15747374,Cryosurgical ablation of the prostate: high risk patient outcomes,0,0.015155106782913208,0
+20550722,Early clinical experience of radiotherapy of prostate cancer with volumetric modulated arc therapy,0,0.01535994652658701,0
+19493260,"Outcomes for patients with high-grade prostate cancer treated with a combination of brachytherapy, external beam radiotherapy and hormonal therapy.",1,0.9798535108566284,1
+21470787,Comparison of high-dose proton radiotherapy and brachytherapy in localized prostate cancer: a case-matched analysis.,1,0.9798431992530823,1
+24101042,Randomized trial of hypofractionated external-beam radiotherapy for prostate cancer.,1,0.9797351360321045,1
+32044166,Single dose high-dose rate (HDR) brachytherapy (BT) as monotherapy for localised prostate cancer: Early results of a UK national cohort study,0,0.015162253752350807,0
+31733323,Stereotactic Body Radiation Therapy to the Prostate Bed: Results of a Phase 1 Dose-Escalation Trial,0,0.015289782546460629,0
+32068493,"The Comparative Outcomes of Radical Prostatectomy versus Radiotherapy for Nonmetastatic Prostate Cancer: A Longitudinal, Population-Based Analysis",0,0.015325598418712616,0
+15681602,Randomized controlled trial to evaluate radiotherapy +/- endocrine therapy versus endocrine therapy alone for PSA failure after radical prostatectomy: Japan Clinical Oncology Group Study JCOG 0401,0,0.015878185629844666,0
+15310996,"Cancer progression and survival rates following anatomical radical retropubic prostatectomy in 3,478 consecutive patients: long-term results.",1,0.979915201663971,1
+32399639,Efficacy of repeated PSMA PET-directed radiotherapy for oligorecurrent prostate cancer after initial curative therapy,0,0.015126365236938,0
+16165919,Surgical treatment of localized prostate cancer,0,0.01754036918282509,0
+20675072,"10-year experience with I-125 prostate brachytherapy at the Princess Margaret Hospital: results for 1,100 patients",0,0.015297889709472656,0
+23062705,Long-term outcomes and prognostic factors in patients treated with intraoperatively planned prostate brachytherapy.,1,0.9800323247909546,1
+32211942,PSMA-positive nodal recurrence in prostate cancer : Salvage radiotherapy is superior to salvage lymph node dissection in retrospective analysis,0,0.015087593346834183,0
+20951450,Analysis of second malignancies after modern radiotherapy versus prostatectomy for localized prostate cancer,0,0.015271414071321487,0
+19775833,Dosimetric comparison of high-dose-rate brachytherapy and intensity-modulated radiation therapy as a boost to the prostate,0,0.01530290488153696,0
+20540878,"[Metastatic progression, cancer-specific mortality and need for secondary treatments in patients with clinically high-risk prostate cancer treated initially with radical prostatectomy].",1,0.97989422082901,1
+20869162,Biochemical recurrence following robot-assisted radical prostatectomy: analysis of 1384 patients with a median 5-year follow-up.,1,0.9798957109451294,1
+23083655,The impact of anatomical radical retropubic prostatectomy on cancer control: the 30-year anniversary.,1,0.9799129962921143,1
+23356910,Fourteen-year oncological and functional outcomes of high-intensity focused ultrasound in localized prostate cancer.,1,0.9798170924186707,1
+16360430,"Statins, especially atorvastatin, may favorably influence clinical presentation and biochemical progression-free survival after brachytherapy for clinically localized prostate cancer.",1,0.9795938730239868,1
+32418156,Salvage radiotherapy in patients affected by oligorecurrent pelvic nodal prostate cancer,0,0.015168079175055027,0
+16278474,Parameters for treatment decisions for salvage radiation therapy,0,0.018459029495716095,0
+31199504,Fractionated stereotactic body radiotherapy for up to five prostate cancer oligometastases: Interim outcomes of a prospective clinical trial,0,0.015290824696421623,0

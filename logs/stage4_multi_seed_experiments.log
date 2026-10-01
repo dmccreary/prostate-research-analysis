@@ -1,0 +1,84 @@
+2026-09-26 19:27:56,641 [INFO] === Stage 4 Multi-Seed Robustness Evaluation ===
+2026-09-26 19:27:56,647 [INFO] Compute Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-09-26 19:27:56,648 [INFO] Seeds: [101, 123, 456, 789, 2024]
+2026-09-26 19:27:56,648 [INFO] Loading PubMedBERT Tokenizer...
+2026-09-26 19:27:56,739 [INFO] Pre-tokenizing datasets for all 5 seeds...
+2026-09-26 19:27:59,964 [INFO] All splits pre-tokenized successfully!
+2026-09-26 19:27:59,964 [INFO] 
+=======================================================
+2026-09-26 19:27:59,964 [INFO]    RUNNING 5-SEED EVALUATION: WEIGHTED PUBMEDBERT
+2026-09-26 19:27:59,964 [INFO] =======================================================
+2026-09-26 19:28:02,051 [INFO] --- [Seed 101 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-26 19:29:10,051 [INFO] Seed 101 (weighted) | Epoch 1/8 - Train: 0.8376 | Val: 0.7632 | Val AUC: 0.9037 | Val F1: 0.7031
+2026-09-26 19:30:20,052 [INFO] Seed 101 (weighted) | Epoch 2/8 - Train: 0.4250 | Val: 0.0614 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 19:31:34,946 [INFO] Seed 101 (weighted) | Epoch 3/8 - Train: 0.0776 | Val: 0.0298 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 19:37:23,399 [INFO] Seed 101 (weighted) | Epoch 4/8 - Train: 0.0511 | Val: 0.0265 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 19:45:22,279 [INFO] Seed 101 (weighted) | Epoch 5/8 - Train: 0.0462 | Val: 0.0250 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 19:48:40,930 [INFO] Seed 101 (weighted) | Epoch 6/8 - Train: 0.0316 | Val: 0.0241 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 19:57:42,403 [INFO] Seed 101 (weighted) | Epoch 7/8 - Train: 0.0311 | Val: 0.0236 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 20:06:52,015 [INFO] Seed 101 (weighted) | Epoch 8/8 - Train: 0.0313 | Val: 0.0234 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 20:08:54,059 [INFO] Result Seed 101 (weighted): Recall=100.00%, Spec=89.80%, Acc=95.24%, F1=0.9573, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=5, TN=44, FN=0)
+2026-09-26 20:08:56,310 [INFO] --- [Seed 123 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-26 20:14:02,887 [INFO] Seed 123 (weighted) | Epoch 1/8 - Train: 0.9216 | Val: 0.7949 | Val AUC: 0.9470 | Val F1: 0.6977
+2026-09-26 20:17:00,485 [INFO] === Stage 4 3-Seed Robustness Evaluation (Weighted PubMedBERT) ===
+2026-09-26 20:17:00,493 [INFO] Compute Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-09-26 20:17:00,493 [INFO] Seeds: [101, 123, 456]
+2026-09-26 20:17:00,493 [INFO] Loading PubMedBERT Tokenizer...
+2026-09-26 20:17:00,595 [INFO] Pre-tokenizing datasets for 3 seeds...
+2026-09-26 20:17:02,493 [INFO] All splits pre-tokenized successfully!
+2026-09-26 20:17:02,528 [INFO] [Reused Existing Run] Seed 101 (weighted): Recall=100.00%, Spec=89.80%, Acc=95.24%, F1=0.9573, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=5, TN=44, FN=0)
+2026-09-26 20:17:04,912 [INFO] --- [Seed 123 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-26 20:18:14,370 [INFO] Seed 123 (weighted) | Epoch 1/8 - Train: 0.9216 | Val: 0.7949 | Val AUC: 0.9470 | Val F1: 0.6977
+2026-09-26 20:23:04,290 [INFO] Seed 123 (weighted) | Epoch 2/8 - Train: 0.5171 | Val: 0.1082 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-26 20:30:25,539 [INFO] Seed 123 (weighted) | Epoch 3/8 - Train: 0.0929 | Val: 0.0336 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 20:42:06,253 [INFO] Seed 123 (weighted) | Epoch 4/8 - Train: 0.0419 | Val: 0.0271 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 20:48:03,789 [INFO] Seed 123 (weighted) | Epoch 5/8 - Train: 0.0349 | Val: 0.0251 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 20:55:11,542 [INFO] Seed 123 (weighted) | Epoch 6/8 - Train: 0.0325 | Val: 0.0243 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 21:02:52,629 [INFO] Seed 123 (weighted) | Epoch 7/8 - Train: 0.0337 | Val: 0.0239 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 21:13:38,515 [INFO] Seed 123 (weighted) | Epoch 8/8 - Train: 0.0311 | Val: 0.0238 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 21:15:04,062 [INFO] Result Seed 123 (weighted): Recall=100.00%, Spec=97.96%, Acc=99.05%, F1=0.9912, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=1, TN=48, FN=0)
+2026-09-26 21:15:06,589 [INFO] --- [Seed 456 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-26 21:19:40,446 [INFO] Seed 456 (weighted) | Epoch 1/8 - Train: 0.8756 | Val: 0.7842 | Val AUC: 0.8467 | Val F1: 0.6977
+2026-09-26 21:27:08,396 [INFO] Seed 456 (weighted) | Epoch 2/8 - Train: 0.4369 | Val: 0.1023 | Val AUC: 0.9989 | Val F1: 0.9890
+2026-09-26 21:31:32,081 [INFO] Seed 456 (weighted) | Epoch 3/8 - Train: 0.1037 | Val: 0.0826 | Val AUC: 0.9846 | Val F1: 0.9890
+2026-09-26 21:36:19,471 [INFO] Seed 456 (weighted) | Epoch 4/8 - Train: 0.0752 | Val: 0.0775 | Val AUC: 0.9983 | Val F1: 0.9890
+2026-09-26 21:42:33,767 [INFO] Seed 456 (weighted) | Epoch 5/8 - Train: 0.0593 | Val: 0.0268 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-26 21:52:30,741 [INFO] Seed 456 (weighted) | Epoch 6/8 - Train: 0.0360 | Val: 0.0732 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-26 22:01:28,497 [INFO] Seed 456 (weighted) | Epoch 7/8 - Train: 0.0343 | Val: 0.0691 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-26 22:09:57,127 [INFO] Seed 456 (weighted) | Epoch 8/8 - Train: 0.0326 | Val: 0.0649 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-26 22:12:27,151 [INFO] Result Seed 456 (weighted): Recall=98.21%, Spec=100.00%, Acc=99.05%, F1=0.9910, AUROC=1.0000, PR-AUC=1.0000 (TP=55, FP=0, TN=49, FN=1)
+2026-09-26 22:12:27,775 [INFO] All 3 seeds completed in 115.46 minutes!
+2026-09-26 22:12:27,792 [INFO] Saved stage4_3seed_weighted_summary.csv
+2026-09-26 22:12:28,988 [INFO] Report written successfully to reports/stage4_multi_seed/stage4_3seed_weighted_report.md
+2026-09-27 17:11:00,987 [INFO] === Stage 4 5-Seed Robustness Evaluation (Weighted PubMedBERT) ===
+2026-09-27 17:11:00,995 [INFO] Compute Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-09-27 17:11:00,995 [INFO] Seeds: [101, 123, 456, 789, 2024]
+2026-09-27 17:11:00,995 [INFO] Loading PubMedBERT Tokenizer...
+2026-09-27 17:11:01,147 [INFO] Pre-tokenizing datasets for all 5 seeds...
+2026-09-27 17:11:04,895 [INFO] All splits pre-tokenized successfully!
+2026-09-27 17:11:04,942 [INFO] [Reused Existing Run] Seed 101 (weighted): Recall=100.00%, Spec=89.80%, Acc=95.24%, F1=0.9573, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=5, TN=44, FN=0)
+2026-09-27 17:11:04,980 [INFO] [Reused Existing Run] Seed 123 (weighted): Recall=100.00%, Spec=97.96%, Acc=99.05%, F1=0.9912, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=1, TN=48, FN=0)
+2026-09-27 17:11:05,023 [INFO] [Reused Existing Run] Seed 456 (weighted): Recall=98.21%, Spec=100.00%, Acc=99.05%, F1=0.9910, AUROC=1.0000, PR-AUC=1.0000 (TP=55, FP=0, TN=49, FN=1)
+2026-09-27 17:11:08,240 [INFO] --- [Seed 789 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-27 17:12:17,056 [INFO] Seed 789 (weighted) | Epoch 1/8 - Train: 0.8669 | Val: 0.8128 | Val AUC: 0.9305 | Val F1: 0.6977
+2026-09-27 17:13:27,009 [INFO] Seed 789 (weighted) | Epoch 2/8 - Train: 0.4708 | Val: 0.1240 | Val AUC: 1.0000 | Val F1: 0.9783
+2026-09-27 17:14:36,431 [INFO] Seed 789 (weighted) | Epoch 3/8 - Train: 0.0774 | Val: 0.0296 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:20:12,637 [INFO] Seed 789 (weighted) | Epoch 4/8 - Train: 0.0436 | Val: 0.0261 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:28:08,292 [INFO] Seed 789 (weighted) | Epoch 5/8 - Train: 0.0338 | Val: 0.0249 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:30:37,319 [INFO] Seed 789 (weighted) | Epoch 6/8 - Train: 0.0317 | Val: 0.0238 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:35:32,574 [INFO] Seed 789 (weighted) | Epoch 7/8 - Train: 0.0313 | Val: 0.0234 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:40:30,676 [INFO] Seed 789 (weighted) | Epoch 8/8 - Train: 0.0308 | Val: 0.0232 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:41:44,914 [INFO] Result Seed 789 (weighted): Recall=100.00%, Spec=100.00%, Acc=100.00%, F1=1.0000, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=0, TN=49, FN=0)
+2026-09-27 17:41:46,251 [INFO] --- [Seed 2024 | Weighted (pos_weight=1.7222)] Training Started ---
+2026-09-27 17:44:47,164 [INFO] Seed 2024 (weighted) | Epoch 1/8 - Train: 0.8993 | Val: 0.8178 | Val AUC: 0.9339 | Val F1: 0.6977
+2026-09-27 17:50:08,615 [INFO] Seed 2024 (weighted) | Epoch 2/8 - Train: 0.4694 | Val: 0.1000 | Val AUC: 1.0000 | Val F1: 1.0000
+2026-09-27 17:54:31,604 [INFO] Seed 2024 (weighted) | Epoch 3/8 - Train: 0.0961 | Val: 0.0615 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-27 17:57:35,034 [INFO] Seed 2024 (weighted) | Epoch 4/8 - Train: 0.0520 | Val: 0.0791 | Val AUC: 0.9994 | Val F1: 0.9890
+2026-09-27 18:00:36,663 [INFO] Seed 2024 (weighted) | Epoch 5/8 - Train: 0.0557 | Val: 0.0781 | Val AUC: 0.9989 | Val F1: 0.9890
+2026-09-27 18:03:37,647 [INFO] Seed 2024 (weighted) | Epoch 6/8 - Train: 0.0458 | Val: 0.0759 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-27 18:06:38,542 [INFO] Seed 2024 (weighted) | Epoch 7/8 - Train: 0.0434 | Val: 0.0763 | Val AUC: 1.0000 | Val F1: 0.9890
+2026-09-27 18:06:38,543 [INFO] Early stopping triggered for Seed 2024 (weighted) at epoch 7
+2026-09-27 18:06:45,253 [INFO] Result Seed 2024 (weighted): Recall=100.00%, Spec=100.00%, Acc=100.00%, F1=1.0000, AUROC=1.0000, PR-AUC=1.0000 (TP=56, FP=0, TN=49, FN=0)
+2026-09-27 18:06:45,430 [INFO] All 5 seeds evaluated/completed in 55.74 minutes!
+2026-09-27 18:06:45,444 [INFO] Saved stage4_5seed_weighted_summary.csv
+2026-09-27 18:06:47,085 [INFO] Report written successfully to reports/stage4_multi_seed/stage4_5seed_weighted_report.md
