@@ -41,6 +41,7 @@ All accepted treatments:
 6. Only articles from peer reviewed journals are included. Peer reviewed journals are those in which every article is first reviewed by an expert panel before publication. Presentations and/or posters do not meet criteria.
 7. An adequate number of patients must be included. Low-Risk accepted minimum number 100 patients. Intermediate-Risk accepted minimum number 100 patients. High-Risk accepted minimum number 50 patients.
 8. Minimum median follow up: 5 years. This is to ensure that patients were followed long enough to adequately evaluate the results long-term.
+9. **Study design** - Single-arm studies are acceptable. A paper does not need to be a comparative/multi-arm trial to be included, provided it meets all other criteria above.
 
 ## Study Exclusion Criteria
 
