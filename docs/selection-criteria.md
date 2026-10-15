@@ -18,18 +18,20 @@ All accepted treatments:
 3. Std EBRT
 4. ADT + Std EBRT
 5. Hypofx EBRT
-6. Ultrahypofx EBRT
-7. Protons
-8. LDR Brachy
-9. ADT + LDR Brachy
-10. EBRT + LDR Brachy
-11. ADT + EBRT + LDR Brachy
-12. HDR Brachy
-13. ADT + HDR Brachy
-14. EBRT + HDR Brachy
-15. ADT + EBRT + HDR Brachy
-16. Cryotherapy
-17. HIFU
+6. ADT + Hypofx EBRT
+7. Ultrahypofx EBRT
+8. ADT + Ultrahypofx EBRT
+9. Protons
+10. LDR Brachy
+11. ADT + LDR Brachy
+12. EBRT + LDR Brachy
+13. ADT + EBRT + LDR Brachy
+14. HDR Brachy
+15. ADT + HDR Brachy
+16. EBRT + HDR Brachy
+17. ADT + EBRT + HDR Brachy
+18. Cryotherapy
+19. HIFU
 
 ## Study Inclusion Criteria
 
