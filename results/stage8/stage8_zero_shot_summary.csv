@@ -1,0 +1,21 @@
+model,query_formulation,dataset,operating_point,threshold,recall,specificity,precision,f1,auroc,pr_auc,tp,fp,tn,fn,workload_pct,reduction_pct,nns
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,Held-Out Test Set,Default (0.50),0.5,5.36,97.96,75.0,0.1,0.5765,0.5516,3,1,48,53,3.81,96.19,1.33
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,Held-Out Test Set,Val-Calibrated >=95% (0.001),0.001,26.79,75.51,55.56,0.3614,0.5765,0.5516,15,12,37,41,25.71,74.29,1.8
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,Held-Out Test Set,Val-Calibrated 100% (0.001),0.001,26.79,75.51,55.56,0.3614,0.5765,0.5516,15,12,37,41,25.71,74.29,1.8
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,Held-Out Test Set,Empirical >=95% (0.001),0.001,26.79,75.51,55.56,0.3614,0.5765,0.5516,15,12,37,41,25.71,74.29,1.8
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,Held-Out Test Set,Empirical 100% (0.001),0.001,26.79,75.51,55.56,0.3614,0.5765,0.5516,15,12,37,41,25.71,74.29,1.8
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,2021 Prospective Cohort,Default (0.50),0.5,3.57,96.63,25.0,0.0625,0.6902,0.3563,1,3,86,27,3.42,96.58,4.0
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,2021 Prospective Cohort,Val-Calibrated >=95% (0.001),0.001,35.71,82.02,38.46,0.3704,0.6902,0.3563,10,16,73,18,22.22,77.78,2.6
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,2021 Prospective Cohort,Val-Calibrated 100% (0.001),0.001,35.71,82.02,38.46,0.3704,0.6902,0.3563,10,16,73,18,22.22,77.78,2.6
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,2021 Prospective Cohort,Empirical >=95% (0.001),0.001,35.71,82.02,38.46,0.3704,0.6902,0.3563,10,16,73,18,22.22,77.78,2.6
+MedCPT Cross-Encoder (Zero-Shot),PICO Natural Language,2021 Prospective Cohort,Empirical 100% (0.001),0.001,35.71,82.02,38.46,0.3704,0.6902,0.3563,10,16,73,18,22.22,77.78,2.6
+MedCPT Cross-Encoder (Zero-Shot),Search Style,Held-Out Test Set,Default (0.50),0.5,7.14,91.84,50.0,0.125,0.6112,0.5891,4,4,45,52,7.62,92.38,2.0
+MedCPT Cross-Encoder (Zero-Shot),Search Style,Held-Out Test Set,Val-Calibrated >=95% (0.001),0.001,25.0,73.47,51.85,0.3373,0.6112,0.5891,14,13,36,42,25.71,74.29,1.93
+MedCPT Cross-Encoder (Zero-Shot),Search Style,Held-Out Test Set,Val-Calibrated 100% (0.001),0.001,25.0,73.47,51.85,0.3373,0.6112,0.5891,14,13,36,42,25.71,74.29,1.93
+MedCPT Cross-Encoder (Zero-Shot),Search Style,Held-Out Test Set,Empirical >=95% (0.001),0.001,25.0,73.47,51.85,0.3373,0.6112,0.5891,14,13,36,42,25.71,74.29,1.93
+MedCPT Cross-Encoder (Zero-Shot),Search Style,Held-Out Test Set,Empirical 100% (0.001),0.001,25.0,73.47,51.85,0.3373,0.6112,0.5891,14,13,36,42,25.71,74.29,1.93
+MedCPT Cross-Encoder (Zero-Shot),Search Style,2021 Prospective Cohort,Default (0.50),0.5,10.71,92.13,30.0,0.1579,0.616,0.3033,3,7,82,25,8.55,91.45,3.33
+MedCPT Cross-Encoder (Zero-Shot),Search Style,2021 Prospective Cohort,Val-Calibrated >=95% (0.001),0.001,28.57,82.02,33.33,0.3077,0.616,0.3033,8,16,73,20,20.51,79.49,3.0
+MedCPT Cross-Encoder (Zero-Shot),Search Style,2021 Prospective Cohort,Val-Calibrated 100% (0.001),0.001,28.57,82.02,33.33,0.3077,0.616,0.3033,8,16,73,20,20.51,79.49,3.0
+MedCPT Cross-Encoder (Zero-Shot),Search Style,2021 Prospective Cohort,Empirical >=95% (0.001),0.001,28.57,82.02,33.33,0.3077,0.616,0.3033,8,16,73,20,20.51,79.49,3.0
+MedCPT Cross-Encoder (Zero-Shot),Search Style,2021 Prospective Cohort,Empirical 100% (0.001),0.001,28.57,82.02,33.33,0.3077,0.616,0.3033,8,16,73,20,20.51,79.49,3.0

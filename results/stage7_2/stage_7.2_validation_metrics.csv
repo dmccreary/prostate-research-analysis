@@ -1,0 +1,3 @@
+model_name,operating_point,threshold,accuracy,recall_sensitivity,specificity,precision,f1_score,auroc,pr_auc,true_positives,false_positives,true_negatives,false_negatives,flagged_count,workload_pct,workload_reduction_pct,nns
+"Structured PICO Cross-Encoder (Standalone, Weighted)",Default (0.50),0.5,0.8214285714285714,0.9333333333333333,0.6923076923076923,0.7777777777777778,0.8484848484848485,0.9002849002849003,0.8648363859049338,42,12,27,3,54,64.29,35.71,1.29
+"Structured PICO Cross-Encoder (Standalone, Weighted)",Recall >= 95%,0.28,0.8333333333333334,0.9555555555555556,0.6923076923076923,0.7818181818181819,0.86,0.9002849002849003,0.8648363859049338,43,12,27,2,55,65.48,34.52,1.28

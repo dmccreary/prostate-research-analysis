@@ -1,0 +1,26 @@
+2026-10-08 01:24:44,981 [INFO] ================================================================================
+2026-10-08 01:24:44,982 [INFO]        STARTING STAGE 7: PICO CROSS-ENCODER SCREENING EXPERIMENT                
+2026-10-08 01:24:44,982 [INFO] ================================================================================
+2026-10-08 01:24:46,094 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-08 01:24:46,217 [INFO] Loaded Splits: Train=335, Val=84, Test=105
+2026-10-08 01:24:46,342 [INFO] Train Counts: Pos=180, Neg=155 -> pos_weight=1.7222
+2026-10-08 01:24:46,343 [INFO] Loading local tokenizer for microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract...
+2026-10-08 01:24:46,601 [INFO] PICO Query Length: 73 tokens.
+2026-10-08 01:24:46,601 [INFO] Remaining budget for Title + Abstract: 436 tokens.
+2026-10-08 01:24:50,181 [INFO] Starting PICO Cross-Encoder training: 8 epochs, batch_size=4, grad_accum=2 (effective 8), max_len=512, lr=2e-05, pos_weight=1.7222...
+2026-10-08 01:26:27,505 [INFO] [PICO Cross-Encoder] Epoch 1/8 - Train Loss: 0.9313 | Val Loss: 0.8562 | Val AUROC: 0.7481 | Val PR-AUC: 0.7683 | Val F1@0.5: 0.6977 | Val Recall@0.5: 100.00%
+2026-10-08 01:26:28,877 [INFO] [PICO Cross-Encoder] New best checkpoint saved at epoch 1 (Val Loss: 0.8562)
+2026-10-08 01:28:05,720 [INFO] [PICO Cross-Encoder] Epoch 2/8 - Train Loss: 0.8258 | Val Loss: 0.7169 | Val AUROC: 0.8103 | Val PR-AUC: 0.8378 | Val F1@0.5: 0.7706 | Val Recall@0.5: 93.33%
+2026-10-08 01:28:07,424 [INFO] [PICO Cross-Encoder] New best checkpoint saved at epoch 2 (Val Loss: 0.7169)
+2026-10-08 01:30:11,924 [INFO] [PICO Cross-Encoder] Epoch 3/8 - Train Loss: 0.5954 | Val Loss: 0.5659 | Val AUROC: 0.8718 | Val PR-AUC: 0.8735 | Val F1@0.5: 0.8696 | Val Recall@0.5: 88.89%
+2026-10-08 01:30:13,838 [INFO] [PICO Cross-Encoder] New best checkpoint saved at epoch 3 (Val Loss: 0.5659)
+2026-10-08 01:37:07,032 [INFO] [PICO Cross-Encoder] Epoch 4/8 - Train Loss: 0.4323 | Val Loss: 0.6074 | Val AUROC: 0.8769 | Val PR-AUC: 0.8552 | Val F1@0.5: 0.8333 | Val Recall@0.5: 88.89%
+2026-10-08 01:43:40,671 [INFO] [PICO Cross-Encoder] Epoch 5/8 - Train Loss: 0.3366 | Val Loss: 0.5860 | Val AUROC: 0.8980 | Val PR-AUC: 0.8845 | Val F1@0.5: 0.8696 | Val Recall@0.5: 88.89%
+2026-10-08 01:50:14,643 [INFO] [PICO Cross-Encoder] Epoch 6/8 - Train Loss: 0.2837 | Val Loss: 0.7802 | Val AUROC: 0.8849 | Val PR-AUC: 0.8706 | Val F1@0.5: 0.8539 | Val Recall@0.5: 84.44%
+2026-10-08 01:56:48,495 [INFO] [PICO Cross-Encoder] Epoch 7/8 - Train Loss: 0.2406 | Val Loss: 0.7131 | Val AUROC: 0.8843 | Val PR-AUC: 0.8252 | Val F1@0.5: 0.8478 | Val Recall@0.5: 86.67%
+2026-10-08 01:56:48,495 [INFO] [PICO Cross-Encoder] Early stopping triggered at epoch 7 (best epoch: 3)
+2026-10-08 02:01:17,426 [INFO] PICO Cross-Encoder Validation-Selected Thresholds: {0.9: 0.3, 0.95: 0.18000000000000002, 1.0: 0.14}
+2026-10-08 02:01:17,556 [INFO] Generating publication figures...
+2026-10-08 02:01:21,556 [INFO] ================================================================================
+2026-10-08 02:01:21,556 [INFO]        STAGE 7 PICO CROSS-ENCODER EXPERIMENT COMPLETED SUCCESSFULLY!            
+2026-10-08 02:01:21,556 [INFO] ================================================================================

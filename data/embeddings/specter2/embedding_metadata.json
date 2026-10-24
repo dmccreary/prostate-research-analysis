@@ -1,0 +1,14 @@
+{
+  "model_id": "allenai/specter2_base",
+  "embedding_dim": 768,
+  "max_length": 512,
+  "train_samples": 335,
+  "val_samples": 84,
+  "test_samples": 105,
+  "train_pos": 180,
+  "val_pos": 45,
+  "test_pos": 56,
+  "seed": 42,
+  "device": "cuda",
+  "timestamp": "2026-10-02 09:49:59"
+}

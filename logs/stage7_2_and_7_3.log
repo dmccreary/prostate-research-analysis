@@ -1,0 +1,38 @@
+2026-10-08 19:30:09,299 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-08 19:30:09,327 [INFO] Loaded Splits: Train=335, Val=84 (Held-out Test is completely excluded)
+2026-10-08 19:30:09,327 [INFO] Enriching clinical text and generating 7 Clinical Indicator vectors...
+2026-10-08 19:30:09,690 [INFO] Sub-train class balance: Pos=180, Neg=155 -> Cost-Sensitive pos_weight = 1.7222
+2026-10-08 19:30:10,361 [INFO] ================================================================================
+2026-10-08 19:30:10,362 [INFO] STARTING Stage 7.2: Structured PICO Cross-Encoder (Standalone, Weighted) (rule_dim=0)
+2026-10-08 19:30:10,362 [INFO] ================================================================================
+2026-10-08 19:31:49,218 [INFO] [Stage 7.2] Epoch 01/08 | Train Loss: 0.9385 | Val Loss: 0.8541 | Val Recall: 1.0000 | Val Spec: 0.0000 | Val AUROC: 0.7749
+2026-10-08 19:31:51,034 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.8541)
+2026-10-08 19:33:27,839 [INFO] [Stage 7.2] Epoch 02/08 | Train Loss: 0.8211 | Val Loss: 0.7013 | Val Recall: 0.9778 | Val Spec: 0.3333 | Val AUROC: 0.8325
+2026-10-08 19:33:29,691 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.7013)
+2026-10-08 19:36:08,374 [INFO] [Stage 7.2] Epoch 03/08 | Train Loss: 0.6140 | Val Loss: 0.5521 | Val Recall: 0.8889 | Val Spec: 0.8205 | Val AUROC: 0.9020
+2026-10-08 19:36:10,322 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.5521)
+2026-10-08 19:47:23,129 [INFO] [Stage 7.2] Epoch 04/08 | Train Loss: 0.4298 | Val Loss: 0.5101 | Val Recall: 0.9333 | Val Spec: 0.6923 | Val AUROC: 0.9003
+2026-10-08 19:47:25,007 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Loss: 0.5101)
+2026-10-08 19:49:28,040 [INFO] [Stage 7.2] Epoch 05/08 | Train Loss: 0.3869 | Val Loss: 0.5900 | Val Recall: 0.8667 | Val Spec: 0.8718 | Val AUROC: 0.8900
+2026-10-08 19:51:30,789 [INFO] [Stage 7.2] Epoch 06/08 | Train Loss: 0.2609 | Val Loss: 0.5912 | Val Recall: 0.8889 | Val Spec: 0.8462 | Val AUROC: 0.8963
+2026-10-08 19:53:33,653 [INFO] [Stage 7.2] Epoch 07/08 | Train Loss: 0.2143 | Val Loss: 0.6185 | Val Recall: 0.8889 | Val Spec: 0.7949 | Val AUROC: 0.8746
+2026-10-08 19:55:34,780 [INFO] [Stage 7.2] Epoch 08/08 | Train Loss: 0.1669 | Val Loss: 0.6128 | Val Recall: 0.8889 | Val Spec: 0.8462 | Val AUROC: 0.8815
+2026-10-08 19:55:34,780 [INFO] Early stopping triggered at epoch 08.
+2026-10-08 19:55:34,781 [INFO] [Stage 7.2] Training finished in 1522.1s.
+2026-10-08 19:55:45,142 [INFO] [Stage 7.2] Selected Validation Threshold for Recall >= 95%: 0.28
+2026-10-08 19:55:45,602 [INFO] ================================================================================
+2026-10-08 19:55:45,602 [INFO] STARTING Stage 7.3: Structured PICO Cross-Encoder + 7 Rules (Hybrid, Weighted) (rule_dim=7)
+2026-10-08 19:55:45,603 [INFO] ================================================================================
+2026-10-08 19:57:28,767 [INFO] [Stage 7.3] Epoch 01/08 | Train Loss: 0.8619 | Val Loss: 0.8993 | Val Recall: 1.0000 | Val Spec: 0.0256 | Val AUROC: 0.7647
+2026-10-08 19:57:30,426 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.8993)
+2026-10-08 19:59:15,426 [INFO] [Stage 7.3] Epoch 02/08 | Train Loss: 0.7717 | Val Loss: 0.7035 | Val Recall: 0.9333 | Val Spec: 0.3333 | Val AUROC: 0.8285
+2026-10-08 19:59:17,562 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.7035)
+2026-10-08 20:05:39,837 [INFO] [Stage 7.3] Epoch 03/08 | Train Loss: 0.6466 | Val Loss: 0.5776 | Val Recall: 0.8444 | Val Spec: 0.7179 | Val AUROC: 0.8866
+2026-10-08 20:05:41,592 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.5776)
+2026-10-08 20:16:41,448 [INFO] [Stage 7.3] Epoch 04/08 | Train Loss: 0.4935 | Val Loss: 0.7118 | Val Recall: 0.9333 | Val Spec: 0.5385 | Val AUROC: 0.8900
+2026-10-08 20:27:40,131 [INFO] [Stage 7.3] Epoch 05/08 | Train Loss: 0.4417 | Val Loss: 0.6363 | Val Recall: 0.8667 | Val Spec: 0.7436 | Val AUROC: 0.8900
+2026-10-08 20:34:19,149 [INFO] [Stage 7.3] Epoch 06/08 | Train Loss: 0.3006 | Val Loss: 0.7753 | Val Recall: 0.7778 | Val Spec: 0.8205 | Val AUROC: 0.8684
+2026-10-08 20:43:31,800 [INFO] [Stage 7.3] Epoch 07/08 | Train Loss: 0.2476 | Val Loss: 0.6984 | Val Recall: 0.8889 | Val Spec: 0.6923 | Val AUROC: 0.8957
+2026-10-08 20:43:31,801 [INFO] Early stopping triggered at epoch 07.
+2026-10-08 20:43:31,801 [INFO] [Stage 7.3] Training finished in 2864.5s.
+2026-10-08 20:44:47,135 [INFO] [Stage 7.3] Selected Validation Threshold for Recall >= 95%: 0.23

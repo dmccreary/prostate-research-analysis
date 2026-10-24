@@ -1,0 +1,44 @@
+2026-10-06 23:32:19,717 [INFO] ================================================================================
+2026-10-06 23:32:19,717 [INFO]     STARTING STAGE 5.5: PubMedBERT 512-TOKEN EXTENSION BENCHMARK                
+2026-10-06 23:32:19,717 [INFO] ================================================================================
+2026-10-06 23:32:20,754 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-06 23:32:20,814 [INFO] Loaded Splits: Train=335, Val=84, Test=105
+2026-10-06 23:32:20,945 [INFO] Train Counts: Pos=180, Neg=155 -> Cost-Sensitive pos_weight=1.7222
+2026-10-06 23:32:20,945 [INFO] Loading local tokenizer for microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract...
+2026-10-06 23:32:21,781 [INFO] --------------------------------------------------------------------------------
+2026-10-06 23:32:21,782 [INFO] TRAINING MODEL A: PubMedBERT (512 tokens, Unweighted BCE)
+2026-10-06 23:32:21,782 [INFO] --------------------------------------------------------------------------------
+2026-10-06 23:32:24,512 [INFO] [PubMedBERT 512 (Unweighted)] Loss: Standard Unweighted BCEWithLogitsLoss
+2026-10-06 23:32:24,515 [INFO] [PubMedBERT 512 (Unweighted)] Starting training: 8 epochs, batch_size=4, grad_accum=2 (effective batch=8), max_len=512, lr=2e-05...
+2026-10-06 23:34:02,635 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 1/8 - Train Loss: 0.7054 | Val Loss: 0.6396 | Val AUROC: 0.8074 | Val PR-AUC: 0.8350 | Val F1@0.5: 0.7593
+2026-10-06 23:34:04,419 [INFO] [PubMedBERT 512 (Unweighted)] New best checkpoint saved at epoch 1 (Val Loss: 0.6396)
+2026-10-06 23:35:41,402 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 2/8 - Train Loss: 0.5846 | Val Loss: 0.5290 | Val AUROC: 0.8120 | Val PR-AUC: 0.8387 | Val F1@0.5: 0.7126
+2026-10-06 23:35:43,179 [INFO] [PubMedBERT 512 (Unweighted)] New best checkpoint saved at epoch 2 (Val Loss: 0.5290)
+2026-10-06 23:37:46,702 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 3/8 - Train Loss: 0.3942 | Val Loss: 0.5705 | Val AUROC: 0.8399 | Val PR-AUC: 0.8654 | Val F1@0.5: 0.7561
+2026-10-06 23:39:50,500 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 4/8 - Train Loss: 0.2832 | Val Loss: 0.5610 | Val AUROC: 0.8997 | Val PR-AUC: 0.9191 | Val F1@0.5: 0.8041
+2026-10-06 23:41:53,163 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 5/8 - Train Loss: 0.1903 | Val Loss: 0.5159 | Val AUROC: 0.8781 | Val PR-AUC: 0.8538 | Val F1@0.5: 0.8043
+2026-10-06 23:41:54,776 [INFO] [PubMedBERT 512 (Unweighted)] New best checkpoint saved at epoch 5 (Val Loss: 0.5159)
+2026-10-06 23:48:48,149 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 6/8 - Train Loss: 0.1448 | Val Loss: 0.5339 | Val AUROC: 0.8769 | Val PR-AUC: 0.8403 | Val F1@0.5: 0.8444
+2026-10-06 23:55:43,614 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 7/8 - Train Loss: 0.1023 | Val Loss: 0.5927 | Val AUROC: 0.8826 | Val PR-AUC: 0.8681 | Val F1@0.5: 0.8172
+2026-10-07 00:02:39,074 [INFO] [PubMedBERT 512 (Unweighted)] Epoch 8/8 - Train Loss: 0.0810 | Val Loss: 0.5455 | Val AUROC: 0.8769 | Val PR-AUC: 0.8510 | Val F1@0.5: 0.8471
+2026-10-07 00:02:55,458 [INFO] --------------------------------------------------------------------------------
+2026-10-07 00:02:55,459 [INFO] TRAINING MODEL B: PubMedBERT (512 tokens, Weighted BCE, pos_weight=1.7222)
+2026-10-07 00:02:55,459 [INFO] --------------------------------------------------------------------------------
+2026-10-07 00:02:56,700 [INFO] [PubMedBERT 512 (Weighted)] Loss: Cost-Sensitive BCEWithLogitsLoss (pos_weight=1.7222)
+2026-10-07 00:02:56,703 [INFO] [PubMedBERT 512 (Weighted)] Starting training: 8 epochs, batch_size=4, grad_accum=2 (effective batch=8), max_len=512, lr=2e-05...
+2026-10-07 00:04:33,318 [INFO] [PubMedBERT 512 (Weighted)] Epoch 1/8 - Train Loss: 0.9228 | Val Loss: 0.8265 | Val AUROC: 0.7801 | Val PR-AUC: 0.8123 | Val F1@0.5: 0.6977
+2026-10-07 00:04:35,126 [INFO] [PubMedBERT 512 (Weighted)] New best checkpoint saved at epoch 1 (Val Loss: 0.8265)
+2026-10-07 00:06:12,045 [INFO] [PubMedBERT 512 (Weighted)] Epoch 2/8 - Train Loss: 0.7528 | Val Loss: 0.6698 | Val AUROC: 0.8228 | Val PR-AUC: 0.8496 | Val F1@0.5: 0.7755
+2026-10-07 00:06:13,535 [INFO] [PubMedBERT 512 (Weighted)] New best checkpoint saved at epoch 2 (Val Loss: 0.6698)
+2026-10-07 00:09:30,097 [INFO] [PubMedBERT 512 (Weighted)] Epoch 3/8 - Train Loss: 0.5216 | Val Loss: 0.7586 | Val AUROC: 0.8541 | Val PR-AUC: 0.8715 | Val F1@0.5: 0.7907
+2026-10-07 00:12:47,121 [INFO] [PubMedBERT 512 (Weighted)] Epoch 4/8 - Train Loss: 0.3787 | Val Loss: 0.6823 | Val AUROC: 0.8923 | Val PR-AUC: 0.8965 | Val F1@0.5: 0.8000
+2026-10-07 00:16:03,889 [INFO] [PubMedBERT 512 (Weighted)] Epoch 5/8 - Train Loss: 0.2822 | Val Loss: 0.7485 | Val AUROC: 0.8792 | Val PR-AUC: 0.8848 | Val F1@0.5: 0.8000
+2026-10-07 00:19:20,993 [INFO] [PubMedBERT 512 (Weighted)] Epoch 6/8 - Train Loss: 0.1840 | Val Loss: 0.7931 | Val AUROC: 0.8758 | Val PR-AUC: 0.8604 | Val F1@0.5: 0.8261
+2026-10-07 00:19:20,993 [INFO] [PubMedBERT 512 (Weighted)] Early stopping triggered at epoch 6 (best epoch: 2)
+2026-10-07 00:19:50,163 [INFO] [PubMedBERT 384 (Stage 5 Baseline, Weighted)] Validation-Selected Thresholds: {0.9: 0.45, 0.95: 0.28, 1.0: 0.16}
+2026-10-07 00:19:50,735 [INFO] [PubMedBERT 512 (Model A, Unweighted)] Validation-Selected Thresholds: {0.9: 0.09, 0.95: 0.04, 1.0: 0.03}
+2026-10-07 00:19:51,312 [INFO] [PubMedBERT 512 (Model B, Weighted)] Validation-Selected Thresholds: {0.9: 0.45, 0.95: 0.36000000000000004, 1.0: 0.22}
+2026-10-07 00:19:51,354 [INFO] Generating publication figures...
+2026-10-07 00:19:56,600 [INFO] ================================================================================
+2026-10-07 00:19:56,600 [INFO]    STAGE 5.5 (512 TOKENS) BENCHMARK COMPLETED SUCCESSFULLY!                    
+2026-10-07 00:19:56,601 [INFO] ================================================================================

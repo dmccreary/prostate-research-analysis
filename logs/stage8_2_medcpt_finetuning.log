@@ -1,0 +1,24 @@
+2026-10-23 22:09:35,170 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-23 22:09:35,279 [INFO] Loaded Splits: Train=335 (Pos=180, Neg=155), Val=84 (Pos=45, Neg=39)
+2026-10-23 22:09:35,280 [INFO] Held-out Test set and 2021 prospective cohort are STRICTLY EXCLUDED.
+2026-10-23 22:09:37,518 [INFO] ================================================================================
+2026-10-23 22:09:37,519 [INFO] TRAINING [model_8_2_standalone_unweighted]: MedCPT Stage 8.2 Standalone ASL (Unweighted) (pos_weight=1.0000)
+2026-10-23 22:09:37,519 [INFO] ================================================================================
+2026-10-23 22:09:39,651 [INFO]   [Warmup Stage 1] Freezing BERT backbone for Epoch 1 (Head-only adaptation)...
+2026-10-23 22:10:15,519 [INFO] [model_8_2_standalone_unweighted] Epoch 01/08 | Train Loss: 2.7332 | Val Loss: 3.9129 | Val Recall: 0.0667 | Val Spec: 1.0000 | Val AUROC: 0.5920
+2026-10-23 22:10:15,544 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 3.9129)
+2026-10-23 22:10:15,544 [INFO]   [Stage 2] Unfreezing all BERT layers with conservative LR (5e-6)...
+2026-10-23 22:11:51,947 [INFO] [model_8_2_standalone_unweighted] Epoch 02/08 | Train Loss: 0.6119 | Val Loss: 0.4144 | Val Recall: 0.8000 | Val Spec: 0.4103 | Val AUROC: 0.7151
+2026-10-23 22:11:51,967 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.4144)
+2026-10-23 22:13:28,673 [INFO] [model_8_2_standalone_unweighted] Epoch 03/08 | Train Loss: 0.2871 | Val Loss: 0.3882 | Val Recall: 0.7556 | Val Spec: 0.7179 | Val AUROC: 0.7960
+2026-10-23 22:13:28,695 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.3882)
+2026-10-23 22:15:05,402 [INFO] [model_8_2_standalone_unweighted] Epoch 04/08 | Train Loss: 0.2592 | Val Loss: 0.4653 | Val Recall: 0.6444 | Val Spec: 0.8462 | Val AUROC: 0.8211
+2026-10-23 22:16:42,324 [INFO] [model_8_2_standalone_unweighted] Epoch 05/08 | Train Loss: 0.2709 | Val Loss: 0.3927 | Val Recall: 0.7111 | Val Spec: 0.7949 | Val AUROC: 0.8313
+2026-10-23 22:18:19,224 [INFO] [model_8_2_standalone_unweighted] Epoch 06/08 | Train Loss: 0.2123 | Val Loss: 0.3466 | Val Recall: 0.7778 | Val Spec: 0.7436 | Val AUROC: 0.8353
+2026-10-23 22:18:19,245 [INFO]   --> Saved new best checkpoint at epoch 06 (Val Loss: 0.3466)
+2026-10-23 22:19:56,100 [INFO] [model_8_2_standalone_unweighted] Epoch 07/08 | Train Loss: 0.2032 | Val Loss: 0.3439 | Val Recall: 0.8000 | Val Spec: 0.7436 | Val AUROC: 0.8405
+2026-10-23 22:19:56,122 [INFO]   --> Saved new best checkpoint at epoch 07 (Val Loss: 0.3439)
+2026-10-23 22:21:33,152 [INFO] [model_8_2_standalone_unweighted] Epoch 08/08 | Train Loss: 0.1924 | Val Loss: 0.3457 | Val Recall: 0.8000 | Val Spec: 0.7179 | Val AUROC: 0.8405
+2026-10-23 22:21:33,152 [INFO] [model_8_2_standalone_unweighted] Training finished in 713.5s. Best Epoch: 07 (Val Loss: 0.3439)
+2026-10-23 22:21:34,944 [INFO] [model_8_2_standalone_unweighted] Checkpoint written to D:\prostate-research-analysis\prostate-research-analysis\models\stage8_2\model_8_2_standalone_unweighted_best.pt
+2026-10-23 22:21:42,976 [INFO] All Stage 8.2 results saved to D:\prostate-research-analysis\prostate-research-analysis\results\stage8_2

@@ -1,0 +1,3 @@
+model_name,operating_point,threshold,accuracy,recall_sensitivity,specificity,precision,f1_score,auroc,pr_auc,true_positives,false_positives,true_negatives,false_negatives,flagged_count,workload_pct,workload_reduction_pct,nns
+ASL Hybrid + 7 Rules (Unweighted),Default (0.50),0.5,0.8,0.9285714285714286,0.6530612244897959,0.7536231884057971,0.832,0.885932944606414,0.9004200846711558,52,17,32,4,69,65.71,34.29,1.33
+ASL Hybrid + 7 Rules (Unweighted),Validation 100% Threshold (0.46),0.46,0.8,0.9285714285714286,0.6530612244897959,0.7536231884057971,0.832,0.885932944606414,0.9004200846711558,52,17,32,4,69,65.71,34.29,1.33

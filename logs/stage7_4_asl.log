@@ -1,0 +1,75 @@
+2026-10-09 19:29:53,495 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-09 19:29:53,582 [INFO] Loaded Splits: Train=335, Val=84 (Held-out Test is completely excluded)
+2026-10-09 19:29:53,582 [INFO] Enriching clinical text and generating 7 Clinical Indicator vectors...
+2026-10-09 19:29:53,915 [INFO] Sub-train class balance: Pos=180, Neg=155 -> Weighted pos_weight = 1.7222
+2026-10-09 19:29:54,471 [INFO] ================================================================================
+2026-10-09 19:29:54,472 [INFO] TRAINING [model_7_4_standalone_unweighted]: ASL Standalone (Unweighted) (rule_dim=0, pos_weight=1.0000)
+2026-10-09 19:29:54,472 [INFO] ================================================================================
+2026-10-09 19:31:35,037 [INFO] [model_7_4_standalone_unweighted] Epoch 01/08 | Train Loss: 0.4159 | Val Loss: 0.3676 | Val Recall: 1.0000 | Val Spec: 0.0000 | Val AUROC: 0.7595
+2026-10-09 19:31:36,719 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.3676)
+2026-10-09 19:33:14,081 [INFO] [model_7_4_standalone_unweighted] Epoch 02/08 | Train Loss: 0.3589 | Val Loss: 0.3046 | Val Recall: 0.9778 | Val Spec: 0.3077 | Val AUROC: 0.8239
+2026-10-09 19:33:15,806 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.3046)
+2026-10-09 19:37:08,996 [INFO] [model_7_4_standalone_unweighted] Epoch 03/08 | Train Loss: 0.2695 | Val Loss: 0.2869 | Val Recall: 0.8222 | Val Spec: 0.8462 | Val AUROC: 0.8701
+2026-10-09 19:37:10,684 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.2869)
+2026-10-09 19:45:10,904 [INFO] [model_7_4_standalone_unweighted] Epoch 04/08 | Train Loss: 0.1996 | Val Loss: 0.2861 | Val Recall: 0.9556 | Val Spec: 0.5897 | Val AUROC: 0.8815
+2026-10-09 19:45:13,044 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Loss: 0.2861)
+2026-10-09 19:47:42,796 [INFO] [model_7_4_standalone_unweighted] Epoch 05/08 | Train Loss: 0.1698 | Val Loss: 0.3245 | Val Recall: 0.9333 | Val Spec: 0.5897 | Val AUROC: 0.8917
+2026-10-09 19:50:12,533 [INFO] [model_7_4_standalone_unweighted] Epoch 06/08 | Train Loss: 0.1200 | Val Loss: 0.3318 | Val Recall: 0.8667 | Val Spec: 0.7692 | Val AUROC: 0.8855
+2026-10-09 19:52:42,483 [INFO] [model_7_4_standalone_unweighted] Epoch 07/08 | Train Loss: 0.1076 | Val Loss: 0.3498 | Val Recall: 0.8667 | Val Spec: 0.7179 | Val AUROC: 0.8729
+2026-10-09 19:55:14,725 [INFO] [model_7_4_standalone_unweighted] Epoch 08/08 | Train Loss: 0.0887 | Val Loss: 0.3571 | Val Recall: 0.8667 | Val Spec: 0.7436 | Val AUROC: 0.8803
+2026-10-09 19:55:14,725 [INFO] [model_7_4_standalone_unweighted] Early stopping triggered at epoch 08.
+2026-10-09 19:55:14,726 [INFO] [model_7_4_standalone_unweighted] Training finished in 1517.9s.
+2026-10-09 19:55:27,798 [INFO] [model_7_4_standalone_unweighted] Selected Validation Threshold for Recall >= 95%: 0.54
+2026-10-09 19:55:28,436 [INFO] ================================================================================
+2026-10-09 19:55:28,436 [INFO] TRAINING [model_7_4_standalone_weighted]: ASL Standalone (Weighted) (rule_dim=0, pos_weight=1.7222)
+2026-10-09 19:55:28,436 [INFO] ================================================================================
+2026-10-09 19:57:11,909 [INFO] [model_7_4_standalone_weighted] Epoch 01/08 | Train Loss: 0.5948 | Val Loss: 0.5186 | Val Recall: 1.0000 | Val Spec: 0.0000 | Val AUROC: 0.7345
+2026-10-09 19:57:13,689 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.5186)
+2026-10-09 19:58:50,414 [INFO] [model_7_4_standalone_weighted] Epoch 02/08 | Train Loss: 0.5069 | Val Loss: 0.4279 | Val Recall: 1.0000 | Val Spec: 0.0256 | Val AUROC: 0.8256
+2026-10-09 19:58:52,782 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.4279)
+2026-10-09 20:01:47,539 [INFO] [model_7_4_standalone_weighted] Epoch 03/08 | Train Loss: 0.3843 | Val Loss: 0.3355 | Val Recall: 0.9333 | Val Spec: 0.6154 | Val AUROC: 0.8678
+2026-10-09 20:01:49,185 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.3355)
+2026-10-09 20:06:50,428 [INFO] [model_7_4_standalone_weighted] Epoch 04/08 | Train Loss: 0.2646 | Val Loss: 0.3260 | Val Recall: 0.9556 | Val Spec: 0.6154 | Val AUROC: 0.8934
+2026-10-09 20:06:52,016 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Loss: 0.3260)
+2026-10-09 20:11:46,963 [INFO] [model_7_4_standalone_weighted] Epoch 05/08 | Train Loss: 0.2216 | Val Loss: 0.3401 | Val Recall: 0.9111 | Val Spec: 0.6923 | Val AUROC: 0.8952
+2026-10-09 20:16:41,299 [INFO] [model_7_4_standalone_weighted] Epoch 06/08 | Train Loss: 0.1659 | Val Loss: 0.4586 | Val Recall: 0.8444 | Val Spec: 0.7949 | Val AUROC: 0.8895
+2026-10-09 20:21:35,971 [INFO] [model_7_4_standalone_weighted] Epoch 07/08 | Train Loss: 0.1346 | Val Loss: 0.4163 | Val Recall: 0.8889 | Val Spec: 0.7436 | Val AUROC: 0.9094
+2026-10-09 20:27:00,827 [INFO] [model_7_4_standalone_weighted] Epoch 08/08 | Train Loss: 0.1001 | Val Loss: 0.4754 | Val Recall: 0.8667 | Val Spec: 0.7949 | Val AUROC: 0.8952
+2026-10-09 20:27:00,828 [INFO] [model_7_4_standalone_weighted] Early stopping triggered at epoch 08.
+2026-10-09 20:27:00,828 [INFO] [model_7_4_standalone_weighted] Training finished in 1889.2s.
+2026-10-09 20:27:53,319 [INFO] [model_7_4_standalone_weighted] Selected Validation Threshold for Recall >= 95%: 0.58
+2026-10-09 20:27:53,698 [INFO] ================================================================================
+2026-10-09 20:27:53,699 [INFO] TRAINING [model_7_4_hybrid_unweighted]: ASL Hybrid + 7 Rules (Unweighted) (rule_dim=7, pos_weight=1.0000)
+2026-10-09 20:27:53,699 [INFO] ================================================================================
+2026-10-09 20:29:32,341 [INFO] [model_7_4_hybrid_unweighted] Epoch 01/08 | Train Loss: 0.3869 | Val Loss: 0.3950 | Val Recall: 1.0000 | Val Spec: 0.0000 | Val AUROC: 0.8353
+2026-10-09 20:29:34,166 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.3950)
+2026-10-09 20:31:10,833 [INFO] [model_7_4_hybrid_unweighted] Epoch 02/08 | Train Loss: 0.3406 | Val Loss: 0.3037 | Val Recall: 1.0000 | Val Spec: 0.1538 | Val AUROC: 0.9031
+2026-10-09 20:31:13,234 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.3037)
+2026-10-09 20:38:43,487 [INFO] [model_7_4_hybrid_unweighted] Epoch 03/08 | Train Loss: 0.2471 | Val Loss: 0.1946 | Val Recall: 0.9778 | Val Spec: 0.7179 | Val AUROC: 0.9339
+2026-10-09 20:38:45,095 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.1946)
+2026-10-09 20:45:01,839 [INFO] [model_7_4_hybrid_unweighted] Epoch 04/08 | Train Loss: 0.1667 | Val Loss: 0.2229 | Val Recall: 1.0000 | Val Spec: 0.6667 | Val AUROC: 0.9328
+2026-10-09 20:52:20,693 [INFO] [model_7_4_hybrid_unweighted] Epoch 05/08 | Train Loss: 0.1426 | Val Loss: 0.1811 | Val Recall: 0.9778 | Val Spec: 0.7692 | Val AUROC: 0.9356
+2026-10-09 20:52:22,432 [INFO]   --> Saved new best checkpoint at epoch 05 (Val Loss: 0.1811)
+2026-10-09 21:01:16,784 [INFO] [model_7_4_hybrid_unweighted] Epoch 06/08 | Train Loss: 0.0981 | Val Loss: 0.2004 | Val Recall: 0.9556 | Val Spec: 0.7949 | Val AUROC: 0.9248
+2026-10-09 21:10:53,425 [INFO] [model_7_4_hybrid_unweighted] Epoch 07/08 | Train Loss: 0.0732 | Val Loss: 0.2030 | Val Recall: 0.9556 | Val Spec: 0.8462 | Val AUROC: 0.9333
+2026-10-09 21:19:58,033 [INFO] [model_7_4_hybrid_unweighted] Epoch 08/08 | Train Loss: 0.0498 | Val Loss: 0.1971 | Val Recall: 0.9556 | Val Spec: 0.8205 | Val AUROC: 0.9333
+2026-10-09 21:19:58,035 [INFO] [model_7_4_hybrid_unweighted] Training finished in 3122.9s.
+2026-10-09 21:21:17,521 [INFO] [model_7_4_hybrid_unweighted] Selected Validation Threshold for Recall >= 95%: 0.82
+2026-10-09 21:21:17,871 [INFO] ================================================================================
+2026-10-09 21:21:17,872 [INFO] TRAINING [model_7_4_hybrid_weighted]: ASL Hybrid + 7 Rules (Weighted) (rule_dim=7, pos_weight=1.7222)
+2026-10-09 21:21:17,872 [INFO] ================================================================================
+2026-10-09 21:22:55,689 [INFO] [model_7_4_hybrid_weighted] Epoch 01/08 | Train Loss: 0.5470 | Val Loss: 0.5556 | Val Recall: 1.0000 | Val Spec: 0.0000 | Val AUROC: 0.8245
+2026-10-09 21:22:57,516 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Loss: 0.5556)
+2026-10-09 21:24:34,348 [INFO] [model_7_4_hybrid_weighted] Epoch 02/08 | Train Loss: 0.4877 | Val Loss: 0.4005 | Val Recall: 1.0000 | Val Spec: 0.0513 | Val AUROC: 0.9026
+2026-10-09 21:24:36,573 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Loss: 0.4005)
+2026-10-09 21:33:15,872 [INFO] [model_7_4_hybrid_weighted] Epoch 03/08 | Train Loss: 0.3767 | Val Loss: 0.3106 | Val Recall: 0.9111 | Val Spec: 0.6410 | Val AUROC: 0.8997
+2026-10-09 21:33:17,720 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Loss: 0.3106)
+2026-10-09 21:43:07,245 [INFO] [model_7_4_hybrid_weighted] Epoch 04/08 | Train Loss: 0.2511 | Val Loss: 0.2586 | Val Recall: 1.0000 | Val Spec: 0.6667 | Val AUROC: 0.9322
+2026-10-09 21:43:09,215 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Loss: 0.2586)
+2026-10-09 21:47:19,663 [INFO] [model_7_4_hybrid_weighted] Epoch 05/08 | Train Loss: 0.2188 | Val Loss: 0.3827 | Val Recall: 0.8444 | Val Spec: 0.8205 | Val AUROC: 0.9214
+2026-10-09 21:51:34,696 [INFO] [model_7_4_hybrid_weighted] Epoch 06/08 | Train Loss: 0.1557 | Val Loss: 0.4253 | Val Recall: 0.8222 | Val Spec: 0.8205 | Val AUROC: 0.8957
+2026-10-09 21:55:54,448 [INFO] [model_7_4_hybrid_weighted] Epoch 07/08 | Train Loss: 0.1204 | Val Loss: 0.3048 | Val Recall: 0.9556 | Val Spec: 0.7179 | Val AUROC: 0.9293
+2026-10-09 22:00:23,102 [INFO] [model_7_4_hybrid_weighted] Epoch 08/08 | Train Loss: 0.0918 | Val Loss: 0.3667 | Val Recall: 0.8667 | Val Spec: 0.7436 | Val AUROC: 0.9214
+2026-10-09 22:00:23,102 [INFO] [model_7_4_hybrid_weighted] Early stopping triggered at epoch 08.
+2026-10-09 22:00:23,103 [INFO] [model_7_4_hybrid_weighted] Training finished in 2343.9s.
+2026-10-09 22:00:32,621 [INFO] [model_7_4_hybrid_weighted] Selected Validation Threshold for Recall >= 95%: 0.78

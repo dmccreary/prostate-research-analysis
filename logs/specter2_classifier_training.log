@@ -1,0 +1,20 @@
+2026-10-02 09:54:09,449 [INFO] ================================================================================
+2026-10-02 09:54:09,449 [INFO]                  STARTING STAGE 6: SPECTER2 SCREENING BENCHMARK                 
+2026-10-02 09:54:09,449 [INFO]   Frozen Embeddings + Lightweight Classifiers vs. Fine-Tuned PubMedBERT         
+2026-10-02 09:54:09,450 [INFO] ================================================================================
+2026-10-02 09:54:10,430 [INFO] Execution Device: cuda
+2026-10-02 09:54:10,449 [INFO] Loaded Embeddings: Train=(335, 768), Val=(84, 768), Test=(105, 768)
+2026-10-02 09:54:10,450 [INFO] Labels: Train Pos=180, Val Pos=45, Test Pos=56
+2026-10-02 09:54:10,450 [INFO] --- Training Model A: Logistic Regression ---
+2026-10-02 09:54:11,758 [INFO] [Logistic Regression] Best Params: {'C': 0.5, 'class_weight': None} (Val PR-AUC: 0.8899)
+2026-10-02 09:54:11,759 [INFO] --- Training Model B: Linear SVM (Calibrated) ---
+2026-10-02 09:55:05,197 [INFO] [Linear SVM (Calibrated)] Best Params: {'C': 0.01, 'class_weight': None} (Val PR-AUC: 0.8910)
+2026-10-02 09:55:05,209 [INFO] --- Training Model C: Small MLP ---
+2026-10-02 09:55:11,032 [INFO] [Small MLP] Trained successfully (Best Val Loss: 0.5609)
+2026-10-02 09:55:12,203 [INFO] [SPECTER2 + Logistic Regression] Selected Validation Thresholds: {'default': 0.5, 'op1_recall_ge_95': 0.16, 'op2_recall_100': 0.02}
+2026-10-02 09:55:13,324 [INFO] [SPECTER2 + Linear SVM] Selected Validation Thresholds: {'default': 0.5, 'op1_recall_ge_95': 0.36, 'op2_recall_100': 0.2}
+2026-10-02 09:55:14,380 [INFO] [SPECTER2 + Small MLP] Selected Validation Thresholds: {'default': 0.5, 'op1_recall_ge_95': 0.38, 'op2_recall_100': 0.16}
+2026-10-02 09:55:14,559 [INFO] Generating publication figures...
+2026-10-02 09:55:22,033 [INFO] ================================================================================
+2026-10-02 09:55:22,034 [INFO]                  STAGE 6 BENCHMARK COMPLETED SUCCESSFULLY!                      
+2026-10-02 09:55:22,034 [INFO] ================================================================================
