@@ -1,0 +1,105 @@
+2026-10-27 22:01:27,636 [INFO] ================================================================================
+2026-10-27 22:01:27,636 [INFO] STARTING STAGE 9 MULTITASK EXPERIMENT: ARM 1
+2026-10-27 22:01:27,637 [INFO] ================================================================================
+2026-10-27 22:01:28,712 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-27 22:01:28,713 [INFO] Model Backbone: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+2026-10-27 22:01:28,713 [INFO] PICO Query: None (Abstract Only)
+2026-10-27 22:01:28,866 [INFO] Loaded Splits: Train=334 (Pos=180, Neg=154), Val=84 (Pos=45, Neg=39), Test=105 (Pos=56, Neg=49)
+2026-10-27 22:01:35,369 [INFO]   [Warmup Stage 1] Freezing BERT backbone for Epoch 1 (Head-only adaptation)...
+2026-10-27 22:02:13,718 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 01/08 | Train Loss: 0.7428 (P:0.4229, A:7.9963) | Val Loss: 0.6455 (P:0.3835, A:6.5497) | Val Recall: 1.0000 | Val Spec: 0.0513 | Val AUROC: 0.5311 | Val PR-AUC: 0.5295 | Aux Macro-F1: 0.1221 | Time: 38.3s
+2026-10-27 22:02:13,765 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Total Loss: 0.6455)
+2026-10-27 22:02:13,766 [INFO]   [Stage 2] Unfreezing all BERT layers with conservative LR (5e-06)...
+2026-10-27 22:05:35,210 [INFO] ================================================================================
+2026-10-27 22:05:35,211 [INFO] STARTING STAGE 9 MULTITASK EXPERIMENT: ARM 1
+2026-10-27 22:05:35,211 [INFO] ================================================================================
+2026-10-27 22:05:36,203 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-27 22:05:36,204 [INFO] Model Backbone: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+2026-10-27 22:05:36,204 [INFO] PICO Query: None (Abstract Only)
+2026-10-27 22:05:36,269 [INFO] Loaded Splits: Train=334 (Pos=180, Neg=154), Val=84 (Pos=45, Neg=39), Test=105 (Pos=56, Neg=49)
+2026-10-27 22:05:43,748 [INFO]   [Warmup Stage 1] Freezing BERT backbone for Epoch 1 (Head-only adaptation)...
+2026-10-27 22:06:20,910 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 01/08 | Train Loss: 0.7428 (P:0.4229, A:7.9963) | Val Loss: 0.6455 (P:0.3835, A:6.5497) | Val Recall: 1.0000 | Val Spec: 0.0513 | Val AUROC: 0.5311 | Val PR-AUC: 0.5295 | Aux Macro-F1: 0.1221 | Time: 37.2s
+2026-10-27 22:06:20,946 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Total Loss: 0.6455)
+2026-10-27 22:06:20,947 [INFO]   [Stage 2] Unfreezing all BERT layers with conservative LR (5e-06)...
+2026-10-27 22:07:57,767 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 02/08 | Train Loss: 0.5998 (P:0.3893, A:5.2625) | Val Loss: 0.5007 (P:0.3481, A:3.8155) | Val Recall: 1.0000 | Val Spec: 0.1282 | Val AUROC: 0.7328 | Val PR-AUC: 0.7170 | Aux Macro-F1: 0.1087 | Time: 96.8s
+2026-10-27 22:07:57,807 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Total Loss: 0.5007)
+2026-10-27 22:09:34,771 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 03/08 | Train Loss: 0.5053 (P:0.3311, A:4.3545) | Val Loss: 0.4751 (P:0.3293, A:3.6445) | Val Recall: 1.0000 | Val Spec: 0.1282 | Val AUROC: 0.7630 | Val PR-AUC: 0.7854 | Aux Macro-F1: 0.0840 | Time: 97.0s
+2026-10-27 22:09:34,801 [INFO]   --> Saved new best checkpoint at epoch 03 (Val Total Loss: 0.4751)
+2026-10-27 22:11:11,576 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 04/08 | Train Loss: 0.4692 (P:0.2991, A:4.2529) | Val Loss: 0.4596 (P:0.3160, A:3.5894) | Val Recall: 0.9111 | Val Spec: 0.2821 | Val AUROC: 0.7715 | Val PR-AUC: 0.8034 | Aux Macro-F1: 0.0845 | Time: 96.8s
+2026-10-27 22:11:11,605 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Total Loss: 0.4596)
+2026-10-27 22:12:48,822 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 05/08 | Train Loss: 0.4361 (P:0.2689, A:4.1811) | Val Loss: 0.4555 (P:0.3122, A:3.5818) | Val Recall: 0.9111 | Val Spec: 0.3077 | Val AUROC: 0.7903 | Val PR-AUC: 0.8195 | Aux Macro-F1: 0.0881 | Time: 97.2s
+2026-10-27 22:12:48,856 [INFO]   --> Saved new best checkpoint at epoch 05 (Val Total Loss: 0.4555)
+2026-10-27 22:14:26,155 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 06/08 | Train Loss: 0.4152 (P:0.2477, A:4.1885) | Val Loss: 0.4540 (P:0.3112, A:3.5689) | Val Recall: 0.9111 | Val Spec: 0.3333 | Val AUROC: 0.7977 | Val PR-AUC: 0.8352 | Aux Macro-F1: 0.0883 | Time: 97.3s
+2026-10-27 22:14:26,185 [INFO]   --> Saved new best checkpoint at epoch 06 (Val Total Loss: 0.4540)
+2026-10-27 22:16:03,337 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 07/08 | Train Loss: 0.3806 (P:0.2166, A:4.1019) | Val Loss: 0.4633 (P:0.3207, A:3.5639) | Val Recall: 0.9111 | Val Spec: 0.3077 | Val AUROC: 0.8051 | Val PR-AUC: 0.8443 | Aux Macro-F1: 0.0946 | Time: 97.2s
+2026-10-27 22:16:03,337 [INFO]   No improvement for 1 consecutive epoch(s).
+2026-10-27 22:17:41,018 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Epoch 08/08 | Train Loss: 0.3784 (P:0.2122, A:4.1560) | Val Loss: 0.4513 (P:0.3092, A:3.5516) | Val Recall: 0.9111 | Val Spec: 0.4103 | Val AUROC: 0.8108 | Val PR-AUC: 0.8450 | Aux Macro-F1: 0.0930 | Time: 97.7s
+2026-10-27 22:17:41,051 [INFO]   --> Saved new best checkpoint at epoch 08 (Val Total Loss: 0.4513)
+2026-10-27 22:17:41,051 [INFO] Training completed in 717.3s. Best Epoch: 08 (Val Loss: 0.4513)
+2026-10-27 22:17:43,195 [INFO] Saved checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9\arm_1_best.pt
+2026-10-27 22:17:44,540 [INFO] Evaluating Best Checkpoint on Held-Out Test Set (N=105)...
+2026-10-27 22:17:53,980 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Test AUROC: 0.7464 | Test PR-AUC: 0.7226
+2026-10-27 22:17:53,980 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Test Recall @ 100% Target: 0.9821 | Test Spec @ 100% Target: 0.3265
+2026-10-27 22:17:53,980 [INFO] [Arm 1: PubMedBERT Abstract-Only (Multitask)] Test Aux Macro-F1: 0.1062 | Test Aux Micro-F1: 0.3283
+2026-10-27 22:17:54,314 [INFO] ================================================================================
+2026-10-27 22:17:54,315 [INFO] STARTING STAGE 9 MULTITASK EXPERIMENT: ARM 2
+2026-10-27 22:17:54,315 [INFO] ================================================================================
+2026-10-27 22:17:54,315 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-27 22:17:54,315 [INFO] Model Backbone: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+2026-10-27 22:17:54,315 [INFO] PICO Query: Fixed Verbatim 73-word Query
+2026-10-27 22:17:54,381 [INFO] Loaded Splits: Train=334 (Pos=180, Neg=154), Val=84 (Pos=45, Neg=39), Test=105 (Pos=56, Neg=49)
+2026-10-27 22:18:00,339 [INFO]   [Warmup Stage 1] Freezing BERT backbone for Epoch 1 (Head-only adaptation)...
+2026-10-27 22:18:36,711 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 01/08 | Train Loss: 0.7517 (P:0.4165, A:8.3779) | Val Loss: 0.6619 (P:0.3862, A:6.8902) | Val Recall: 0.9778 | Val Spec: 0.1795 | Val AUROC: 0.7362 | Val PR-AUC: 0.6626 | Aux Macro-F1: 0.1232 | Time: 36.4s
+2026-10-27 22:18:36,873 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Total Loss: 0.6619)
+2026-10-27 22:18:36,874 [INFO]   [Stage 2] Unfreezing all BERT layers with conservative LR (5e-06)...
+2026-10-27 22:20:14,011 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 02/08 | Train Loss: 0.5584 (P:0.3509, A:5.1881) | Val Loss: 0.4390 (P:0.2935, A:3.6374) | Val Recall: 0.9333 | Val Spec: 0.3590 | Val AUROC: 0.8342 | Val PR-AUC: 0.8020 | Aux Macro-F1: 0.0946 | Time: 97.1s
+2026-10-27 22:20:14,039 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Total Loss: 0.4390)
+2026-10-27 22:21:51,723 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 03/08 | Train Loss: 0.4519 (P:0.2843, A:4.1879) | Val Loss: 0.4468 (P:0.3079, A:3.4713) | Val Recall: 0.7778 | Val Spec: 0.8205 | Val AUROC: 0.8296 | Val PR-AUC: 0.8130 | Aux Macro-F1: 0.0747 | Time: 97.7s
+2026-10-27 22:21:51,724 [INFO]   No improvement for 1 consecutive epoch(s).
+2026-10-27 22:23:29,407 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 04/08 | Train Loss: 0.4078 (P:0.2462, A:4.0412) | Val Loss: 0.4495 (P:0.3127, A:3.4186) | Val Recall: 0.8000 | Val Spec: 0.8205 | Val AUROC: 0.8330 | Val PR-AUC: 0.8204 | Aux Macro-F1: 0.0786 | Time: 97.7s
+2026-10-27 22:23:29,408 [INFO]   No improvement for 2 consecutive epoch(s).
+2026-10-27 22:25:06,623 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 05/08 | Train Loss: 0.3881 (P:0.2277, A:4.0080) | Val Loss: 0.4461 (P:0.3109, A:3.3795) | Val Recall: 0.8222 | Val Spec: 0.8462 | Val AUROC: 0.8405 | Val PR-AUC: 0.8249 | Aux Macro-F1: 0.0934 | Time: 97.2s
+2026-10-27 22:25:06,624 [INFO]   No improvement for 3 consecutive epoch(s).
+2026-10-27 22:26:43,720 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Epoch 06/08 | Train Loss: 0.3620 (P:0.2025, A:3.9881) | Val Loss: 0.4617 (P:0.3271, A:3.3658) | Val Recall: 0.8000 | Val Spec: 0.8462 | Val AUROC: 0.8439 | Val PR-AUC: 0.8243 | Aux Macro-F1: 0.0984 | Time: 97.1s
+2026-10-27 22:26:43,721 [INFO]   No improvement for 4 consecutive epoch(s).
+2026-10-27 22:26:43,721 [INFO] Early stopping triggered at epoch 06.
+2026-10-27 22:26:43,721 [INFO] Training completed in 523.4s. Best Epoch: 02 (Val Loss: 0.4390)
+2026-10-27 22:26:45,471 [INFO] Saved checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9\arm_2_best.pt
+2026-10-27 22:26:46,689 [INFO] Evaluating Best Checkpoint on Held-Out Test Set (N=105)...
+2026-10-27 22:26:55,974 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Test AUROC: 0.7751 | Test PR-AUC: 0.7778
+2026-10-27 22:26:55,975 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Test Recall @ 100% Target: 0.9643 | Test Spec @ 100% Target: 0.1837
+2026-10-27 22:26:55,975 [INFO] [Arm 2: PubMedBERT Abstract + PICO (Multitask)] Test Aux Macro-F1: 0.0677 | Test Aux Micro-F1: 0.2460
+2026-10-27 22:26:56,007 [INFO] ================================================================================
+2026-10-27 22:26:56,007 [INFO] STARTING STAGE 9 MULTITASK EXPERIMENT: ARM 3
+2026-10-27 22:26:56,007 [INFO] ================================================================================
+2026-10-27 22:26:56,007 [INFO] Execution Device: cuda (NVIDIA GeForce GTX 1050 Ti)
+2026-10-27 22:26:56,007 [INFO] Model Backbone: ncbi/MedCPT-Cross-Encoder
+2026-10-27 22:26:56,007 [INFO] PICO Query: Fixed Verbatim 73-word Query
+2026-10-27 22:26:56,070 [INFO] Loaded Splits: Train=334 (Pos=180, Neg=154), Val=84 (Pos=45, Neg=39), Test=105 (Pos=56, Neg=49)
+2026-10-27 22:26:59,914 [INFO]   [Warmup Stage 1] Freezing BERT backbone for Epoch 1 (Head-only adaptation)...
+2026-10-27 22:27:36,332 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 01/08 | Train Loss: 0.7148 (P:0.5057, A:5.2286) | Val Loss: 0.6760 (P:0.4931, A:4.5725) | Val Recall: 0.0000 | Val Spec: 1.0000 | Val AUROC: 0.6108 | Val PR-AUC: 0.6175 | Aux Macro-F1: 0.1316 | Time: 36.4s
+2026-10-27 22:27:36,358 [INFO]   --> Saved new best checkpoint at epoch 01 (Val Total Loss: 0.6760)
+2026-10-27 22:27:36,358 [INFO]   [Stage 2] Unfreezing all BERT layers with conservative LR (5e-06)...
+2026-10-27 22:29:13,996 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 02/08 | Train Loss: 0.5432 (P:0.3583, A:4.6220) | Val Loss: 0.5122 (P:0.3565, A:3.8937) | Val Recall: 0.7111 | Val Spec: 0.6154 | Val AUROC: 0.7219 | Val PR-AUC: 0.7551 | Aux Macro-F1: 0.1117 | Time: 97.6s
+2026-10-27 22:29:14,023 [INFO]   --> Saved new best checkpoint at epoch 02 (Val Total Loss: 0.5122)
+2026-10-27 22:30:51,249 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 03/08 | Train Loss: 0.4396 (P:0.2692, A:4.2613) | Val Loss: 0.5170 (P:0.3697, A:3.6807) | Val Recall: 0.6222 | Val Spec: 0.8205 | Val AUROC: 0.7812 | Val PR-AUC: 0.7959 | Aux Macro-F1: 0.0689 | Time: 97.2s
+2026-10-27 22:30:51,249 [INFO]   No improvement for 1 consecutive epoch(s).
+2026-10-27 22:32:28,776 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 04/08 | Train Loss: 0.4103 (P:0.2477, A:4.0650) | Val Loss: 0.5087 (P:0.3663, A:3.5603) | Val Recall: 0.6444 | Val Spec: 0.8462 | Val AUROC: 0.8074 | Val PR-AUC: 0.8066 | Aux Macro-F1: 0.0823 | Time: 97.5s
+2026-10-27 22:32:28,804 [INFO]   --> Saved new best checkpoint at epoch 04 (Val Total Loss: 0.5087)
+2026-10-27 22:34:06,075 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 05/08 | Train Loss: 0.3789 (P:0.2216, A:3.9335) | Val Loss: 0.5268 (P:0.3870, A:3.4948) | Val Recall: 0.6444 | Val Spec: 0.8462 | Val AUROC: 0.8125 | Val PR-AUC: 0.7884 | Aux Macro-F1: 0.0955 | Time: 97.3s
+2026-10-27 22:34:06,075 [INFO]   No improvement for 1 consecutive epoch(s).
+2026-10-27 22:35:43,420 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 06/08 | Train Loss: 0.3759 (P:0.2196, A:3.9073) | Val Loss: 0.5394 (P:0.4005, A:3.4714) | Val Recall: 0.6444 | Val Spec: 0.8462 | Val AUROC: 0.8211 | Val PR-AUC: 0.8113 | Aux Macro-F1: 0.0915 | Time: 97.3s
+2026-10-27 22:35:43,421 [INFO]   No improvement for 2 consecutive epoch(s).
+2026-10-27 22:37:20,780 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 07/08 | Train Loss: 0.3634 (P:0.2083, A:3.8777) | Val Loss: 0.5349 (P:0.3968, A:3.4526) | Val Recall: 0.6667 | Val Spec: 0.8462 | Val AUROC: 0.8234 | Val PR-AUC: 0.8087 | Aux Macro-F1: 0.0982 | Time: 97.4s
+2026-10-27 22:37:20,780 [INFO]   No improvement for 3 consecutive epoch(s).
+2026-10-27 22:38:57,979 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Epoch 08/08 | Train Loss: 0.3433 (P:0.1893, A:3.8511) | Val Loss: 0.5256 (P:0.3878, A:3.4444) | Val Recall: 0.6889 | Val Spec: 0.8462 | Val AUROC: 0.8262 | Val PR-AUC: 0.8261 | Aux Macro-F1: 0.1105 | Time: 97.2s
+2026-10-27 22:38:57,979 [INFO]   No improvement for 4 consecutive epoch(s).
+2026-10-27 22:38:57,980 [INFO] Early stopping triggered at epoch 08.
+2026-10-27 22:38:57,980 [INFO] Training completed in 718.1s. Best Epoch: 04 (Val Loss: 0.5087)
+2026-10-27 22:39:01,068 [INFO] Saved checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9\arm_3_best.pt
+2026-10-27 22:39:02,627 [INFO] Evaluating Best Checkpoint on Held-Out Test Set (N=105)...
+2026-10-27 22:39:12,035 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Test AUROC: 0.8393 | Test PR-AUC: 0.8425
+2026-10-27 22:39:12,037 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Test Recall @ 100% Target: 1.0000 | Test Spec @ 100% Target: 0.3061
+2026-10-27 22:39:12,037 [INFO] [Arm 3: MedCPT Abstract + PICO (Multitask)] Test Aux Macro-F1: 0.1051 | Test Aux Micro-F1: 0.3194
+2026-10-27 22:39:12,157 [INFO] ================================================================================
+2026-10-27 22:39:12,157 [INFO] STAGE 9 EXPERIMENTS COMPLETED SUCCESSFULLY! Results saved to D:\prostate-research-analysis\prostate-research-analysis\results\stage9
+2026-10-27 22:39:12,158 [INFO] ================================================================================

@@ -1,0 +1,26 @@
+feature,accuracy,recall,precision,f1,auroc,pr_auc,positive_count,total_count,arm_id,arm_name
+risk_method_damico,1.0,1.0,1.0,1.0,1.0,1.0,6,105,2,Arm 2: PubMedBERT Abstract + PICO
+risk_method_nccn,0.8952,0.0,0.0,0.0,0.7437,0.1736,11,105,2,Arm 2: PubMedBERT Abstract + PICO
+pretreatment_risk_stratification,0.819,0.0,0.0,0.0,0.7785,0.443,19,105,2,Arm 2: PubMedBERT Abstract + PICO
+low_risk_group_status,0.9238,0.0,0.0,0.0,0.8222,0.1875,8,105,2,Arm 2: PubMedBERT Abstract + PICO
+intermediate_risk_group_status,0.9238,0.0,0.0,0.0,0.7629,0.135,8,105,2,Arm 2: PubMedBERT Abstract + PICO
+high_risk_group_status,0.9238,0.0,0.0,0.0,0.7178,0.1424,8,105,2,Arm 2: PubMedBERT Abstract + PICO
+retains_baseline_risk_groups,0.8571,0.2222,0.8,0.3478,0.8602,0.6478,18,105,2,Arm 2: PubMedBERT Abstract + PICO
+radical_prostatectomy,0.7143,0.5714,0.3636,0.4444,0.7574,0.5056,21,105,2,Arm 2: PubMedBERT Abstract + PICO
+standard_ebrt,0.6286,0.7857,0.5238,0.6286,0.7181,0.6318,42,105,2,Arm 2: PubMedBERT Abstract + PICO
+hypofractionated_ebrt,0.9524,0.0,0.0,0.0,0.66,0.0681,5,105,2,Arm 2: PubMedBERT Abstract + PICO
+ultrahypofractionated_ebrt,0.9524,0.0,0.0,0.0,0.44,0.2318,5,105,2,Arm 2: PubMedBERT Abstract + PICO
+proton_therapy,0.9905,0.0,0.0,0.0,0.6635,0.0139,1,105,2,Arm 2: PubMedBERT Abstract + PICO
+ldr_brachytherapy,0.8476,0.0,0.0,0.0,0.6987,0.2269,16,105,2,Arm 2: PubMedBERT Abstract + PICO
+hdr_brachytherapy,0.8952,0.0,0.0,0.0,0.764,0.2467,11,105,2,Arm 2: PubMedBERT Abstract + PICO
+adt_combination,0.7714,0.0,0.0,0.0,0.662,0.3704,24,105,2,Arm 2: PubMedBERT Abstract + PICO
+cryotherapy,0.9524,0.0,0.0,0.0,0.518,0.0671,5,105,2,Arm 2: PubMedBERT Abstract + PICO
+hifu,0.9333,0.0,0.0,0.0,0.6516,0.0936,7,105,2,Arm 2: PubMedBERT Abstract + PICO
+has_brfs,0.5524,0.8718,0.4474,0.5913,0.7222,0.6105,39,105,2,Arm 2: PubMedBERT Abstract + PICO
+has_os,0.6476,0.75,0.4118,0.5316,0.7004,0.4272,28,105,2,Arm 2: PubMedBERT Abstract + PICO
+has_mfs,0.9429,0.0,0.0,0.0,0.638,0.0738,6,105,2,Arm 2: PubMedBERT Abstract + PICO
+has_css,0.6476,0.8333,0.3061,0.4478,0.788,0.4641,18,105,2,Arm 2: PubMedBERT Abstract + PICO
+standard_ebrt_dose_status,0.9714,0.0,0.0,0.0,0.6144,0.0438,3,105,2,Arm 2: PubMedBERT Abstract + PICO
+median_followup_status,0.6667,0.7857,0.4314,0.557,0.7291,0.4646,28,105,2,Arm 2: PubMedBERT Abstract + PICO
+advanced_metastatic_cohort,0.981,0.0,0.0,0.0,0.5825,0.059,2,105,2,Arm 2: PubMedBERT Abstract + PICO
+salvage_postfailure_cohort,0.9238,0.0,0.0,0.0,0.6508,0.1293,8,105,2,Arm 2: PubMedBERT Abstract + PICO

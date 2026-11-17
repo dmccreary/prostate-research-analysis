@@ -1,0 +1,201 @@
+2026-11-03 23:36:01,338 [INFO] ================================================================================
+2026-11-03 23:36:01,339 [INFO] STARTING PHASE 0: ORACLE CEILING TEST (Using Ground-Truth 25 Labels)
+2026-11-03 23:36:01,339 [INFO] ================================================================================
+2026-11-03 23:36:07,506 [INFO] Oracle Ceiling Results Saved to D:\prostate-research-analysis\prostate-research-analysis\results\stage9_1\oracle_baseline_metrics.csv
+2026-11-03 23:36:07,506 [INFO] Oracle LR Test AUROC: 0.8402 | PR-AUC: 0.8655
+2026-11-03 23:36:07,506 [INFO] Oracle MLP Test AUROC: 0.8380 | PR-AUC: 0.8675
+2026-11-03 23:36:07,506 [INFO] Oracle RF Test AUROC: 0.8555 | PR-AUC: 0.8791
+2026-11-03 23:36:07,509 [INFO] Oracle baseline finished. Exiting as requested.
+2026-11-03 23:36:42,102 [INFO] ================================================================================
+2026-11-03 23:36:42,103 [INFO] STARTING PHASE 0: ORACLE CEILING TEST (Using Ground-Truth 25 Labels)
+2026-11-03 23:36:42,103 [INFO] ================================================================================
+2026-11-03 23:36:46,209 [INFO] Oracle Ceiling Results Saved to D:\prostate-research-analysis\prostate-research-analysis\results\stage9_1\oracle_baseline_metrics.csv
+2026-11-03 23:36:46,209 [INFO] Oracle LR Test AUROC: 0.8402 | PR-AUC: 0.8655
+2026-11-03 23:36:46,209 [INFO] Oracle MLP Test AUROC: 0.8380 | PR-AUC: 0.8675
+2026-11-03 23:36:46,209 [INFO] Oracle RF Test AUROC: 0.8555 | PR-AUC: 0.8791
+2026-11-03 23:36:46,210 [INFO] ================================================================================
+2026-11-03 23:36:46,210 [INFO] STARTING STAGE 9.1 CASCADE: ARM 1 (5-FOLD OOF EXTRACTION)
+2026-11-03 23:36:46,210 [INFO] ================================================================================
+2026-11-03 23:36:48,738 [INFO] --- [Arm 1: PubMedBERT Abstract-Only] Fold 1/5 (Train=267, OOF Val=67) ---
+2026-11-03 23:37:22,613 [INFO]   Fold 1 | Epoch 01 | Train Loss: 0.2424 | Val Loss: 0.2201 | Aux Macro-F1: 0.0910 | Macro-AUROC: 0.4812
+2026-11-03 23:38:40,257 [INFO]   Fold 1 | Epoch 02 | Train Loss: 0.1751 | Val Loss: 0.1507 | Aux Macro-F1: 0.1075 | Macro-AUROC: 0.5302
+2026-11-03 23:39:57,927 [INFO]   Fold 1 | Epoch 03 | Train Loss: 0.1591 | Val Loss: 0.1494 | Aux Macro-F1: 0.0997 | Macro-AUROC: 0.5612
+2026-11-03 23:41:15,632 [INFO]   Fold 1 | Epoch 04 | Train Loss: 0.1567 | Val Loss: 0.1483 | Aux Macro-F1: 0.1092 | Macro-AUROC: 0.5824
+2026-11-03 23:42:33,323 [INFO]   Fold 1 | Epoch 05 | Train Loss: 0.1535 | Val Loss: 0.1478 | Aux Macro-F1: 0.1299 | Macro-AUROC: 0.5904
+2026-11-03 23:43:51,006 [INFO]   Fold 1 | Epoch 06 | Train Loss: 0.1522 | Val Loss: 0.1470 | Aux Macro-F1: 0.1343 | Macro-AUROC: 0.6068
+2026-11-03 23:45:08,812 [INFO]   Fold 1 | Epoch 07 | Train Loss: 0.1498 | Val Loss: 0.1465 | Aux Macro-F1: 0.1367 | Macro-AUROC: 0.6143
+2026-11-03 23:46:26,535 [INFO]   Fold 1 | Epoch 08 | Train Loss: 0.1493 | Val Loss: 0.1464 | Aux Macro-F1: 0.1346 | Macro-AUROC: 0.6171
+2026-11-03 23:46:28,456 [INFO]   Saved fold 1 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_1_fold_1.pt
+2026-11-03 23:46:28,591 [INFO] --- [Arm 1: PubMedBERT Abstract-Only] Fold 2/5 (Train=267, OOF Val=67) ---
+2026-11-03 23:47:00,619 [INFO]   Fold 2 | Epoch 01 | Train Loss: 0.2166 | Val Loss: 0.1957 | Aux Macro-F1: 0.1245 | Macro-AUROC: 0.4975
+2026-11-03 23:49:31,563 [INFO]   Fold 2 | Epoch 02 | Train Loss: 0.1721 | Val Loss: 0.1504 | Aux Macro-F1: 0.0913 | Macro-AUROC: 0.5525
+2026-11-03 23:51:46,542 [INFO]   Fold 2 | Epoch 03 | Train Loss: 0.1558 | Val Loss: 0.1483 | Aux Macro-F1: 0.1096 | Macro-AUROC: 0.5759
+2026-11-03 23:54:21,421 [INFO]   Fold 2 | Epoch 04 | Train Loss: 0.1530 | Val Loss: 0.1467 | Aux Macro-F1: 0.1142 | Macro-AUROC: 0.6097
+2026-11-03 23:56:55,819 [INFO]   Fold 2 | Epoch 05 | Train Loss: 0.1503 | Val Loss: 0.1452 | Aux Macro-F1: 0.1145 | Macro-AUROC: 0.6263
+2026-11-03 23:59:35,827 [INFO]   Fold 2 | Epoch 06 | Train Loss: 0.1434 | Val Loss: 0.1446 | Aux Macro-F1: 0.1172 | Macro-AUROC: 0.6374
+2026-11-04 00:02:18,819 [INFO]   Fold 2 | Epoch 07 | Train Loss: 0.1438 | Val Loss: 0.1440 | Aux Macro-F1: 0.1175 | Macro-AUROC: 0.6423
+2026-11-04 00:05:10,774 [INFO]   Fold 2 | Epoch 08 | Train Loss: 0.1435 | Val Loss: 0.1441 | Aux Macro-F1: 0.1167 | Macro-AUROC: 0.6429
+2026-11-04 00:05:12,324 [INFO]   Saved fold 2 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_1_fold_2.pt
+2026-11-04 00:05:12,507 [INFO] --- [Arm 1: PubMedBERT Abstract-Only] Fold 3/5 (Train=267, OOF Val=67) ---
+2026-11-04 00:05:44,809 [INFO]   Fold 3 | Epoch 01 | Train Loss: 0.2561 | Val Loss: 0.2257 | Aux Macro-F1: 0.1365 | Macro-AUROC: 0.5117
+2026-11-04 00:12:24,699 [INFO]   Fold 3 | Epoch 02 | Train Loss: 0.1791 | Val Loss: 0.1494 | Aux Macro-F1: 0.0719 | Macro-AUROC: 0.5274
+2026-11-04 00:19:27,377 [INFO]   Fold 3 | Epoch 03 | Train Loss: 0.1599 | Val Loss: 0.1456 | Aux Macro-F1: 0.0915 | Macro-AUROC: 0.5603
+2026-11-04 00:25:46,649 [INFO]   Fold 3 | Epoch 04 | Train Loss: 0.1550 | Val Loss: 0.1434 | Aux Macro-F1: 0.1244 | Macro-AUROC: 0.5810
+2026-11-04 00:32:51,982 [INFO]   Fold 3 | Epoch 05 | Train Loss: 0.1500 | Val Loss: 0.1417 | Aux Macro-F1: 0.1312 | Macro-AUROC: 0.5932
+2026-11-04 00:39:07,035 [INFO]   Fold 3 | Epoch 06 | Train Loss: 0.1491 | Val Loss: 0.1402 | Aux Macro-F1: 0.1461 | Macro-AUROC: 0.6086
+2026-11-04 00:46:06,063 [INFO]   Fold 3 | Epoch 07 | Train Loss: 0.1467 | Val Loss: 0.1396 | Aux Macro-F1: 0.1547 | Macro-AUROC: 0.6152
+2026-11-04 00:52:43,579 [INFO]   Fold 3 | Epoch 08 | Train Loss: 0.1494 | Val Loss: 0.1395 | Aux Macro-F1: 0.1618 | Macro-AUROC: 0.6162
+2026-11-04 00:52:45,754 [INFO]   Saved fold 3 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_1_fold_3.pt
+2026-11-04 00:52:45,944 [INFO] --- [Arm 1: PubMedBERT Abstract-Only] Fold 4/5 (Train=267, OOF Val=67) ---
+2026-11-04 00:53:18,781 [INFO]   Fold 4 | Epoch 01 | Train Loss: 0.2452 | Val Loss: 0.2149 | Aux Macro-F1: 0.1296 | Macro-AUROC: 0.5171
+2026-11-04 01:01:46,282 [INFO]   Fold 4 | Epoch 02 | Train Loss: 0.1805 | Val Loss: 0.1511 | Aux Macro-F1: 0.0795 | Macro-AUROC: 0.5422
+2026-11-04 01:09:46,624 [INFO]   Fold 4 | Epoch 03 | Train Loss: 0.1589 | Val Loss: 0.1472 | Aux Macro-F1: 0.0704 | Macro-AUROC: 0.5892
+2026-11-04 01:17:46,691 [INFO]   Fold 4 | Epoch 04 | Train Loss: 0.1575 | Val Loss: 0.1465 | Aux Macro-F1: 0.0768 | Macro-AUROC: 0.6345
+2026-11-04 01:25:47,761 [INFO]   Fold 4 | Epoch 05 | Train Loss: 0.1523 | Val Loss: 0.1447 | Aux Macro-F1: 0.0905 | Macro-AUROC: 0.6564
+2026-11-04 01:33:51,829 [INFO]   Fold 4 | Epoch 06 | Train Loss: 0.1511 | Val Loss: 0.1436 | Aux Macro-F1: 0.0907 | Macro-AUROC: 0.6746
+2026-11-04 01:41:47,385 [INFO]   Fold 4 | Epoch 07 | Train Loss: 0.1495 | Val Loss: 0.1431 | Aux Macro-F1: 0.0944 | Macro-AUROC: 0.6812
+2026-11-04 01:49:49,639 [INFO]   Fold 4 | Epoch 08 | Train Loss: 0.1480 | Val Loss: 0.1427 | Aux Macro-F1: 0.0988 | Macro-AUROC: 0.6837
+2026-11-04 01:49:51,762 [INFO]   Saved fold 4 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_1_fold_4.pt
+2026-11-04 01:49:51,951 [INFO] --- [Arm 1: PubMedBERT Abstract-Only] Fold 5/5 (Train=268, OOF Val=66) ---
+2026-11-04 01:50:29,510 [INFO]   Fold 5 | Epoch 01 | Train Loss: 0.2580 | Val Loss: 0.2267 | Aux Macro-F1: 0.1666 | Macro-AUROC: 0.4842
+2026-11-04 01:59:50,058 [INFO]   Fold 5 | Epoch 02 | Train Loss: 0.1779 | Val Loss: 0.1657 | Aux Macro-F1: 0.0897 | Macro-AUROC: 0.5208
+2026-11-04 02:10:08,343 [INFO]   Fold 5 | Epoch 03 | Train Loss: 0.1567 | Val Loss: 0.1651 | Aux Macro-F1: 0.1053 | Macro-AUROC: 0.5469
+2026-11-04 02:19:37,653 [INFO]   Fold 5 | Epoch 04 | Train Loss: 0.1504 | Val Loss: 0.1638 | Aux Macro-F1: 0.1040 | Macro-AUROC: 0.5713
+2026-11-04 02:30:06,084 [INFO]   Fold 5 | Epoch 05 | Train Loss: 0.1488 | Val Loss: 0.1633 | Aux Macro-F1: 0.1015 | Macro-AUROC: 0.5872
+2026-11-04 02:39:53,973 [INFO]   Fold 5 | Epoch 06 | Train Loss: 0.1473 | Val Loss: 0.1628 | Aux Macro-F1: 0.1078 | Macro-AUROC: 0.5961
+2026-11-04 02:49:57,236 [INFO]   Fold 5 | Epoch 07 | Train Loss: 0.1458 | Val Loss: 0.1631 | Aux Macro-F1: 0.1118 | Macro-AUROC: 0.6017
+2026-11-04 03:00:03,492 [INFO]   Fold 5 | Epoch 08 | Train Loss: 0.1448 | Val Loss: 0.1628 | Aux Macro-F1: 0.1109 | Macro-AUROC: 0.6031
+2026-11-04 03:00:05,188 [INFO]   Saved fold 5 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_1_fold_5.pt
+2026-11-04 03:00:05,438 [INFO] Running 5-Model Ensemble Inference on Val (N=84) and Test (N=105)...
+2026-11-04 03:03:06,048 [INFO] [Arm 1: PubMedBERT Abstract-Only] Stage 1 Test Aux Macro-F1: 0.1234 | Macro-AUROC: 0.6695
+2026-11-04 03:03:06,072 [INFO] ================================================================================
+2026-11-04 03:03:06,072 [INFO] PHASE 2: TRAINING STAGE 2 DECISION CLASSIFIERS FOR Arm 1: PubMedBERT Abstract-Only
+2026-11-04 03:03:06,072 [INFO] ================================================================================
+2026-11-04 03:03:10,050 [INFO] [Arm 1: PubMedBERT Abstract-Only] Test MLP AUROC: 0.6819 | PR-AUC: 0.6587
+2026-11-04 03:03:10,050 [INFO] [Arm 1: PubMedBERT Abstract-Only] Test MLP Spec @ 100% Target: 0.1020 | FN: 0
+2026-11-04 03:03:10,050 [INFO] [Arm 1: PubMedBERT Abstract-Only] Test LR AUROC: 0.6797 | Test RF AUROC: 0.6808
+2026-11-04 03:03:10,051 [INFO] ================================================================================
+2026-11-04 03:03:10,051 [INFO] STARTING STAGE 9.1 CASCADE: ARM 2 (5-FOLD OOF EXTRACTION)
+2026-11-04 03:03:10,051 [INFO] ================================================================================
+2026-11-04 03:03:13,260 [INFO] --- [Arm 2: PubMedBERT Abstract + PICO] Fold 1/5 (Train=267, OOF Val=67) ---
+2026-11-04 03:03:44,713 [INFO]   Fold 1 | Epoch 01 | Train Loss: 0.2702 | Val Loss: 0.2474 | Aux Macro-F1: 0.0700 | Macro-AUROC: 0.4705
+2026-11-04 03:07:02,491 [INFO]   Fold 1 | Epoch 02 | Train Loss: 0.1772 | Val Loss: 0.1490 | Aux Macro-F1: 0.1050 | Macro-AUROC: 0.5055
+2026-11-04 03:09:37,438 [INFO]   Fold 1 | Epoch 03 | Train Loss: 0.1568 | Val Loss: 0.1479 | Aux Macro-F1: 0.1072 | Macro-AUROC: 0.5509
+2026-11-04 03:12:39,660 [INFO]   Fold 1 | Epoch 04 | Train Loss: 0.1535 | Val Loss: 0.1451 | Aux Macro-F1: 0.1295 | Macro-AUROC: 0.6190
+2026-11-04 03:15:19,553 [INFO]   Fold 1 | Epoch 05 | Train Loss: 0.1506 | Val Loss: 0.1433 | Aux Macro-F1: 0.1598 | Macro-AUROC: 0.6266
+2026-11-04 03:18:01,701 [INFO]   Fold 1 | Epoch 06 | Train Loss: 0.1472 | Val Loss: 0.1421 | Aux Macro-F1: 0.1775 | Macro-AUROC: 0.6505
+2026-11-04 03:20:25,136 [INFO]   Fold 1 | Epoch 07 | Train Loss: 0.1436 | Val Loss: 0.1416 | Aux Macro-F1: 0.1733 | Macro-AUROC: 0.6527
+2026-11-04 03:23:52,994 [INFO]   Fold 1 | Epoch 08 | Train Loss: 0.1452 | Val Loss: 0.1415 | Aux Macro-F1: 0.1781 | Macro-AUROC: 0.6557
+2026-11-04 03:23:54,746 [INFO]   Saved fold 1 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_2_fold_1.pt
+2026-11-04 03:23:54,939 [INFO] --- [Arm 2: PubMedBERT Abstract + PICO] Fold 2/5 (Train=267, OOF Val=67) ---
+2026-11-04 03:24:28,189 [INFO]   Fold 2 | Epoch 01 | Train Loss: 0.2184 | Val Loss: 0.1944 | Aux Macro-F1: 0.0741 | Macro-AUROC: 0.5591
+2026-11-04 03:27:45,438 [INFO]   Fold 2 | Epoch 02 | Train Loss: 0.1699 | Val Loss: 0.1484 | Aux Macro-F1: 0.0903 | Macro-AUROC: 0.5968
+2026-11-04 03:31:11,039 [INFO]   Fold 2 | Epoch 03 | Train Loss: 0.1561 | Val Loss: 0.1443 | Aux Macro-F1: 0.1283 | Macro-AUROC: 0.6338
+2026-11-04 03:34:27,871 [INFO]   Fold 2 | Epoch 04 | Train Loss: 0.1522 | Val Loss: 0.1420 | Aux Macro-F1: 0.1660 | Macro-AUROC: 0.6631
+2026-11-04 03:37:56,300 [INFO]   Fold 2 | Epoch 05 | Train Loss: 0.1476 | Val Loss: 0.1401 | Aux Macro-F1: 0.1871 | Macro-AUROC: 0.6804
+2026-11-04 03:41:21,821 [INFO]   Fold 2 | Epoch 06 | Train Loss: 0.1435 | Val Loss: 0.1398 | Aux Macro-F1: 0.1842 | Macro-AUROC: 0.6873
+2026-11-04 03:44:41,563 [INFO]   Fold 2 | Epoch 07 | Train Loss: 0.1441 | Val Loss: 0.1392 | Aux Macro-F1: 0.1858 | Macro-AUROC: 0.6912
+2026-11-04 03:48:11,873 [INFO]   Fold 2 | Epoch 08 | Train Loss: 0.1413 | Val Loss: 0.1393 | Aux Macro-F1: 0.1864 | Macro-AUROC: 0.6935
+2026-11-04 03:48:13,961 [INFO]   Saved fold 2 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_2_fold_2.pt
+2026-11-04 03:48:14,131 [INFO] --- [Arm 2: PubMedBERT Abstract + PICO] Fold 3/5 (Train=267, OOF Val=67) ---
+2026-11-04 03:48:46,281 [INFO]   Fold 3 | Epoch 01 | Train Loss: 0.2540 | Val Loss: 0.2165 | Aux Macro-F1: 0.1089 | Macro-AUROC: 0.5294
+2026-11-04 03:53:25,313 [INFO]   Fold 3 | Epoch 02 | Train Loss: 0.1732 | Val Loss: 0.1488 | Aux Macro-F1: 0.0663 | Macro-AUROC: 0.5584
+2026-11-04 03:58:54,091 [INFO]   Fold 3 | Epoch 03 | Train Loss: 0.1567 | Val Loss: 0.1423 | Aux Macro-F1: 0.1400 | Macro-AUROC: 0.6435
+2026-11-04 04:03:40,417 [INFO]   Fold 3 | Epoch 04 | Train Loss: 0.1516 | Val Loss: 0.1394 | Aux Macro-F1: 0.1736 | Macro-AUROC: 0.6964
+2026-11-04 04:09:10,775 [INFO]   Fold 3 | Epoch 05 | Train Loss: 0.1469 | Val Loss: 0.1366 | Aux Macro-F1: 0.2271 | Macro-AUROC: 0.7257
+2026-11-04 04:13:56,549 [INFO]   Fold 3 | Epoch 06 | Train Loss: 0.1450 | Val Loss: 0.1355 | Aux Macro-F1: 0.2196 | Macro-AUROC: 0.7209
+2026-11-04 04:19:29,211 [INFO]   Fold 3 | Epoch 07 | Train Loss: 0.1432 | Val Loss: 0.1344 | Aux Macro-F1: 0.2368 | Macro-AUROC: 0.7377
+2026-11-04 04:24:17,035 [INFO]   Fold 3 | Epoch 08 | Train Loss: 0.1434 | Val Loss: 0.1344 | Aux Macro-F1: 0.2350 | Macro-AUROC: 0.7345
+2026-11-04 04:24:18,967 [INFO]   Saved fold 3 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_2_fold_3.pt
+2026-11-04 04:24:19,152 [INFO] --- [Arm 2: PubMedBERT Abstract + PICO] Fold 4/5 (Train=267, OOF Val=67) ---
+2026-11-04 04:24:51,427 [INFO]   Fold 4 | Epoch 01 | Train Loss: 0.2689 | Val Loss: 0.2290 | Aux Macro-F1: 0.1002 | Macro-AUROC: 0.5046
+2026-11-04 04:36:47,260 [INFO]   Fold 4 | Epoch 02 | Train Loss: 0.1841 | Val Loss: 0.1488 | Aux Macro-F1: 0.0680 | Macro-AUROC: 0.5932
+2026-11-04 04:47:21,343 [INFO]   Fold 4 | Epoch 03 | Train Loss: 0.1573 | Val Loss: 0.1442 | Aux Macro-F1: 0.0818 | Macro-AUROC: 0.6861
+2026-11-04 04:59:26,610 [INFO]   Fold 4 | Epoch 04 | Train Loss: 0.1544 | Val Loss: 0.1405 | Aux Macro-F1: 0.1008 | Macro-AUROC: 0.7289
+2026-11-04 05:10:05,754 [INFO]   Fold 4 | Epoch 05 | Train Loss: 0.1494 | Val Loss: 0.1378 | Aux Macro-F1: 0.1075 | Macro-AUROC: 0.7473
+2026-11-04 05:22:09,681 [INFO]   Fold 4 | Epoch 06 | Train Loss: 0.1487 | Val Loss: 0.1367 | Aux Macro-F1: 0.1343 | Macro-AUROC: 0.7606
+2026-11-04 05:32:45,999 [INFO]   Fold 4 | Epoch 07 | Train Loss: 0.1458 | Val Loss: 0.1351 | Aux Macro-F1: 0.1627 | Macro-AUROC: 0.7684
+2026-11-04 05:45:13,067 [INFO]   Fold 4 | Epoch 08 | Train Loss: 0.1427 | Val Loss: 0.1349 | Aux Macro-F1: 0.1787 | Macro-AUROC: 0.7694
+2026-11-04 05:45:15,058 [INFO]   Saved fold 4 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_2_fold_4.pt
+2026-11-04 05:45:15,300 [INFO] --- [Arm 2: PubMedBERT Abstract + PICO] Fold 5/5 (Train=268, OOF Val=66) ---
+2026-11-04 05:46:41,611 [INFO]   Fold 5 | Epoch 01 | Train Loss: 0.2697 | Val Loss: 0.2351 | Aux Macro-F1: 0.1193 | Macro-AUROC: 0.4495
+2026-11-04 05:58:15,327 [INFO]   Fold 5 | Epoch 02 | Train Loss: 0.1780 | Val Loss: 0.1651 | Aux Macro-F1: 0.0918 | Macro-AUROC: 0.5629
+2026-11-04 06:09:56,130 [INFO]   Fold 5 | Epoch 03 | Train Loss: 0.1560 | Val Loss: 0.1628 | Aux Macro-F1: 0.1221 | Macro-AUROC: 0.6319
+2026-11-04 06:23:52,815 [INFO]   Fold 5 | Epoch 04 | Train Loss: 0.1496 | Val Loss: 0.1588 | Aux Macro-F1: 0.1281 | Macro-AUROC: 0.6865
+2026-11-04 06:35:11,460 [INFO]   Fold 5 | Epoch 05 | Train Loss: 0.1452 | Val Loss: 0.1564 | Aux Macro-F1: 0.1434 | Macro-AUROC: 0.7013
+2026-11-04 06:46:45,337 [INFO]   Fold 5 | Epoch 06 | Train Loss: 0.1440 | Val Loss: 0.1557 | Aux Macro-F1: 0.1514 | Macro-AUROC: 0.7175
+2026-11-04 06:57:29,285 [INFO]   Fold 5 | Epoch 07 | Train Loss: 0.1418 | Val Loss: 0.1550 | Aux Macro-F1: 0.1550 | Macro-AUROC: 0.7208
+2026-11-04 07:10:51,885 [INFO]   Fold 5 | Epoch 08 | Train Loss: 0.1405 | Val Loss: 0.1543 | Aux Macro-F1: 0.1548 | Macro-AUROC: 0.7219
+2026-11-04 07:10:53,862 [INFO]   Saved fold 5 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_2_fold_5.pt
+2026-11-04 07:10:54,116 [INFO] Running 5-Model Ensemble Inference on Val (N=84) and Test (N=105)...
+2026-11-04 07:13:55,309 [INFO] [Arm 2: PubMedBERT Abstract + PICO] Stage 1 Test Aux Macro-F1: 0.1819 | Macro-AUROC: 0.7058
+2026-11-04 07:13:55,334 [INFO] ================================================================================
+2026-11-04 07:13:55,335 [INFO] PHASE 2: TRAINING STAGE 2 DECISION CLASSIFIERS FOR Arm 2: PubMedBERT Abstract + PICO
+2026-11-04 07:13:55,335 [INFO] ================================================================================
+2026-11-04 07:13:59,313 [INFO] [Arm 2: PubMedBERT Abstract + PICO] Test MLP AUROC: 0.8236 | PR-AUC: 0.8291
+2026-11-04 07:13:59,313 [INFO] [Arm 2: PubMedBERT Abstract + PICO] Test MLP Spec @ 100% Target: 0.1837 | FN: 1
+2026-11-04 07:13:59,313 [INFO] [Arm 2: PubMedBERT Abstract + PICO] Test LR AUROC: 0.8141 | Test RF AUROC: 0.8098
+2026-11-04 07:13:59,313 [INFO] ================================================================================
+2026-11-04 07:13:59,314 [INFO] STARTING STAGE 9.1 CASCADE: ARM 3 (5-FOLD OOF EXTRACTION)
+2026-11-04 07:13:59,314 [INFO] ================================================================================
+2026-11-04 07:14:00,907 [INFO] --- [Arm 3: MedCPT Abstract + PICO] Fold 1/5 (Train=267, OOF Val=67) ---
+2026-11-04 07:14:31,879 [INFO]   Fold 1 | Epoch 01 | Train Loss: 0.2150 | Val Loss: 0.2022 | Aux Macro-F1: 0.1164 | Macro-AUROC: 0.4200
+2026-11-04 07:19:38,640 [INFO]   Fold 1 | Epoch 02 | Train Loss: 0.1726 | Val Loss: 0.1508 | Aux Macro-F1: 0.0625 | Macro-AUROC: 0.5771
+2026-11-04 07:25:05,754 [INFO]   Fold 1 | Epoch 03 | Train Loss: 0.1556 | Val Loss: 0.1493 | Aux Macro-F1: 0.0773 | Macro-AUROC: 0.6399
+2026-11-04 07:30:35,383 [INFO]   Fold 1 | Epoch 04 | Train Loss: 0.1551 | Val Loss: 0.1482 | Aux Macro-F1: 0.0762 | Macro-AUROC: 0.6649
+2026-11-04 07:35:40,059 [INFO]   Fold 1 | Epoch 05 | Train Loss: 0.1522 | Val Loss: 0.1475 | Aux Macro-F1: 0.0953 | Macro-AUROC: 0.6671
+2026-11-04 07:40:28,869 [INFO]   Fold 1 | Epoch 06 | Train Loss: 0.1493 | Val Loss: 0.1464 | Aux Macro-F1: 0.0975 | Macro-AUROC: 0.6662
+2026-11-04 07:45:27,922 [INFO]   Fold 1 | Epoch 07 | Train Loss: 0.1478 | Val Loss: 0.1465 | Aux Macro-F1: 0.0975 | Macro-AUROC: 0.6509
+2026-11-04 07:50:26,950 [INFO]   Fold 1 | Epoch 08 | Train Loss: 0.1469 | Val Loss: 0.1463 | Aux Macro-F1: 0.0963 | Macro-AUROC: 0.6526
+2026-11-04 07:50:28,968 [INFO]   Saved fold 1 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_3_fold_1.pt
+2026-11-04 07:50:29,212 [INFO] --- [Arm 3: MedCPT Abstract + PICO] Fold 2/5 (Train=267, OOF Val=67) ---
+2026-11-04 07:51:03,461 [INFO]   Fold 2 | Epoch 01 | Train Loss: 0.2405 | Val Loss: 0.2217 | Aux Macro-F1: 0.1279 | Macro-AUROC: 0.5158
+2026-11-04 07:56:46,393 [INFO]   Fold 2 | Epoch 02 | Train Loss: 0.1822 | Val Loss: 0.1515 | Aux Macro-F1: 0.0464 | Macro-AUROC: 0.5679
+2026-11-04 08:03:46,010 [INFO]   Fold 2 | Epoch 03 | Train Loss: 0.1555 | Val Loss: 0.1489 | Aux Macro-F1: 0.0756 | Macro-AUROC: 0.6037
+2026-11-04 08:09:32,268 [INFO]   Fold 2 | Epoch 04 | Train Loss: 0.1510 | Val Loss: 0.1487 | Aux Macro-F1: 0.0775 | Macro-AUROC: 0.6077
+2026-11-04 08:15:56,713 [INFO]   Fold 2 | Epoch 05 | Train Loss: 0.1475 | Val Loss: 0.1457 | Aux Macro-F1: 0.1303 | Macro-AUROC: 0.6322
+2026-11-04 08:21:47,481 [INFO]   Fold 2 | Epoch 06 | Train Loss: 0.1463 | Val Loss: 0.1462 | Aux Macro-F1: 0.1308 | Macro-AUROC: 0.6250
+2026-11-04 08:28:28,168 [INFO]   Fold 2 | Epoch 07 | Train Loss: 0.1443 | Val Loss: 0.1466 | Aux Macro-F1: 0.1215 | Macro-AUROC: 0.6236
+2026-11-04 08:35:16,491 [INFO]   Fold 2 | Epoch 08 | Train Loss: 0.1435 | Val Loss: 0.1463 | Aux Macro-F1: 0.1337 | Macro-AUROC: 0.6243
+2026-11-04 08:35:18,639 [INFO]   Saved fold 2 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_3_fold_2.pt
+2026-11-04 08:35:18,844 [INFO] --- [Arm 3: MedCPT Abstract + PICO] Fold 3/5 (Train=267, OOF Val=67) ---
+2026-11-04 08:35:50,115 [INFO]   Fold 3 | Epoch 01 | Train Loss: 0.2184 | Val Loss: 0.2024 | Aux Macro-F1: 0.1375 | Macro-AUROC: 0.5727
+2026-11-04 08:43:44,356 [INFO]   Fold 3 | Epoch 02 | Train Loss: 0.1729 | Val Loss: 0.1485 | Aux Macro-F1: 0.0585 | Macro-AUROC: 0.5587
+2026-11-04 08:51:07,582 [INFO]   Fold 3 | Epoch 03 | Train Loss: 0.1556 | Val Loss: 0.1449 | Aux Macro-F1: 0.0716 | Macro-AUROC: 0.6884
+2026-11-04 08:58:24,637 [INFO]   Fold 3 | Epoch 04 | Train Loss: 0.1529 | Val Loss: 0.1413 | Aux Macro-F1: 0.1279 | Macro-AUROC: 0.7209
+2026-11-04 09:06:06,040 [INFO]   Fold 3 | Epoch 05 | Train Loss: 0.1493 | Val Loss: 0.1386 | Aux Macro-F1: 0.1520 | Macro-AUROC: 0.7118
+2026-11-04 09:13:16,530 [INFO]   Fold 3 | Epoch 06 | Train Loss: 0.1481 | Val Loss: 0.1374 | Aux Macro-F1: 0.1797 | Macro-AUROC: 0.7180
+2026-11-04 09:21:03,627 [INFO]   Fold 3 | Epoch 07 | Train Loss: 0.1472 | Val Loss: 0.1368 | Aux Macro-F1: 0.1801 | Macro-AUROC: 0.7197
+2026-11-04 09:28:11,610 [INFO]   Fold 3 | Epoch 08 | Train Loss: 0.1467 | Val Loss: 0.1366 | Aux Macro-F1: 0.1823 | Macro-AUROC: 0.7208
+2026-11-04 09:28:14,007 [INFO]   Saved fold 3 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_3_fold_3.pt
+2026-11-04 09:28:14,198 [INFO] --- [Arm 3: MedCPT Abstract + PICO] Fold 4/5 (Train=267, OOF Val=67) ---
+2026-11-04 09:33:59,061 [INFO]   Fold 4 | Epoch 01 | Train Loss: 0.2173 | Val Loss: 0.1917 | Aux Macro-F1: 0.0874 | Macro-AUROC: 0.5491
+2026-11-04 09:40:18,899 [INFO]   Fold 4 | Epoch 02 | Train Loss: 0.1723 | Val Loss: 0.1478 | Aux Macro-F1: 0.0599 | Macro-AUROC: 0.5715
+2026-11-04 09:48:02,086 [INFO]   Fold 4 | Epoch 03 | Train Loss: 0.1559 | Val Loss: 0.1452 | Aux Macro-F1: 0.0650 | Macro-AUROC: 0.5704
+2026-11-04 09:55:34,532 [INFO]   Fold 4 | Epoch 04 | Train Loss: 0.1518 | Val Loss: 0.1424 | Aux Macro-F1: 0.0899 | Macro-AUROC: 0.6206
+2026-11-04 10:03:47,852 [INFO]   Fold 4 | Epoch 05 | Train Loss: 0.1491 | Val Loss: 0.1414 | Aux Macro-F1: 0.1082 | Macro-AUROC: 0.6436
+2026-11-04 10:11:16,896 [INFO]   Fold 4 | Epoch 06 | Train Loss: 0.1490 | Val Loss: 0.1392 | Aux Macro-F1: 0.1383 | Macro-AUROC: 0.6591
+2026-11-04 10:18:55,340 [INFO]   Fold 4 | Epoch 07 | Train Loss: 0.1471 | Val Loss: 0.1397 | Aux Macro-F1: 0.1392 | Macro-AUROC: 0.6689
+2026-11-04 10:26:50,474 [INFO]   Fold 4 | Epoch 08 | Train Loss: 0.1480 | Val Loss: 0.1390 | Aux Macro-F1: 0.1389 | Macro-AUROC: 0.6718
+2026-11-04 10:26:52,343 [INFO]   Saved fold 4 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_3_fold_4.pt
+2026-11-04 10:26:52,525 [INFO] --- [Arm 3: MedCPT Abstract + PICO] Fold 5/5 (Train=268, OOF Val=66) ---
+2026-11-04 10:27:36,144 [INFO]   Fold 5 | Epoch 01 | Train Loss: 0.2238 | Val Loss: 0.2080 | Aux Macro-F1: 0.1509 | Macro-AUROC: 0.5241
+2026-11-04 10:42:46,826 [INFO]   Fold 5 | Epoch 02 | Train Loss: 0.1737 | Val Loss: 0.1634 | Aux Macro-F1: 0.0575 | Macro-AUROC: 0.5506
+2026-11-04 10:55:01,243 [INFO]   Fold 5 | Epoch 03 | Train Loss: 0.1528 | Val Loss: 0.1631 | Aux Macro-F1: 0.0701 | Macro-AUROC: 0.5899
+2026-11-04 11:08:30,167 [INFO]   Fold 5 | Epoch 04 | Train Loss: 0.1486 | Val Loss: 0.1602 | Aux Macro-F1: 0.0762 | Macro-AUROC: 0.6608
+2026-11-04 11:20:50,650 [INFO]   Fold 5 | Epoch 05 | Train Loss: 0.1451 | Val Loss: 0.1575 | Aux Macro-F1: 0.1047 | Macro-AUROC: 0.6848
+2026-11-04 11:35:40,773 [INFO]   Fold 5 | Epoch 06 | Train Loss: 0.1450 | Val Loss: 0.1571 | Aux Macro-F1: 0.1155 | Macro-AUROC: 0.6870
+2026-11-04 11:49:39,040 [INFO]   Fold 5 | Epoch 07 | Train Loss: 0.1440 | Val Loss: 0.1579 | Aux Macro-F1: 0.1200 | Macro-AUROC: 0.6668
+2026-11-04 12:04:23,565 [INFO]   Fold 5 | Epoch 08 | Train Loss: 0.1420 | Val Loss: 0.1571 | Aux Macro-F1: 0.1304 | Macro-AUROC: 0.6782
+2026-11-04 12:04:25,359 [INFO]   Saved fold 5 checkpoint to D:\prostate-research-analysis\prostate-research-analysis\models\stage9_1\arm_3_fold_5.pt
+2026-11-04 12:04:25,669 [INFO] Running 5-Model Ensemble Inference on Val (N=84) and Test (N=105)...
+2026-11-04 12:17:00,756 [INFO] [Arm 3: MedCPT Abstract + PICO] Stage 1 Test Aux Macro-F1: 0.1272 | Macro-AUROC: 0.6820
+2026-11-04 12:17:00,779 [INFO] ================================================================================
+2026-11-04 12:17:00,779 [INFO] PHASE 2: TRAINING STAGE 2 DECISION CLASSIFIERS FOR Arm 3: MedCPT Abstract + PICO
+2026-11-04 12:17:00,780 [INFO] ================================================================================
+2026-11-04 12:17:06,038 [INFO] [Arm 3: MedCPT Abstract + PICO] Test MLP AUROC: 0.8145 | PR-AUC: 0.8310
+2026-11-04 12:17:06,039 [INFO] [Arm 3: MedCPT Abstract + PICO] Test MLP Spec @ 100% Target: 0.0000 | FN: 0
+2026-11-04 12:17:06,039 [INFO] [Arm 3: MedCPT Abstract + PICO] Test LR AUROC: 0.8218 | Test RF AUROC: 0.8083
+2026-11-04 12:17:06,046 [INFO] ================================================================================
+2026-11-04 12:17:06,046 [INFO] STAGE 9.1 CASCADE BENCHMARK COMPLETED SUCCESSFULLY! Results saved to D:\prostate-research-analysis\prostate-research-analysis\results\stage9_1
+2026-11-04 12:17:06,046 [INFO] ================================================================================

@@ -1,0 +1,26 @@
+{
+  "total_samples": 105,
+  "accuracy": 0.7904761904761904,
+  "sensitivity_recall": 0.9642857142857143,
+  "specificity": 0.5918367346938775,
+  "precision": 0.7297297297297297,
+  "npv": 0.9354838709677419,
+  "f1_score": 0.8307692307692308,
+  "macro_f1": 0.7778846153846154,
+  "weighted_f1": 0.7814102564102565,
+  "true_positives": 54,
+  "false_positives": 20,
+  "true_negatives": 29,
+  "false_negatives": 2,
+  "confusion_matrix": {
+    "tn": 29,
+    "fp": 20,
+    "fn": 2,
+    "tp": 54
+  },
+  "model_name": "kwangsuklee/Qwen3.5-9B.Q4_K_M-Claude-4.6-Opus-Reasoning-Distilled-v2",
+  "dataset_path": "data\\splits\\stage5\\test.csv",
+  "total_evaluated": 105,
+  "valid_predictions": 105,
+  "elapsed_total_sec": 12518.45
+}

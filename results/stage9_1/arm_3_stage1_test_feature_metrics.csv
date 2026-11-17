@@ -1,0 +1,26 @@
+feature,accuracy,recall,precision,f1,auroc,pr_auc,positive_count,total_count,arm_id,arm_name
+risk_method_damico,0.9333,0.0,0.0,0.0,0.9545,0.3648,6,105,3,Arm 3: MedCPT Abstract + PICO
+risk_method_nccn,0.8952,0.0,0.0,0.0,0.8327,0.4597,11,105,3,Arm 3: MedCPT Abstract + PICO
+pretreatment_risk_stratification,0.819,0.0,0.0,0.0,0.8005,0.399,19,105,3,Arm 3: MedCPT Abstract + PICO
+low_risk_group_status,0.9238,0.0,0.0,0.0,0.8003,0.17,8,105,3,Arm 3: MedCPT Abstract + PICO
+intermediate_risk_group_status,0.9238,0.0,0.0,0.0,0.7655,0.1572,8,105,3,Arm 3: MedCPT Abstract + PICO
+high_risk_group_status,0.9143,0.0,0.0,0.0,0.6134,0.0876,8,105,3,Arm 3: MedCPT Abstract + PICO
+retains_baseline_risk_groups,0.8095,0.0,0.0,0.0,0.9017,0.5057,18,105,3,Arm 3: MedCPT Abstract + PICO
+radical_prostatectomy,0.7619,0.619,0.4333,0.5098,0.72,0.4031,21,105,3,Arm 3: MedCPT Abstract + PICO
+standard_ebrt,0.5238,0.9524,0.4545,0.6154,0.746,0.714,42,105,3,Arm 3: MedCPT Abstract + PICO
+hypofractionated_ebrt,0.9524,0.0,0.0,0.0,0.794,0.4846,5,105,3,Arm 3: MedCPT Abstract + PICO
+ultrahypofractionated_ebrt,0.9524,0.0,0.0,0.0,0.6,0.264,5,105,3,Arm 3: MedCPT Abstract + PICO
+proton_therapy,0.9905,0.0,0.0,0.0,0.7885,0.0217,1,105,3,Arm 3: MedCPT Abstract + PICO
+ldr_brachytherapy,0.8476,0.0,0.0,0.0,0.5372,0.1474,16,105,3,Arm 3: MedCPT Abstract + PICO
+hdr_brachytherapy,0.8952,0.0,0.0,0.0,0.6934,0.1954,11,105,3,Arm 3: MedCPT Abstract + PICO
+adt_combination,0.7714,0.0,0.0,0.0,0.6821,0.3947,24,105,3,Arm 3: MedCPT Abstract + PICO
+cryotherapy,0.9524,0.0,0.0,0.0,0.386,0.0375,5,105,3,Arm 3: MedCPT Abstract + PICO
+hifu,0.9333,0.0,0.0,0.0,0.5569,0.069,7,105,3,Arm 3: MedCPT Abstract + PICO
+has_brfs,0.6,0.8205,0.4776,0.6038,0.6317,0.4477,39,105,3,Arm 3: MedCPT Abstract + PICO
+has_os,0.6952,0.5714,0.4444,0.5,0.7171,0.4859,28,105,3,Arm 3: MedCPT Abstract + PICO
+has_mfs,0.9429,0.0,0.0,0.0,0.6835,0.0834,6,105,3,Arm 3: MedCPT Abstract + PICO
+has_css,0.8,0.3333,0.4,0.3636,0.6954,0.3562,18,105,3,Arm 3: MedCPT Abstract + PICO
+standard_ebrt_dose_status,0.9714,0.0,0.0,0.0,0.2614,0.018,3,105,3,Arm 3: MedCPT Abstract + PICO
+median_followup_status,0.7048,0.7857,0.4681,0.5867,0.757,0.5098,28,105,3,Arm 3: MedCPT Abstract + PICO
+advanced_metastatic_cohort,0.981,0.0,0.0,0.0,0.5534,0.0317,2,105,3,Arm 3: MedCPT Abstract + PICO
+salvage_postfailure_cohort,0.9238,0.0,0.0,0.0,0.5773,0.0831,8,105,3,Arm 3: MedCPT Abstract + PICO

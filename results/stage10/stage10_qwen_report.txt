@@ -1,0 +1,22 @@
+================================================================================
+Stage 5 Test Set Evaluation Report
+Model: kwangsuklee/Qwen3.5-9B.Q4_K_M-Claude-4.6-Opus-Reasoning-Distilled-v2
+Dataset: data\splits\stage5\test.csv
+================================================================================
+
+SUMMARY METRICS (N=105):
+  Accuracy:             0.7905 (79.05%)
+  Sensitivity (Recall): 0.9643 (96.43%)
+  Specificity:          0.5918 (59.18%)
+  Precision (PPV):      0.7297 (72.97%)
+  NPV:                  0.9355 (93.55%)
+  F1-Score (Positive):  0.8308
+  Macro F1:             0.7779
+  Weighted F1:          0.7814
+
+CONFUSION MATRIX:
+                    Predicted Negative (0)    Predicted Positive (1)
+  Actual Negative (0)          29 (TN)                20 (FP)
+  Actual Positive (1)           2 (FN)                54 (TP)
+
+================================================================================

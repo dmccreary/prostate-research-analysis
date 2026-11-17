@@ -1,0 +1,7 @@
+arm_id,arm_name,epoch,train_total_loss,train_primary_loss,train_aux_loss,val_total_loss,val_primary_loss,val_aux_loss,val_recall,val_specificity,val_precision,val_f1,val_auroc,val_pr_auc,val_aux_macro_f1,val_aux_micro_f1,val_aux_macro_auroc,epoch_duration_s
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),1,0.7517,0.4165,8.3779,0.6619,0.3862,6.8902,0.9778,0.1795,0.5789,0.7273,0.7362,0.6626,0.1232,0.1702,0.5763,36.4
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),2,0.5584,0.3509,5.1881,0.439,0.2935,3.6374,0.9333,0.359,0.6269,0.75,0.8342,0.802,0.0946,0.3187,0.5826,97.1
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),3,0.4519,0.2843,4.1879,0.4468,0.3079,3.4713,0.7778,0.8205,0.8333,0.8046,0.8296,0.813,0.0747,0.3242,0.6016,97.7
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),4,0.4078,0.2462,4.0412,0.4495,0.3127,3.4186,0.8,0.8205,0.8372,0.8182,0.833,0.8204,0.0786,0.3326,0.6243,97.7
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),5,0.3881,0.2277,4.008,0.4461,0.3109,3.3795,0.8222,0.8462,0.8605,0.8409,0.8405,0.8249,0.0934,0.3555,0.6369,97.2
+2,Arm 2: PubMedBERT Abstract + PICO (Multitask),6,0.362,0.2025,3.9881,0.4617,0.3271,3.3658,0.8,0.8462,0.8571,0.8276,0.8439,0.8243,0.0984,0.3594,0.6446,97.1
